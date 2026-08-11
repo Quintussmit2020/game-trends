@@ -2,7 +2,7 @@
 """Generate the weekly game-trends HTML report from a snapshot.
 
 Usage: python3 report.py [--week 2026-W33] [--datadir ../data] [--docsdir ../docs]
-Writes docs/index.html (latest) and docs/reports/<week>.html (archive).
+Writes docs/reports/<week>.html (full report) and docs/index.html (redirect to latest).
 """
 import argparse
 import datetime as dt
@@ -334,11 +334,22 @@ def main():
     page = build_html(args.week, data, history)
 
     os.makedirs(os.path.join(args.docsdir, "reports"), exist_ok=True)
-    for path in (os.path.join(args.docsdir, "index.html"),
-                 os.path.join(args.docsdir, "reports", f"{args.week}.html")):
-        with open(path, "w") as f:
-            f.write(page)
-        print("wrote", path)
+    report_path = os.path.join(args.docsdir, "reports", f"{args.week}.html")
+    with open(report_path, "w") as f:
+        f.write(page)
+    print("wrote", report_path)
+
+    # index.html is a tiny redirect to the latest weekly report, so the
+    # bookmarkable URL always shows the newest week without duplicating content.
+    index_path = os.path.join(args.docsdir, "index.html")
+    with open(index_path, "w") as f:
+        f.write(
+            '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">\n'
+            f'<meta http-equiv="refresh" content="0; url=reports/{args.week}.html">\n'
+            f'<title>Game Trends - latest</title></head><body>\n'
+            f'<p>Redirecting to the latest report: '
+            f'<a href="reports/{args.week}.html">{args.week}</a></p></body></html>\n')
+    print("wrote", index_path)
 
 
 if __name__ == "__main__":
