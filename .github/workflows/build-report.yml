@@ -1,0 +1,39 @@
+name: Build report
+
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'collector/report.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Find the newest week with data
+        id: week
+        run: |
+          WEEK=$(ls -d data/*-W* | xargs -n1 basename | sort | tail -1)
+          echo "week=$WEEK" >> "$GITHUB_OUTPUT"
+          echo "building $WEEK"
+
+      - name: Generate report
+        run: |
+          cd collector
+          python3 report.py --week "${{ steps.week.outputs.week }}" --datadir ../data --docsdir ../docs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet || (git commit -m "Rebuild report for ${{ steps.week.outputs.week }}" && git push)
