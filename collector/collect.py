@@ -4,7 +4,7 @@
 Collects public Steam data for the weekly game-trends snapshot:
   - Most played top 100 (official Steam charts service)
   - Current top sellers (store search, hardware filtered out)
-  - New releases of the last 14 days, enriched
+  - New releases of the last 14 days, enriched, with any AI content disclosure
   - Tag data via SteamSpy, review summaries via the store API
 
 Revenue is estimated with the Boxleiter method (reviews x multiplier x price).
@@ -15,11 +15,14 @@ Usage: python3 collect.py [--week 2026-W33] [--outdir ../data]
 import argparse
 import datetime as dt
 import json
+import os
 import re
 import sys
 import time
 import urllib.request
 import urllib.parse
+
+import ai_disclosure
 
 UA = {"User-Agent": "game-trends-collector/1.0 (weekly research snapshot)"}
 REVIEW_MULTIPLIER = 35        # Boxleiter-style: sales ~= total reviews x 35
@@ -193,7 +196,6 @@ def main():
 
     week = args.week
     outdir = f"{args.outdir}/{week}"
-    import os
     os.makedirs(outdir, exist_ok=True)
     print(f"== game-trends collection for {week} ==")
 
@@ -237,6 +239,8 @@ def main():
             continue
         e["ccu_now"] = get_ccu(r["appid"])
         time.sleep(REQUEST_DELAY)
+        e["ai_disclosed"], e["ai_note"], e["ai_scope"] = ai_disclosure.check(r["appid"])
+        time.sleep(REQUEST_DELAY)
         releases.append(e)
         print(f"   release: {e['name']} ({e['total_reviews']} reviews)")
     json.dump({"week": week, "window_days": NEW_RELEASE_WINDOW_DAYS, "releases": releases},
@@ -272,22 +276,27 @@ def main():
     }
     json.dump(summary, open(f"{outdir}/summary.json", "w"), indent=1)
 
-    # Append to the long-run CSV record
-    tag_csv = f"{args.outdir}/tag_momentum_history.csv"
-    new_file = not os.path.exists(tag_csv)
-    with open(tag_csv, "a") as f:
-        if new_file:
-            f.write("week,tag,weight_usd\n")
-        for t, w in top_tags:
-            f.write(f"{week},\"{t}\",{int(w)}\n")
+    # Long-run CSV record. Rows for this week are rewritten rather than appended,
+    # so re-running a week cannot silently double it up.
+    def rewrite_week(path, header, rows):
+        kept = []
+        if os.path.exists(path):
+            with open(path) as f:
+                lines = f.readlines()
+            kept = [l for l in lines[1:] if not l.startswith(f"{week},")]
+        with open(path, "w") as f:
+            f.write(header)
+            f.writelines(kept)
+            f.writelines(rows)
 
-    week_csv = f"{args.outdir}/weekly_summary_history.csv"
-    new_file = not os.path.exists(week_csv)
-    with open(week_csv, "a") as f:
-        if new_file:
-            f.write("week,new_releases_tracked,indie_new_releases,top_breakout,top_breakout_est_net_usd\n")
-        top = breakouts[0] if breakouts else {"name": "", "est_net_usd": 0}
-        f.write(f"{week},{len(releases)},{len(indies)},\"{top['name']}\",{top['est_net_usd']}\n")
+    rewrite_week(f"{args.outdir}/tag_momentum_history.csv",
+                 "week,tag,weight_usd\n",
+                 [f"{week},\"{t}\",{int(w)}\n" for t, w in top_tags])
+
+    top = breakouts[0] if breakouts else {"name": "", "est_net_usd": 0}
+    rewrite_week(f"{args.outdir}/weekly_summary_history.csv",
+                 "week,new_releases_tracked,indie_new_releases,top_breakout,top_breakout_est_net_usd\n",
+                 [f"{week},{len(releases)},{len(indies)},\"{top['name']}\",{top['est_net_usd']}\n"])
 
     print(f"done. snapshot in {outdir}/")
 
