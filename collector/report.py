@@ -75,6 +75,39 @@ def fmt_int(n):
     return f"{n:,}" if isinstance(n, (int, float)) else "-"
 
 
+def fmt_hours(h):
+    """Playtime, rounded to a resolution the estimate can actually support."""
+    if not h:
+        return "-"
+    if h < 10:
+        return f"{h:.1f}h"
+    return f"{round(h)}h"
+
+
+def ai_badge(rec):
+    """Steam AI disclosure, shown with its scope. Absence of a badge means the
+    developer filed no disclosure, not that no AI was used."""
+    if not rec.get("ai_disclosed"):
+        return ""
+    scope = rec.get("ai_scope") or "unspecified"
+    heavy = scope in ("core assets", "visuals + audio")
+    note = ESC(rec.get("ai_note") or "")
+    return (f'<span class="ai{" ai-heavy" if heavy else ""}" title="{note}">'
+            f'AI: {ESC(scope)}</span>')
+
+
+def store_link(appid, name):
+    """Game name linked to its Steam store page. Names are untrusted data, so they
+    are escaped; the appid is coerced to int so it can never break out of the href."""
+    label = ESC(str(name))
+    try:
+        aid = int(appid)
+    except (TypeError, ValueError):
+        return label
+    return (f'<a href="https://store.steampowered.com/app/{aid}/" '
+            f'target="_blank" rel="noopener noreferrer">{label}</a>')
+
+
 # --------------------------------------------------------------------------
 # Market tab
 # --------------------------------------------------------------------------
@@ -137,7 +170,8 @@ def build_market_tab(data, summary, history):
 
     def release_row(r):
         tags_s = ESC(", ".join(r.get("tags", [])[:5]))
-        return (f"<tr><td>{ESC(r['name'])}</td><td>{ESC(r.get('release_date') or '-')}</td>"
+        return (f"<tr><td>{store_link(r.get('appid'), r['name'])}{ai_badge(r)}</td>"
+                f"<td>{ESC(r.get('release_date') or '-')}</td>"
                 f"<td class='num'>${r.get('price_usd', 0):.2f}</td>"
                 f"<td>{ESC((r.get('team_class') or '').replace('_', ' '))}</td>"
                 f"<td class='num'>{fmt_int(r.get('total_reviews', 0))}</td>"
@@ -148,7 +182,7 @@ def build_market_tab(data, summary, history):
     breakout_rows = "".join(release_row(r) for r in breakouts)
     seller_rows = "".join(
         f"<tr{' class=hl' if s.get('team_class') != 'aaa_or_publisher' else ''}>"
-        f"<td>{i+1}</td><td>{ESC(s['name'])}</td>"
+        f"<td>{i+1}</td><td>{store_link(s.get('appid'), s['name'])}</td>"
         f"<td class='num'>${s.get('price_usd', 0):.2f}</td>"
         f"<td>{ESC((s.get('team_class') or '').replace('_', ' '))}</td>"
         f"<td class='num'>{fmt_int(s.get('ccu_now')) if s.get('ccu_now') is not None else '-'}</td>"
@@ -213,8 +247,8 @@ def build_vn_tab(vn, baseline):
                      f"{fmt_int(baseline_median(baseline))} all VNs"))
     kpis.append(("VN releases tracked", str(counts.get("releases", 0)),
                  f"last {vn.get('window_days', 30)} days"))
-    kpis.append(("VN market titles sampled", str(counts.get("market_titles", 0)),
-                 "top sellers + most reviewed"))
+    kpis.append(("Proven titles", str(counts.get("proven", counts.get("market_titles", 0))),
+                 f"{vn.get('proven_min_reviews', 500)}+ reviews"))
     kpi_html = "".join(
         f'<div class="tile"><div class="tlabel">{l}</div><div class="tvalue">{v}</div>'
         f'<div class="tsub">{s}</div></div>' for l, v, s in kpis)
@@ -248,14 +282,17 @@ def build_vn_tab(vn, baseline):
     tr = vn.get("top_releases") or []
     if tr:
         rel_rows = "".join(
-            f"<tr><td>{ESC(r['name'])}</td><td>{ESC(r.get('release_date') or '-')}</td>"
+            f"<tr><td>{store_link(r.get('appid'), r['name'])}{ai_badge(r)}</td>"
+            f"<td>{ESC(r.get('release_date') or '-')}</td>"
             f"<td class='num'>${r.get('price_usd', 0):.2f}</td>"
             f"<td class='num'>{fmt_int(r.get('total_reviews', 0))}</td>"
             f"<td class='num'>{r.get('pct_positive') if r.get('pct_positive') is not None else '-'}%</td>"
+            f"<td class='num'>{fmt_hours(r.get('playtime_hours'))}</td>"
             f"<td class='tags'>{ESC(', '.join(r.get('clusters', [])[:3]))}</td></tr>"
             for r in tr)
         releases_block = f"""<table><thead><tr><th>Game</th><th>Released</th><th>Price</th>
-<th>Reviews</th><th>Positive</th><th>Clusters</th></tr></thead><tbody>{rel_rows}</tbody></table>"""
+<th>Reviews</th><th>Positive</th><th>Length</th><th>Clusters</th></tr></thead>
+<tbody>{rel_rows}</tbody></table>"""
     else:
         releases_block = ("<p class='note'>No VN releases with review traction in the window. "
                           "VNs release in a slower rhythm than the wider market, so quiet weeks "
@@ -265,15 +302,56 @@ def build_vn_tab(vn, baseline):
     lane_list = vn.get("hybrid_lane") or []
     if lane_list:
         lane_rows = "".join(
-            f"<tr><td>{ESC(r['name'])}</td><td class='num'>{fmt_int(r.get('total_reviews', 0))}</td>"
+            f"<tr><td>{store_link(r.get('appid'), r['name'])}{ai_badge(r)}</td>"
+            f"<td class='num'>{fmt_int(r.get('total_reviews', 0))}</td>"
             f"<td class='num'>{r.get('pct_positive') if r.get('pct_positive') is not None else '-'}%</td>"
             f"<td class='num'>${r.get('price_usd', 0):.2f}</td>"
+            f"<td class='num'>{fmt_hours(r.get('playtime_hours'))}</td>"
             f"<td class='tags'>{ESC(', '.join(r.get('clusters', [])[:3]))}</td></tr>"
             for r in lane_list[:15])
         lane_block = f"""<table><thead><tr><th>Game</th><th>Reviews</th><th>Positive</th>
-<th>Price</th><th>Clusters</th></tr></thead><tbody>{lane_rows}</tbody></table>"""
+<th>Price</th><th>Length</th><th>Clusters</th></tr></thead>
+<tbody>{lane_rows}</tbody></table>"""
     else:
         lane_block = "<p class='note'>No lane titles in this week's sample.</p>"
+
+    # Proven titles: the "what do people actually like" view
+    proven_sum = vn.get("proven_summary") or []
+    proven_titles = vn.get("proven_titles") or []
+    min_rev = vn.get("proven_min_reviews", 500)
+    if proven_sum:
+        prov_rows = "".join(
+            f"<tr class='{'lane' if c.get('hybrid_lane') else ''}'><td>{ESC(c['cluster'])}"
+            f"{' <span class=badge>lane</span>' if c.get('hybrid_lane') else ''}</td>"
+            f"<td class='num'>{c['count']}</td>"
+            f"<td class='num'>{c['median_pct_positive'] if c['median_pct_positive'] is not None else '-'}%</td>"
+            f"<td class='num'>{fmt_int(c['median_reviews'])}</td>"
+            f"<td class='num'>{fmt_hours(c.get('median_hours'))}</td>"
+            f"<td class='num'>${c['median_price_usd']:.2f}</td></tr>"
+            for c in proven_sum)
+        proven_block = f"""<table><thead><tr><th>Cluster</th><th>Titles</th><th>Median positive</th>
+<th>Median reviews</th><th>Median length</th><th>Median price</th></tr></thead>
+<tbody>{prov_rows}</tbody></table>
+<div id="provenchart" class="chart"></div>"""
+    else:
+        proven_block = ("<p class='note'>Proven-title data appears once the collector has run "
+                        "with the proven-titles sweep enabled.</p>")
+
+    if proven_titles:
+        pt_rows = "".join(
+            f"<tr><td>{store_link(r.get('appid'), r['name'])}{ai_badge(r)}</td>"
+            f"<td class='num'>{fmt_int(r.get('total_reviews', 0))}</td>"
+            f"<td class='num'>{r.get('pct_positive') if r.get('pct_positive') is not None else '-'}%</td>"
+            f"<td class='num'>{fmt_hours(r.get('playtime_hours'))}</td>"
+            f"<td class='num'>${r.get('price_usd', 0):.2f}</td>"
+            f"<td>{'self-pub' if r.get('self_published') else 'publisher'}</td>"
+            f"<td class='tags'>{ESC(', '.join(r.get('clusters', [])[:3]))}</td></tr>"
+            for r in proven_titles[:60])
+        proven_list = f"""<table><thead><tr><th>Game</th><th>Reviews</th><th>Positive</th>
+<th>Length</th><th>Price</th><th>Team</th><th>Clusters</th></tr></thead>
+<tbody>{pt_rows}</tbody></table>"""
+    else:
+        proven_list = ""
 
     exemplars = ", ".join(ESC(n) for n in (overlap.get("examples") or [])[:6])
     caveat = ESC(vn.get("caveat") or (baseline or {}).get("caveat", ""))
@@ -308,6 +386,16 @@ is worth noting for scope: it is not a penalty at this end of the market.</p>
 the clusters that out-perform pure romance among visible titles. Watchlist by review count.</p>
 {lane_block}
 
+<h2>What performs</h2>
+<p class="sub">Every cluster measured only on VNs with {min_rev}+ reviews, so this reflects
+titles that found an audience rather than everything that shipped. Sorted by how well
+players rate them.</p>
+{proven_block}
+
+<h2>Proven titles</h2>
+<p class="sub">The {min_rev}+ review set, most-reviewed first.</p>
+{proven_list}
+
 <h2>Tags that over-index among lane winners</h2>
 <p class="sub">Within the lane, how much more often a tag appears on titles doing at least
 2x the lane's median reviews. Above 1.0 means over-represented among the winners.</p>
@@ -320,7 +408,6 @@ the clusters that out-perform pure romance among visible titles. Watchlist by re
 Highlighted rows are the lane.</p>
 <table><thead><tr><th>Cluster</th><th>Share</th><th>Median reviews</th><th>Titles &gt;1k reviews</th>
 <th>Median price</th><th>New this week</th></tr></thead><tbody>{cluster_rows}</tbody></table>
-<div id="vnclusterchart" class="chart"></div>
 
 <h2>VN releases in the window</h2>
 {releases_block}
@@ -372,6 +459,9 @@ def build_html(week, data, history, baseline, vn_hist, vn_hist_weeks):
         # lane average" - drawing these from zero would make 1.8x and 1.3x look alike
         "lift": [{**t, "excess": round(t["lift"] - 1.0, 3)}
                  for t in (la.get("tag_lift") or [])[:14]],
+        "proven": [{"cluster": c["cluster"], "pct": c.get("median_pct_positive") or 0,
+                    "reviews": c["median_reviews"], "lane": c.get("hybrid_lane", False)}
+                   for c in ((vn or {}).get("proven_summary") or [])],
         "vn_clusters": [{"cluster": c["cluster"], "share_pct": c["share_pct"],
                          "median_reviews": c["median_reviews"],
                          "lane": c.get("hybrid_lane", False)}
@@ -392,68 +482,112 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Game Trends - @@WEEK@@</title>
 <style>
+/* Colours live as custom properties on .report, which paints its own surface.
+   That matters: this file gets viewed inside panels and iframes that impose
+   their own background, and a page relying on the host's surface ends up with
+   dark-mode text on a light body or vice versa. .report always brings its own. */
 :root { color-scheme: light dark; }
-body {
-  margin: 0; padding: 24px; font: 15px/1.5 system-ui, sans-serif;
-  background: #fcfcfb; color: #0b0b0b; max-width: 1080px; margin-inline: auto;
+.report {
+  --surface:      #fcfcfb;
+  --surface-card: #ffffff;
+  --border:       #e8e7e3;
+  --border-soft:  #f0efec;
+  --ink:          #0b0b0b;
+  --ink-2:        #45443f;   /* secondary text: 8.0:1 on the light surface */
+  --ink-3:        #5c5b55;   /* tertiary / tag text: 6.0:1 */
+  --accent:       #256abf;   /* 5.26:1 on the light surface, clears 4.5:1 as link text */
+  --accent-warm:  #eb6834;
+  --accent-3:     #1baf7a;
+  --accent-4:     #eda100;
+  --muted-bar:    #a8a79f;
+  color-scheme: light;
+  background: var(--surface);
+  color: var(--ink);
+  display: block;
+  padding: 24px;
+  max-width: 1080px;
+  margin-inline: auto;
 }
+.report[data-theme="dark"] {
+  --surface:      #1a1a19;
+  --surface-card: #232322;
+  --border:       #3d3d39;
+  --border-soft:  #2c2c2a;
+  --ink:          #ffffff;
+  --ink-2:        #d6d5cb;   /* secondary text: 11.4:1 on the dark surface */
+  --ink-3:        #b9b8ad;   /* tertiary / tag text: 8.5:1 */
+  --accent:       #6ea8ea;   /* raised from #3987e5 to clear 4.5:1 as link text */
+  --accent-warm:  #f08050;
+  --accent-3:     #35c48f;
+  --accent-4:     #e0ae3c;
+  --muted-bar:    #6e6e65;
+  color-scheme: dark;
+}
+body {
+  margin: 0; padding: 0; font: 15px/1.5 system-ui, sans-serif;
+  background: #fcfcfb;
+}
+body:has(.report[data-theme="dark"]) { background: #1a1a19; }
 h1 { font-size: 26px; margin: 0 0 4px; }
 h2 { font-size: 19px; margin: 36px 0 10px; }
-.sub { color: #52514e; margin-bottom: 20px; }
-.tabs { display: flex; gap: 4px; border-bottom: 1px solid #e8e7e3; margin: 20px 0 24px; }
+.sub { color: var(--ink-2); margin-bottom: 20px; }
+.tabs { display: flex; gap: 4px; align-items: center; border-bottom: 1px solid var(--border); margin: 20px 0 24px; }
 .tabs button {
-  font: inherit; font-weight: 600; color: #52514e; background: none; border: none;
+  font: inherit; font-weight: 600; color: var(--ink-2); background: none; border: none;
   padding: 10px 16px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
 }
-.tabs button[aria-selected="true"] { color: #2a78d6; border-bottom-color: #2a78d6; }
+.tabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .panel[hidden] { display: none; }
 .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-.tile { background: #fff; border: 1px solid #e8e7e3; border-radius: 10px; padding: 14px 16px; }
-.tlabel { font-size: 13px; color: #52514e; }
+.tile { background: var(--surface-card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.tlabel { font-size: 13px; color: var(--ink-2); }
 .tvalue { font-size: 26px; font-weight: 600; margin-top: 2px; }
-.tsub { font-size: 12px; color: #52514e; }
+.tsub { font-size: 12px; color: var(--ink-2); }
 table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
-th { text-align: left; color: #52514e; font-weight: 600; border-bottom: 1px solid #e8e7e3; padding: 6px 8px; }
-td { border-bottom: 1px solid #f0efec; padding: 6px 8px; vertical-align: top; }
+th { text-align: left; color: var(--ink-2); font-weight: 600; border-bottom: 1px solid var(--border); padding: 6px 8px; }
+td { border-bottom: 1px solid var(--border-soft); padding: 6px 8px; vertical-align: top; }
 td.num { text-align: right; font-variant-numeric: tabular-nums; }
-tr.hl td:first-child, tr.lane td:first-child { box-shadow: inset 3px 0 0 #2a78d6; }
+tr.hl td:first-child, tr.lane td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 .badge {
-  font-size: 11px; font-weight: 600; color: #2a78d6; border: 1px solid #2a78d6;
+  font-size: 11px; font-weight: 600; color: var(--accent); border: 1px solid var(--accent);
   border-radius: 4px; padding: 0 5px; margin-left: 6px; vertical-align: 1px;
 }
-.tags { color: #52514e; font-size: 12.5px; }
+.tags { color: var(--ink-3); font-size: 12.5px; }
+.ai {
+  display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: .02em;
+  color: var(--ink-2); border: 1px solid var(--border); border-radius: 4px;
+  padding: 0 5px; margin-left: 6px; white-space: nowrap; cursor: help;
+}
+.ai-heavy { color: var(--accent-warm); border-color: var(--accent-warm); }
 .chart { margin: 8px 0 4px; }
 .chart svg { display: block; width: 100%; height: auto; }
-.note { color: #52514e; font-style: italic; }
+.note { color: var(--ink-2); font-style: italic; }
 .analysis p { max-width: 75ch; }
-.analysis p.caveat { color: #52514e; font-size: 13.5px; border-left: 2px solid #e8e7e3; padding-left: 12px; }
+.analysis p.caveat { color: var(--ink-2); font-size: 13.5px; border-left: 2px solid var(--border); padding-left: 12px; }
 .tooltip {
-  position: fixed; pointer-events: none; background: #fff; border: 1px solid #e8e7e3;
-  border-radius: 8px; padding: 6px 10px; font-size: 12.5px; box-shadow: 0 2px 8px rgba(0,0,0,.08);
-  display: none; z-index: 10;
+  position: fixed; pointer-events: none; background: var(--surface-card); color: var(--ink);
+  border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; font-size: 12.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.28); display: none; z-index: 10;
 }
 .tooltip .v { font-weight: 600; }
-footer { margin-top: 40px; color: #52514e; font-size: 12.5px; border-top: 1px solid #e8e7e3; padding-top: 12px; }
-@media (prefers-color-scheme: dark) {
-  body { background: #1a1a19; color: #fff; }
-  .tile, .tooltip { background: #232322; border-color: #383835; }
-  .tlabel, .tsub, .sub, .tags, .note, footer, .analysis p.caveat { color: #c3c2b7; }
-  th { color: #c3c2b7; border-color: #383835; }
-  td { border-color: #2c2c2a; }
-  .tabs { border-color: #383835; }
-  .tabs button { color: #c3c2b7; }
-  .tabs button[aria-selected="true"] { color: #3987e5; border-bottom-color: #3987e5; }
-  tr.hl td:first-child, tr.lane td:first-child { box-shadow: inset 3px 0 0 #3987e5; }
-  .badge { color: #3987e5; border-color: #3987e5; }
-  .analysis p.caveat { border-left-color: #383835; }
+footer { margin-top: 40px; color: var(--ink-2); font-size: 12.5px; border-top: 1px solid var(--border); padding-top: 12px; }
+a { color: var(--accent); text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+a:hover { text-decoration-thickness: 2px; }
+.themetoggle {
+  margin-left: auto; font: inherit; font-size: 13px; font-weight: 600;
+  color: var(--ink-2); background: none; border: 1px solid var(--border);
+  border-radius: 6px; padding: 4px 10px; cursor: pointer;
 }
+.themetoggle:hover { color: var(--ink); }
 </style></head><body>
+<div class="report" id="report">
 <h1>Game Trends</h1>
 <div class="sub">Week @@WEEK@@ &middot; generated @@GENERATED@@ &middot; indie lens, Steam data</div>
 
 <div class="tabs" role="tablist">
   <button role="tab" aria-selected="true" aria-controls="tab-market" id="btn-market">Market</button>
   <button role="tab" aria-selected="false" aria-controls="tab-vn" id="btn-vn">Visual Novels</button>
+  <button class="themetoggle" id="themetoggle" type="button">Dark</button>
 </div>
 
 <div class="panel" id="tab-market" role="tabpanel" aria-labelledby="btn-market">
@@ -467,12 +601,31 @@ footer { margin-top: 40px; color: #52514e; font-size: 12.5px; border-top: 1px so
 <footer>game-trends &middot; public Steam data (charts, store, reviews) + SteamSpy &middot;
 revenue estimated via review-count heuristic &middot; built by Claude, weekly on Fridays</footer>
 <div class="tooltip" id="tt"></div>
+</div>
 <script>
 const DATA = @@PAYLOAD@@;
-const dark = matchMedia('(prefers-color-scheme: dark)').matches;
-const C = { accent: dark ? '#3987e5' : '#2a78d6', warm: dark ? '#d95926' : '#eb6834',
-  ink: dark ? '#ffffff' : '#0b0b0b', sub: dark ? '#c3c2b7' : '#52514e',
-  grid: dark ? '#2c2c2a' : '#f0efec' };
+const report = document.getElementById('report');
+const themeBtn = document.getElementById('themetoggle');
+
+// Chart colours are read back off the live CSS variables rather than hard-coded,
+// so the SVGs can never disagree with the stylesheet.
+let C = {};
+function readTheme() {
+  const s = getComputedStyle(report);
+  const v = n => s.getPropertyValue(n).trim();
+  C = { accent: v('--accent'), warm: v('--accent-warm'), third: v('--accent-3'),
+        fourth: v('--accent-4'), ink: v('--ink'), sub: v('--ink-2'),
+        grid: v('--border-soft'), surface: v('--surface'), muted: v('--muted-bar') };
+}
+function isDark() { return report.getAttribute('data-theme') === 'dark'; }
+function setTheme(mode) {
+  if (mode === 'dark') report.setAttribute('data-theme', 'dark');
+  else report.removeAttribute('data-theme');
+  themeBtn.textContent = mode === 'dark' ? 'Light' : 'Dark';
+  readTheme();
+  drawCharts();
+}
+themeBtn.addEventListener('click', () => setTheme(isDark() ? 'light' : 'dark'));
 
 // tabs
 const tabs = [['btn-market','tab-market'], ['btn-vn','tab-vn']];
@@ -503,7 +656,8 @@ function fmtUsd(n) {
 }
 function hbar(el, items, valueKey, labelKey, fmt, colorFn) {
   if (!el || !items.length) return;
-  const W = 1040, rowH = 30, pad = 4, labelW = 260, valueW = 80;
+  el.textContent = '';
+  const W = 1040, rowH = 30, pad = 4, labelW = 260, valueW = 120;
   const H = items.length * rowH + pad * 2;
   const max = Math.max(...items.map(d => d[valueKey]), 1);
   const bw = W - labelW - valueW - 20;
@@ -535,6 +689,7 @@ function hbar(el, items, valueKey, labelKey, fmt, colorFn) {
   el.appendChild(svg);
 }
 
+function drawCharts() {
 hbar(document.getElementById('breakoutchart'), DATA.breakouts, 'est_net_usd', 'name', fmtUsd);
 hbar(document.getElementById('tagchart'), DATA.tags, 'weight_usd', 'tag', fmtUsd);
 hbar(document.getElementById('gainerchart'),
@@ -544,8 +699,8 @@ hbar(document.getElementById('gainerchart'),
 // VN tab charts
 hbar(document.getElementById('liftchart'), DATA.lift, 'excess', 'tag',
   v => '+' + Math.round(v * 100) + '% vs lane');
-hbar(document.getElementById('vnclusterchart'), DATA.vn_clusters, 'median_reviews', 'cluster',
-  v => v.toLocaleString() + ' reviews', d => d.lane ? C.accent : (dark ? '#4a4a46' : '#c9c8c3'));
+hbar(document.getElementById('provenchart'), DATA.proven, 'reviews', 'cluster',
+  v => v.toLocaleString(), d => d.lane ? C.accent : C.muted);
 
 const trendEl = document.getElementById('tagtrend');
 if (trendEl && DATA.history_weeks.length > 1) {
@@ -557,7 +712,7 @@ if (trendEl && DATA.history_weeks.length > 1) {
   const max = Math.max(...series.flatMap(s => s.pts.filter(v => v !== null)), 1);
   const x = i => padL + i * (W - padL - padR) / Math.max(1, weeks.length - 1);
   const y = v => H - padY - v / max * (H - padY * 2);
-  const hues = [C.accent, C.warm, dark ? '#199e70' : '#1baf7a', dark ? '#c98500' : '#eda100'];
+  const hues = [C.accent, C.warm, C.third, C.fourth];
   let s = `<svg viewBox="0 0 ${W} ${H}">`;
   weeks.forEach((w, i) => {
     s += `<line x1="${x(i)}" y1="${padY}" x2="${x(i)}" y2="${H - padY}" stroke="${C.grid}"/>`;
@@ -568,13 +723,22 @@ if (trendEl && DATA.history_weeks.length > 1) {
     s += `<polyline points="${pts.join(' ')}" fill="none" stroke="${hues[si]}" stroke-width="2" stroke-linejoin="round"/>`;
     const last = sr.pts.length - 1;
     if (sr.pts[last] !== null) {
-      s += `<circle cx="${x(last)}" cy="${y(sr.pts[last])}" r="4" fill="${hues[si]}" stroke="${dark ? '#1a1a19' : '#fcfcfb'}" stroke-width="2"/>`;
+      s += `<circle cx="${x(last)}" cy="${y(sr.pts[last])}" r="4" fill="${hues[si]}" stroke="${C.surface}" stroke-width="2"/>`;
       s += `<text x="${x(last) + 10}" y="${y(sr.pts[last]) + 4}" font-size="12" fill="${C.ink}">${sr.tag}</text>`;
     }
   });
   s += '</svg>';
   trendEl.innerHTML = s;
 }
+}
+
+// Start from the viewer's preference, then let the toggle take over. Following the
+// system setting live matters when a host panel switches theme under us.
+const mq = matchMedia('(prefers-color-scheme: dark)');
+let manual = false;
+setTheme(mq.matches ? 'dark' : 'light');
+themeBtn.addEventListener('click', () => { manual = true; });
+mq.addEventListener('change', e => { if (!manual) setTheme(e.matches ? 'dark' : 'light'); });
 </script>
 </body></html>
 """
