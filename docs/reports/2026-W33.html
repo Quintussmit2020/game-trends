@@ -237,6 +237,7 @@ function setTheme(mode) {
   drawCharts();
 }
 themeBtn.addEventListener('click', () => setTheme(isDark() ? 'light' : 'dark'));
+
 // tabs
 const tabs = [['btn-market','tab-market'], ['btn-vn','tab-vn']];
 tabs.forEach(([b, p]) => document.getElementById(b).addEventListener('click', () => {
