@@ -1,0 +1,1470 @@
+{
+ "week": "2026-W34",
+ "window_days": 14,
+ "releases": [
+  {
+   "appid": 4566700,
+   "name": "how to kill a fly [ H2KAF ]",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Radtel Collective"
+   ],
+   "publishers": [
+    "Radtel Collective"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "tags": [
+    "Adventure",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "total_reviews": 23,
+   "positive_reviews": 23,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 805,
+   "est_gross_usd": 8041,
+   "est_net_usd": 4423,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 5,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3196440,
+   "name": "Vacation Cafe Simulator",
+   "release_date": "2026-08-20",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "Alice Games"
+   ],
+   "publishers": [
+    "Alice Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 70,
+   "positive_reviews": 62,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 88.6,
+   "est_sales": 2450,
+   "est_gross_usd": 48975,
+   "est_net_usd": 26936,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 497,
+   "ai_disclosed": true,
+   "ai_note": "We used AI to generate initial music tracks, concept art, and temporary translations into some languages. All materials were then thoroughly edited, reworked, and finalized by humans. Nothing went straight from the generator into the game.",
+   "ai_scope": "audio only"
+  },
+  {
+   "appid": 903930,
+   "name": "Brigador Killers",
+   "release_date": "2026-08-20",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "Stellar Jockeys",
+    "Gausswerks"
+   ],
+   "publishers": [
+    "Stellar Jockeys"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Indie",
+    "Early Access"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Early Access"
+   ],
+   "total_reviews": 94,
+   "positive_reviews": 83,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 88.3,
+   "est_sales": 3290,
+   "est_gross_usd": 82217,
+   "est_net_usd": 45219,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 465,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2796180,
+   "name": "SILENT BREATH",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "EXODIAC STUDIOS"
+   ],
+   "publishers": [
+    "EXODIAC STUDIOS"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Horror",
+    "Psychological Horror",
+    "Thriller",
+    "1990's",
+    "Realistic",
+    "Early Access",
+    "Dark",
+    "First-Person",
+    "Exploration",
+    "Simulation"
+   ],
+   "total_reviews": 1228,
+   "positive_reviews": 837,
+   "review_score_desc": "Mixed",
+   "pct_positive": 68.2,
+   "est_sales": 42980,
+   "est_gross_usd": 429370,
+   "est_net_usd": 236153,
+   "steamspy_owners": "50,000 .. 100,000",
+   "ccu_now": 8,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2882310,
+   "name": "Roomballs",
+   "release_date": "2026-08-20",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Ultraton Studios"
+   ],
+   "publishers": [
+    "Ultraton Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Massively Multiplayer",
+    "Racing",
+    "Sports",
+    "Free To Play"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Massively Multiplayer",
+    "Racing",
+    "Sports",
+    "Free To Play"
+   ],
+   "total_reviews": 12,
+   "positive_reviews": 10,
+   "review_score_desc": "Positive",
+   "pct_positive": 83.3,
+   "est_sales": 420,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 4,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2836460,
+   "name": "Cozy Marbles",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Pixel Pea Games"
+   ],
+   "publishers": [
+    "Mythwright"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Racing",
+    "Simulation"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Racing",
+    "Simulation"
+   ],
+   "total_reviews": 12,
+   "positive_reviews": 11,
+   "review_score_desc": "Positive",
+   "pct_positive": 91.7,
+   "est_sales": 420,
+   "est_gross_usd": 4195,
+   "est_net_usd": 2307,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 67,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3345950,
+   "name": "Capote",
+   "release_date": "2026-08-20",
+   "price_usd": 5.99,
+   "is_free": false,
+   "developers": [
+    "Luski Game Studio"
+   ],
+   "publishers": [
+    "CriticalLeap"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 178,
+   "positive_reviews": 166,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 93.3,
+   "est_sales": 6230,
+   "est_gross_usd": 37317,
+   "est_net_usd": 20524,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 58,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4000770,
+   "name": "Swarmdustry",
+   "release_date": "2026-08-20",
+   "price_usd": 29.99,
+   "is_free": false,
+   "developers": [
+    "Mitchy Studios"
+   ],
+   "publishers": [
+    "Mitchy Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Indie",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "tags": [
+    "Indie",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "total_reviews": 12,
+   "positive_reviews": 10,
+   "review_score_desc": "Positive",
+   "pct_positive": 83.3,
+   "est_sales": 420,
+   "est_gross_usd": 12595,
+   "est_net_usd": 6927,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 29,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 1279510,
+   "name": "Screw Drivers",
+   "release_date": "2026-08-20",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "Creactstudios"
+   ],
+   "publishers": [
+    "Headup"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Indie",
+    "Racing",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Racing",
+    "Simulation"
+   ],
+   "total_reviews": 6474,
+   "positive_reviews": 5526,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 85.4,
+   "est_sales": 226590,
+   "est_gross_usd": 1810454,
+   "est_net_usd": 995749,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 197,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3966510,
+   "name": "Feed the Scorchpot",
+   "release_date": "2026-08-20",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Moravian"
+   ],
+   "publishers": [
+    "Indieformer",
+    "WhisperGames"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Indie",
+    "Strategy"
+   ],
+   "tags": [
+    "Indie",
+    "Strategy"
+   ],
+   "total_reviews": 35,
+   "positive_reviews": 35,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 1225,
+   "est_gross_usd": 18362,
+   "est_net_usd": 10099,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 167,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3516780,
+   "name": "2nd EVE",
+   "release_date": "2026-08-20",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Gamer Cloud"
+   ],
+   "publishers": [
+    "Gamer Cloud"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "total_reviews": 26,
+   "positive_reviews": 24,
+   "review_score_desc": "Positive",
+   "pct_positive": 92.3,
+   "est_sales": 910,
+   "est_gross_usd": 13640,
+   "est_net_usd": 7502,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": true,
+   "ai_note": "All visual art, gameplay assets, music and written narrative were created by humans. No AI is used to generate content during gameplay. The game uses AI-generated voice acting for cinematic and in-game character dialogue.",
+   "ai_scope": "audio only"
+  },
+  {
+   "appid": 4029740,
+   "name": "Puppergeist",
+   "release_date": "2026-08-20",
+   "price_usd": 4.99,
+   "is_free": false,
+   "developers": [
+    "Serenity Forge"
+   ],
+   "publishers": [
+    "Serenity Forge",
+    "Mecrew Games"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Casual"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Casual"
+   ],
+   "total_reviews": 29,
+   "positive_reviews": 29,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 1015,
+   "est_gross_usd": 5064,
+   "est_net_usd": 2785,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 16,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2332150,
+   "name": "Frog Island",
+   "release_date": "2026-08-20",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "DevFrog"
+   ],
+   "publishers": [
+    "Shovel Sprout"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Indie",
+    "RPG",
+    "Simulation",
+    "Free To Play"
+   ],
+   "tags": [
+    "Indie",
+    "RPG",
+    "Simulation",
+    "Free To Play"
+   ],
+   "total_reviews": 24,
+   "positive_reviews": 23,
+   "review_score_desc": "Positive",
+   "pct_positive": 95.8,
+   "est_sales": 840,
+   "est_gross_usd": 6711,
+   "est_net_usd": 3691,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 48,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4294490,
+   "name": "KOTAMON: My Sis Found A Super-Rare Card In Her Cereal Box, So I Became A Garbage Man To Find The Entire Collection And Earn $1,000,000",
+   "release_date": "2026-08-20",
+   "price_usd": 6.99,
+   "is_free": false,
+   "developers": [
+    " KotaMota Games"
+   ],
+   "publishers": [
+    "Polnoch"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 220,
+   "positive_reviews": 168,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 76.4,
+   "est_sales": 7700,
+   "est_gross_usd": 53823,
+   "est_net_usd": 29602,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 2430,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3565980,
+   "name": "The Stalked 3",
+   "release_date": "2026-08-20",
+   "price_usd": 2.99,
+   "is_free": false,
+   "developers": [
+    "Korvinrular"
+   ],
+   "publishers": [
+    "Korvinrular"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "Indie"
+   ],
+   "tags": [
+    "Adventure",
+    "Indie"
+   ],
+   "total_reviews": 35,
+   "positive_reviews": 33,
+   "review_score_desc": "Positive",
+   "pct_positive": 94.3,
+   "est_sales": 1225,
+   "est_gross_usd": 3662,
+   "est_net_usd": 2014,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 13,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3587260,
+   "name": "Backrooms: The Deep Dark",
+   "release_date": "2026-08-20",
+   "price_usd": 2.99,
+   "is_free": false,
+   "developers": [
+    "SUDT Games"
+   ],
+   "publishers": [
+    "SUDT Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Early Access",
+    "Exploration",
+    "FPS",
+    "Puzzle",
+    "Stealth",
+    "PvE",
+    "Walking Simulator",
+    "3D",
+    "First-Person",
+    "Simulation"
+   ],
+   "total_reviews": 23,
+   "positive_reviews": 15,
+   "review_score_desc": "Mixed",
+   "pct_positive": 65.2,
+   "est_sales": 805,
+   "est_gross_usd": 2406,
+   "est_net_usd": 1323,
+   "steamspy_owners": "20,000 .. 50,000",
+   "ccu_now": 0,
+   "ai_disclosed": true,
+   "ai_note": "AI-generated content is mostly used for sprites, images, like the images on the steam page",
+   "ai_scope": "some visuals"
+  },
+  {
+   "appid": 2454600,
+   "name": "Ironsand",
+   "release_date": "2026-08-20",
+   "price_usd": 7.49,
+   "is_free": false,
+   "developers": [
+    "Renderise"
+   ],
+   "publishers": [
+    "Renderise"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "tags": [
+    "Action",
+    "Adventure"
+   ],
+   "total_reviews": 50,
+   "positive_reviews": 34,
+   "review_score_desc": "Mixed",
+   "pct_positive": 68.0,
+   "est_sales": 1750,
+   "est_gross_usd": 13107,
+   "est_net_usd": 7209,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 29,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4898860,
+   "name": "Hollow Hide",
+   "release_date": "2026-08-20",
+   "price_usd": 4.99,
+   "is_free": false,
+   "developers": [
+    "Renderise"
+   ],
+   "publishers": [
+    "Renderise"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Casual"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Casual"
+   ],
+   "total_reviews": 13,
+   "positive_reviews": 13,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 455,
+   "est_gross_usd": 2270,
+   "est_net_usd": 1248,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4001890,
+   "name": "How to Fish",
+   "release_date": "2026-08-20",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "Dazed Games"
+   ],
+   "publishers": [
+    "Dazed Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 1298,
+   "positive_reviews": 1246,
+   "review_score_desc": "Overwhelmingly Positive",
+   "pct_positive": 96.0,
+   "est_sales": 45430,
+   "est_gross_usd": 362985,
+   "est_net_usd": 199642,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 13898,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 1091870,
+   "name": "Theropods",
+   "release_date": "2026-08-20",
+   "price_usd": 17.49,
+   "is_free": false,
+   "developers": [
+    "Lost Token"
+   ],
+   "publishers": [
+    "Dionous Games",
+    "Gamersky Games"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure"
+   ],
+   "tags": [
+    "Adventure"
+   ],
+   "total_reviews": 46,
+   "positive_reviews": 43,
+   "review_score_desc": "Positive",
+   "pct_positive": 93.5,
+   "est_sales": 1610,
+   "est_gross_usd": 28158,
+   "est_net_usd": 15487,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 7,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3764970,
+   "name": "Mexican Ninja",
+   "release_date": "2026-08-20",
+   "price_usd": 16.99,
+   "is_free": false,
+   "developers": [
+    "Madbricks"
+   ],
+   "publishers": [
+    "Amber Studio"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Indie"
+   ],
+   "total_reviews": 33,
+   "positive_reviews": 32,
+   "review_score_desc": "Positive",
+   "pct_positive": 97.0,
+   "est_sales": 1155,
+   "est_gross_usd": 19623,
+   "est_net_usd": 10792,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 34,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3958820,
+   "name": "Drive Me Broke",
+   "release_date": "2026-08-20",
+   "price_usd": 15.99,
+   "is_free": false,
+   "developers": [
+    "Onur AD"
+   ],
+   "publishers": [
+    "Long Shift Games"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure",
+    "Indie",
+    "Racing",
+    "Simulation"
+   ],
+   "tags": [
+    "Adventure",
+    "Indie",
+    "Racing",
+    "Simulation"
+   ],
+   "total_reviews": 14,
+   "positive_reviews": 9,
+   "review_score_desc": "Mixed",
+   "pct_positive": 64.3,
+   "est_sales": 490,
+   "est_gross_usd": 7835,
+   "est_net_usd": 4309,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 45,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4403510,
+   "name": "Sensory Overload",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Pancake Studios"
+   ],
+   "publishers": [
+    "Pancake Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie"
+   ],
+   "total_reviews": 49,
+   "positive_reviews": 48,
+   "review_score_desc": "Positive",
+   "pct_positive": 98.0,
+   "est_sales": 1715,
+   "est_gross_usd": 17132,
+   "est_net_usd": 9423,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 63,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4117730,
+   "name": "Slayblade",
+   "release_date": "2026-08-20",
+   "price_usd": 4.99,
+   "is_free": false,
+   "developers": [
+    "Henry's House, Oscar Brittain"
+   ],
+   "publishers": [
+    "Henry's House"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "total_reviews": 102,
+   "positive_reviews": 75,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 73.5,
+   "est_sales": 3570,
+   "est_gross_usd": 17814,
+   "est_net_usd": 9797,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 184,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3312030,
+   "name": "AI Learns To Drive",
+   "release_date": "2026-08-20",
+   "price_usd": 7.49,
+   "is_free": false,
+   "developers": [
+    "ActivationFunction"
+   ],
+   "publishers": [
+    "ActivationFunction"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Indie",
+    "Racing",
+    "Simulation"
+   ],
+   "tags": [
+    "Artificial Intelligence",
+    "Sandbox",
+    "Simulation",
+    "Idler",
+    "Education",
+    "Level Editor",
+    "Racing",
+    "Driving",
+    "Programming",
+    "Hacking"
+   ],
+   "total_reviews": 193,
+   "positive_reviews": 184,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 95.3,
+   "est_sales": 6755,
+   "est_gross_usd": 50594,
+   "est_net_usd": 27827,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 23,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4005220,
+   "name": "Deep Blue Sushi",
+   "release_date": "2026-08-20",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "PaperPixel Games"
+   ],
+   "publishers": [
+    "PaperPixel Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 36,
+   "positive_reviews": 28,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 77.8,
+   "est_sales": 1260,
+   "est_gross_usd": 18887,
+   "est_net_usd": 10388,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 233,
+   "ai_disclosed": true,
+   "ai_note": "AI tools were used only during the concept development stages. All final content was reviewed and edited by the development team. All artwork used on the Steam store page was created by freelance 2D artists.",
+   "ai_scope": "core assets"
+  },
+  {
+   "appid": 2584270,
+   "name": "Mortal Shell II",
+   "release_date": "2026-08-20",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Cold Symmetry"
+   ],
+   "publishers": [
+    "Playstack"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "RPG"
+   ],
+   "total_reviews": 5447,
+   "positive_reviews": 4374,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 80.3,
+   "est_sales": 190645,
+   "est_gross_usd": 9530343,
+   "est_net_usd": 5241688,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 18998,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2570580,
+   "name": "Ground Zero Hero",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Rowan Edmondson"
+   ],
+   "publishers": [
+    "Acclaim, Inc.",
+    "Aurakenn Games"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "tags": [
+    "Action",
+    "Adventure"
+   ],
+   "total_reviews": 31,
+   "positive_reviews": 30,
+   "review_score_desc": "Positive",
+   "pct_positive": 96.8,
+   "est_sales": 1085,
+   "est_gross_usd": 10839,
+   "est_net_usd": 5961,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 18,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 1841160,
+   "name": "Amata",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Zxyyr"
+   ],
+   "publishers": [
+    "Zxyyr"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "RPG",
+    "Strategy"
+   ],
+   "tags": [
+    "Early Access",
+    "Precision Platformer",
+    "Platformer",
+    "Action RPG",
+    "Action-Adventure",
+    "RPG",
+    "Female Protagonist",
+    "2D",
+    "Surreal",
+    "Controller"
+   ],
+   "total_reviews": 12,
+   "positive_reviews": 11,
+   "review_score_desc": "Positive",
+   "pct_positive": 91.7,
+   "est_sales": 420,
+   "est_gross_usd": 4195,
+   "est_net_usd": 2307,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4902600,
+   "name": "Re:Store the Record Store",
+   "release_date": "2026-08-20",
+   "price_usd": 5.99,
+   "is_free": false,
+   "developers": [
+    "Double Jump Games"
+   ],
+   "publishers": [
+    "Double Jump Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Simulation"
+   ],
+   "tags": [
+    "Casual",
+    "Simulation"
+   ],
+   "total_reviews": 12,
+   "positive_reviews": 6,
+   "review_score_desc": "Mixed",
+   "pct_positive": 50.0,
+   "est_sales": 420,
+   "est_gross_usd": 2515,
+   "est_net_usd": 1383,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 13,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3065940,
+   "name": "Gallipoli",
+   "release_date": "2026-08-20",
+   "price_usd": 29.99,
+   "is_free": false,
+   "developers": [
+    "BlackMill Games"
+   ],
+   "publishers": [
+    "BlackMill Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie",
+    "Massively Multiplayer",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Massively Multiplayer",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 1076,
+   "positive_reviews": 817,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 75.9,
+   "est_sales": 37660,
+   "est_gross_usd": 1129423,
+   "est_net_usd": 621182,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 1396,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2768380,
+   "name": "Repterra",
+   "release_date": "2026-08-20",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "Chute Apps"
+   ],
+   "publishers": [
+    "MicroProse Software"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Strategy"
+   ],
+   "tags": [
+    "Strategy"
+   ],
+   "total_reviews": 89,
+   "positive_reviews": 81,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 91.0,
+   "est_sales": 3115,
+   "est_gross_usd": 62268,
+   "est_net_usd": 34247,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 54,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2163330,
+   "name": "Yet Another Zombie Survivors",
+   "release_date": "2026-08-20",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Awesome Games Studio"
+   ],
+   "publishers": [
+    "Awesome Games Studio"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "RPG"
+   ],
+   "tags": [
+    "Early Access",
+    "Action Roguelike",
+    "Bullet Hell",
+    "Indie",
+    "Arcade",
+    "Rogue-lite",
+    "Action RPG",
+    "Singleplayer",
+    "Top-Down Shooter",
+    "Rogue-like"
+   ],
+   "total_reviews": 13840,
+   "positive_reviews": 12662,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 91.5,
+   "est_sales": 484400,
+   "est_gross_usd": 7261156,
+   "est_net_usd": 3993635,
+   "steamspy_owners": "500,000 .. 1,000,000",
+   "ccu_now": 4041,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4289150,
+   "name": "Can Your Otaku Cabinet Grow a Beautiful Girl?",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Survival Strategy ！"
+   ],
+   "publishers": [
+    "Survival Strategy ！"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "total_reviews": 67,
+   "positive_reviews": 65,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 97.0,
+   "est_sales": 2345,
+   "est_gross_usd": 23426,
+   "est_net_usd": 12884,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 10,
+   "ai_disclosed": true,
+   "ai_note": "Some elements of the character were drawn with AI assistance, such as the flowers.",
+   "ai_scope": "unspecified"
+  },
+  {
+   "appid": 5010520,
+   "name": "KERF: Sawmill Tycoon",
+   "release_date": "2026-08-20",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "MGDB Studio"
+   ],
+   "publishers": [
+    "MGDB Studio"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 10,
+   "positive_reviews": 9,
+   "review_score_desc": "Positive",
+   "pct_positive": 90.0,
+   "est_sales": 350,
+   "est_gross_usd": 3496,
+   "est_net_usd": 1923,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 5,
+   "ai_disclosed": true,
+   "ai_note": "Kerf - Sawmill Tycoon was made almost entirely with AI tools. The developer directed the work, chose what went into the game and approved every result, but did not model, rig or write code by hand. What that means for the content that ships in the game: - Code: written by an AI coding assistant. - Characters: generated by an AI 3D tool from AI-generated reference images, then rigged and set up in ",
+   "ai_scope": "some visuals"
+  },
+  {
+   "appid": 2766910,
+   "name": "PengPong",
+   "release_date": "2026-08-20",
+   "price_usd": 12.99,
+   "is_free": false,
+   "developers": [
+    "SANDY FLOOR"
+   ],
+   "publishers": [
+    "SANDY FLOOR",
+    " Gamirror Games"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie"
+   ],
+   "total_reviews": 59,
+   "positive_reviews": 56,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 94.9,
+   "est_sales": 2065,
+   "est_gross_usd": 26824,
+   "est_net_usd": 14753,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 206,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2621930,
+   "name": "Grim Trials",
+   "release_date": "2026-08-19",
+   "price_usd": 17.99,
+   "is_free": false,
+   "developers": [
+    "Glory Jam"
+   ],
+   "publishers": [
+    "Soft Source"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "RPG"
+   ],
+   "total_reviews": 28,
+   "positive_reviews": 26,
+   "review_score_desc": "Positive",
+   "pct_positive": 92.9,
+   "est_sales": 980,
+   "est_gross_usd": 17630,
+   "est_net_usd": 9696,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 24,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4354710,
+   "name": "Ghost Buster:Village",
+   "release_date": "2026-08-19",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "ZV GAMES"
+   ],
+   "publishers": [
+    "ZV GAMES"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Indie"
+   ],
+   "total_reviews": 34,
+   "positive_reviews": 30,
+   "review_score_desc": "Positive",
+   "pct_positive": 88.2,
+   "est_sales": 1190,
+   "est_gross_usd": 9508,
+   "est_net_usd": 5229,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 4,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3883290,
+   "name": "LABYRINTHOS: The Depths Want You",
+   "release_date": "2026-08-19",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "Astronauts"
+   ],
+   "publishers": [
+    "Shiravune"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "RPG"
+   ],
+   "tags": [
+    "RPG"
+   ],
+   "total_reviews": 25,
+   "positive_reviews": 22,
+   "review_score_desc": "Positive",
+   "pct_positive": 88.0,
+   "est_sales": 875,
+   "est_gross_usd": 21866,
+   "est_net_usd": 12026,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 56,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  }
+ ]
+}
