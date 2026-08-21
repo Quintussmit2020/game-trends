@@ -1,0 +1,1709 @@
+{
+ "week": "2026-W34",
+ "top_sellers": [
+  {
+   "appid": 2584270,
+   "name": "Mortal Shell II",
+   "release_date": "2026-08-20",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Cold Symmetry"
+   ],
+   "publishers": [
+    "Playstack"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "RPG"
+   ],
+   "total_reviews": 5444,
+   "positive_reviews": 4373,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 80.3,
+   "est_sales": 190540,
+   "est_gross_usd": 9525094,
+   "est_net_usd": 5238802,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 19106
+  },
+  {
+   "appid": 4435490,
+   "name": "Call of Duty®: Modern Warfare® 4",
+   "release_date": "2026-10-22",
+   "price_usd": 69.99,
+   "is_free": false,
+   "developers": [
+    "Infinity Ward",
+    "Beenox",
+    "Digital Legends",
+    "Activision Shanghai",
+    "Raven Software",
+    "Treyarch",
+    "Sledgehammer Games",
+    "High Moon Studios"
+   ],
+   "publishers": [
+    "Activision"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Action"
+   ],
+   "total_reviews": 0,
+   "positive_reviews": 0,
+   "review_score_desc": "No user reviews",
+   "pct_positive": null,
+   "est_sales": 0,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": null
+  },
+  {
+   "appid": 730,
+   "name": "Counter-Strike 2",
+   "release_date": "2012-08-21",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Valve"
+   ],
+   "publishers": [
+    "Valve"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Free To Play"
+   ],
+   "tags": [
+    "FPS",
+    "Shooter",
+    "Multiplayer",
+    "Competitive",
+    "Action",
+    "Team-Based",
+    "e-sports",
+    "Tactical",
+    "First-Person",
+    "PvP"
+   ],
+   "total_reviews": 9805721,
+   "positive_reviews": 8427117,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 85.9,
+   "est_sales": 343200235,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "100,000,000 .. 200,000,000",
+   "ccu_now": 551388
+  },
+  {
+   "appid": 1867240,
+   "name": "WARDOGS",
+   "release_date": "2026-09-10",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "BULKHEAD"
+   ],
+   "publishers": [
+    "Team17"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Indie",
+    "Massively Multiplayer",
+    "Simulation",
+    "Early Access"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Massively Multiplayer",
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 0,
+   "positive_reviews": 0,
+   "review_score_desc": "No user reviews",
+   "pct_positive": null,
+   "est_sales": 0,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": null
+  },
+  {
+   "appid": 2767030,
+   "name": "Marvel Rivals",
+   "release_date": "2024-12-05",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "NetEase Games"
+   ],
+   "publishers": [
+    "NetEase Games"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Free To Play"
+   ],
+   "tags": [
+    "Free to Play",
+    "Multiplayer",
+    "Hero Shooter",
+    "Third-Person Shooter",
+    "Superhero",
+    "PvP",
+    "Action",
+    "Team-Based",
+    "Competitive",
+    "Shooter"
+   ],
+   "total_reviews": 410280,
+   "positive_reviews": 310935,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 75.8,
+   "est_sales": 14359800,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 66843
+  },
+  {
+   "appid": 3513350,
+   "name": "Wuthering Waves",
+   "release_date": "2025-04-28",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "KURO GAMES"
+   ],
+   "publishers": [
+    "KURO GAMES"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "total_reviews": 54493,
+   "positive_reviews": 47889,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 87.9,
+   "est_sales": 1907255,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 12009
+  },
+  {
+   "appid": 4001890,
+   "name": "How to Fish",
+   "release_date": "2026-08-20",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "Dazed Games"
+   ],
+   "publishers": [
+    "Dazed Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 1289,
+   "positive_reviews": 1238,
+   "review_score_desc": "Overwhelmingly Positive",
+   "pct_positive": 96.0,
+   "est_sales": 45115,
+   "est_gross_usd": 360468,
+   "est_net_usd": 198257,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 14487
+  },
+  {
+   "appid": 1643320,
+   "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "release_date": "2024-11-20",
+   "price_usd": 59.99,
+   "is_free": false,
+   "developers": [
+    "GSC Game World"
+   ],
+   "publishers": [
+    "GSC Game World (worldwide)",
+    "SEGA (Japan)",
+    "4Divinity (China and South East Asia)"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG"
+   ],
+   "tags": [
+    "Open World",
+    "FPS",
+    "Post-apocalyptic",
+    "Survival",
+    "Atmospheric",
+    "Singleplayer",
+    "Shooter",
+    "Exploration",
+    "RPG",
+    "Story Rich"
+   ],
+   "total_reviews": 136351,
+   "positive_reviews": 108820,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 79.8,
+   "est_sales": 4772285,
+   "est_gross_usd": 286289377,
+   "est_net_usd": 157459157,
+   "steamspy_owners": "2,000,000 .. 5,000,000",
+   "ccu_now": 11537
+  },
+  {
+   "appid": 1172470,
+   "name": "Apex Legends™",
+   "release_date": "2020-11-04",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Respawn"
+   ],
+   "publishers": [
+    "Electronic Arts"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Free To Play"
+   ],
+   "tags": [
+    "Free to Play",
+    "Battle Royale",
+    "Multiplayer",
+    "FPS",
+    "Shooter",
+    "First-Person",
+    "PvP",
+    "Action",
+    "Hero Shooter",
+    "Team-Based"
+   ],
+   "total_reviews": 1064786,
+   "positive_reviews": 721318,
+   "review_score_desc": "Mixed",
+   "pct_positive": 67.7,
+   "est_sales": 37267510,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "100,000,000 .. 200,000,000",
+   "ccu_now": 101487
+  },
+  {
+   "appid": 292000,
+   "name": "No More Room in Hell 2",
+   "release_date": "2026-08-11",
+   "price_usd": 29.99,
+   "is_free": false,
+   "developers": [
+    "Torn Banner Studios"
+   ],
+   "publishers": [
+    "Torn Banner Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie"
+   ],
+   "tags": [
+    "Early Access",
+    "Zombies",
+    "Multiplayer",
+    "Online Co-Op",
+    "Co-op",
+    "Action",
+    "Survival Horror",
+    "Survival",
+    "First-Person",
+    "Indie"
+   ],
+   "total_reviews": 24247,
+   "positive_reviews": 12911,
+   "review_score_desc": "Mixed",
+   "pct_positive": 53.2,
+   "est_sales": 848645,
+   "est_gross_usd": 25450863,
+   "est_net_usd": 13997974,
+   "steamspy_owners": "200,000 .. 500,000",
+   "ccu_now": 8770
+  },
+  {
+   "appid": 553850,
+   "name": "HELLDIVERS™ 2",
+   "release_date": "2024-02-08",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "Arrowhead Game Studios"
+   ],
+   "publishers": [
+    "PlayStation Publishing LLC"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Online Co-Op",
+    "PvE",
+    "Third-Person Shooter",
+    "Multiplayer",
+    "Action",
+    "Shooter",
+    "Co-op",
+    "Sci-fi",
+    "Capitalism",
+    "Space"
+   ],
+   "total_reviews": 1156852,
+   "positive_reviews": 871964,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 75.4,
+   "est_sales": 40489820,
+   "est_gross_usd": 1619187901,
+   "est_net_usd": 890553345,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 46498
+  },
+  {
+   "appid": 2075800,
+   "name": "STAR WARS Zero Company™",
+   "release_date": "2026-08-27",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Bit Reactor"
+   ],
+   "publishers": [
+    "Electronic Arts"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Strategy"
+   ],
+   "tags": [
+    "Strategy"
+   ],
+   "total_reviews": 0,
+   "positive_reviews": 0,
+   "review_score_desc": "No user reviews",
+   "pct_positive": null,
+   "est_sales": 0,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": null
+  },
+  {
+   "appid": 2074920,
+   "name": "The First Descendant",
+   "release_date": "2024-06-30",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "NEXON Games Co., Ltd."
+   ],
+   "publishers": [
+    "NEXON"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "total_reviews": 111600,
+   "positive_reviews": 64123,
+   "review_score_desc": "Mixed",
+   "pct_positive": 57.5,
+   "est_sales": 3906000,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 8941
+  },
+  {
+   "appid": 3065940,
+   "name": "Gallipoli",
+   "release_date": "2026-08-20",
+   "price_usd": 29.99,
+   "is_free": false,
+   "developers": [
+    "BlackMill Games"
+   ],
+   "publishers": [
+    "BlackMill Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie",
+    "Massively Multiplayer",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Massively Multiplayer",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 1074,
+   "positive_reviews": 815,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 75.9,
+   "est_sales": 37590,
+   "est_gross_usd": 1127324,
+   "est_net_usd": 620028,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 1396
+  },
+  {
+   "appid": 1478500,
+   "name": "Big Walk",
+   "release_date": "2026-08-04",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "House House"
+   ],
+   "publishers": [
+    "Panic"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure"
+   ],
+   "tags": [
+    "Adventure"
+   ],
+   "total_reviews": 21798,
+   "positive_reviews": 20580,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 94.4,
+   "est_sales": 762930,
+   "est_gross_usd": 15250970,
+   "est_net_usd": 8388033,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 8051
+  },
+  {
+   "appid": 230410,
+   "name": "Warframe",
+   "release_date": "2013-03-25",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Digital Extremes"
+   ],
+   "publishers": [
+    "Digital Extremes"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "RPG",
+    "Free To Play"
+   ],
+   "tags": [
+    "Free to Play",
+    "Action RPG",
+    "Looter Shooter",
+    "Third-Person Shooter",
+    "Action",
+    "RPG",
+    "Third Person",
+    "Character Customization",
+    "Massively Multiplayer",
+    "Online Co-Op"
+   ],
+   "total_reviews": 674612,
+   "positive_reviews": 592311,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 87.8,
+   "est_sales": 23611420,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 42186
+  },
+  {
+   "appid": 3079210,
+   "name": "Hell Let Loose: Vietnam",
+   "release_date": "2026-08-13",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "Expression Games"
+   ],
+   "publishers": [
+    "Team17"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Massively Multiplayer",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Action",
+    "Massively Multiplayer",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 8617,
+   "positive_reviews": 5119,
+   "review_score_desc": "Mixed",
+   "pct_positive": 59.4,
+   "est_sales": 301595,
+   "est_gross_usd": 12060784,
+   "est_net_usd": 6633431,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 5810
+  },
+  {
+   "appid": 3564740,
+   "name": "Where Winds Meet",
+   "release_date": "2025-11-14",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Everstone Studio"
+   ],
+   "publishers": [
+    "NetEase Games"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Massively Multiplayer",
+    "Racing",
+    "RPG",
+    "Simulation",
+    "Strategy",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Massively Multiplayer",
+    "Racing"
+   ],
+   "total_reviews": 113706,
+   "positive_reviews": 98400,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 86.5,
+   "est_sales": 3979710,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 9403
+  },
+  {
+   "appid": 2357570,
+   "name": "Overwatch®",
+   "release_date": "2023-08-10",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Blizzard Entertainment, Inc."
+   ],
+   "publishers": [
+    "Blizzard Entertainment, Inc."
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Free To Play"
+   ],
+   "total_reviews": 418595,
+   "positive_reviews": 131431,
+   "review_score_desc": "Mostly Negative",
+   "pct_positive": 31.4,
+   "est_sales": 14650825,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 44600
+  },
+  {
+   "appid": 2552430,
+   "name": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
+   "release_date": "2024-06-13",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Square Enix"
+   ],
+   "publishers": [
+    "Square Enix"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "RPG",
+    "Adventure",
+    "JRPG",
+    "Great Soundtrack",
+    "Action-Adventure",
+    "Emotional",
+    "Story Rich",
+    "Singleplayer",
+    "Fantasy"
+   ],
+   "total_reviews": 11652,
+   "positive_reviews": 10071,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 86.4,
+   "est_sales": 407820,
+   "est_gross_usd": 20386921,
+   "est_net_usd": 11212806,
+   "steamspy_owners": "1,000,000 .. 2,000,000",
+   "ccu_now": 5677
+  },
+  {
+   "appid": 4162040,
+   "name": "Zenless Zone Zero",
+   "release_date": "2026-06-16",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "COGNOSPHERE PTE. LTD."
+   ],
+   "publishers": [
+    "COGNOSPHERE PTE. LTD."
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "total_reviews": 14277,
+   "positive_reviews": 12558,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 88.0,
+   "est_sales": 499695,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 6844
+  },
+  {
+   "appid": 3940610,
+   "name": "EA SPORTS™ Madden NFL 27",
+   "release_date": "2026-08-13",
+   "price_usd": 69.99,
+   "is_free": false,
+   "developers": [
+    "Tiburon"
+   ],
+   "publishers": [
+    "Electronic Arts"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Simulation",
+    "Sports",
+    "Strategy"
+   ],
+   "tags": [
+    "Simulation",
+    "Sports",
+    "Strategy"
+   ],
+   "total_reviews": 442,
+   "positive_reviews": 157,
+   "review_score_desc": "Mostly Negative",
+   "pct_positive": 35.5,
+   "est_sales": 15470,
+   "est_gross_usd": 1082745,
+   "est_net_usd": 595509,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 1885
+  },
+  {
+   "appid": 359550,
+   "name": "Tom Clancy's Rainbow Six Siege",
+   "release_date": "2015-12-01",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Ubisoft Montreal"
+   ],
+   "publishers": [
+    "Ubisoft"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Free To Play"
+   ],
+   "tags": [
+    "FPS",
+    "PvP",
+    "Multiplayer",
+    "Tactical",
+    "e-sports",
+    "Shooter",
+    "Competitive",
+    "Online Co-Op",
+    "Action",
+    "Hero Shooter"
+   ],
+   "total_reviews": 1542879,
+   "positive_reviews": 1268257,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 82.2,
+   "est_sales": 54000765,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 45746
+  },
+  {
+   "appid": 381210,
+   "name": "Dead by Daylight",
+   "release_date": "2016-06-14",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "Behaviour Interactive Inc."
+   ],
+   "publishers": [
+    "Behaviour Interactive Inc."
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Horror",
+    "Multiplayer",
+    "Survival Horror",
+    "Online Co-Op",
+    "Co-op",
+    "Survival",
+    "Gore",
+    "Team-Based",
+    "Blood",
+    "Stealth"
+   ],
+   "total_reviews": 928286,
+   "positive_reviews": 727974,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 78.4,
+   "est_sales": 32490010,
+   "est_gross_usd": 649475299,
+   "est_net_usd": 357211414,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 33430
+  },
+  {
+   "appid": 1623730,
+   "name": "Palworld",
+   "release_date": "2026-07-09",
+   "price_usd": 29.99,
+   "is_free": false,
+   "developers": [
+    "Pocketpair"
+   ],
+   "publishers": [
+    "Pocketpair"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "RPG"
+   ],
+   "tags": [
+    "Open World",
+    "Survival",
+    "Creature Collector",
+    "Multiplayer",
+    "Open World Survival Craft",
+    "Online Co-Op",
+    "Crafting",
+    "Co-op",
+    "Adventure",
+    "Base-Building"
+   ],
+   "total_reviews": 478799,
+   "positive_reviews": 452627,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 94.5,
+   "est_sales": 16757965,
+   "est_gross_usd": 502571370,
+   "est_net_usd": 276414253,
+   "steamspy_owners": "50,000,000 .. 100,000,000",
+   "ccu_now": 129063
+  },
+  {
+   "appid": 582660,
+   "name": "Black Desert",
+   "release_date": "2017-05-24",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Pearl Abyss"
+   ],
+   "publishers": [
+    "Pearl Abyss"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Massively Multiplayer",
+    "RPG",
+    "Strategy"
+   ],
+   "tags": [
+    "MMORPG",
+    "Massively Multiplayer",
+    "Open World",
+    "Character Customization",
+    "RPG",
+    "Adventure",
+    "Fantasy",
+    "Action",
+    "3D",
+    "Strategy"
+   ],
+   "total_reviews": 94039,
+   "positive_reviews": 69140,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 73.5,
+   "est_sales": 3291365,
+   "est_gross_usd": 32880736,
+   "est_net_usd": 18084404,
+   "steamspy_owners": "5,000,000 .. 10,000,000",
+   "ccu_now": 19476
+  },
+  {
+   "appid": 2406770,
+   "name": "Bodycam",
+   "release_date": "2024-06-07",
+   "price_usd": 33.32,
+   "is_free": false,
+   "developers": [
+    "Reissad Studio"
+   ],
+   "publishers": [
+    "Reissad Studio"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie",
+    "Massively Multiplayer",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "tags": [
+    "Early Access",
+    "FPS",
+    "Realistic",
+    "Shooter",
+    "Military",
+    "Co-op",
+    "Horror",
+    "Zombies",
+    "Multiplayer",
+    "Team-Based"
+   ],
+   "total_reviews": 45101,
+   "positive_reviews": 34436,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 76.4,
+   "est_sales": 1578535,
+   "est_gross_usd": 52596786,
+   "est_net_usd": 28928232,
+   "steamspy_owners": "500,000 .. 1,000,000",
+   "ccu_now": 914
+  },
+  {
+   "appid": 1361210,
+   "name": "Warhammer 40,000: Darktide",
+   "release_date": "2022-11-30",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "Fatshark"
+   ],
+   "publishers": [
+    "Fatshark"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG"
+   ],
+   "tags": [
+    "Horror",
+    "Team-Based",
+    "Combat",
+    "Class-Based",
+    "Hack and Slash",
+    "Zombies",
+    "PvE",
+    "Warhammer 40K",
+    "Shooter",
+    "FPS"
+   ],
+   "total_reviews": 137800,
+   "positive_reviews": 98765,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 71.7,
+   "est_sales": 4823000,
+   "est_gross_usd": 192871770,
+   "est_net_usd": 106079473,
+   "steamspy_owners": "2,000,000 .. 5,000,000",
+   "ccu_now": 5082
+  },
+  {
+   "appid": 252490,
+   "name": "Rust",
+   "release_date": "2018-02-08",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "Facepunch Studios"
+   ],
+   "publishers": [
+    "Facepunch Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "Massively Multiplayer",
+    "RPG"
+   ],
+   "tags": [
+    "Survival",
+    "Crafting",
+    "Multiplayer",
+    "Open World",
+    "Open World Survival Craft",
+    "Building",
+    "PvP",
+    "Sandbox",
+    "Adventure",
+    "First-Person"
+   ],
+   "total_reviews": 1392515,
+   "positive_reviews": 1208303,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 86.8,
+   "est_sales": 48738025,
+   "est_gross_usd": 1949033619,
+   "est_net_usd": 1071968490,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 67324
+  },
+  {
+   "appid": 1142710,
+   "name": "Total War: WARHAMMER III",
+   "release_date": "2022-02-16",
+   "price_usd": 59.99,
+   "is_free": false,
+   "developers": [
+    "CREATIVE ASSEMBLY",
+    "Feral Interactive"
+   ],
+   "publishers": [
+    "SEGA",
+    "Feral Interactive"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Strategy"
+   ],
+   "tags": [
+    "Strategy",
+    "Turn-Based Strategy",
+    "Grand Strategy",
+    "RTS",
+    "Fantasy",
+    "Real Time Tactics",
+    "War",
+    "Dark Fantasy",
+    "Action",
+    "Dwarf"
+   ],
+   "total_reviews": 147221,
+   "positive_reviews": 104812,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 71.2,
+   "est_sales": 5152735,
+   "est_gross_usd": 309112572,
+   "est_net_usd": 170011914,
+   "steamspy_owners": "2,000,000 .. 5,000,000",
+   "ccu_now": 19774
+  },
+  {
+   "appid": 2358720,
+   "name": "Black Myth: Wukong",
+   "release_date": "2024-08-19",
+   "price_usd": 59.99,
+   "is_free": false,
+   "developers": [
+    "Game Science"
+   ],
+   "publishers": [
+    "Game Science"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG"
+   ],
+   "tags": [
+    "Mythology",
+    "Action RPG",
+    "Action",
+    "Souls-like",
+    "RPG",
+    "Combat",
+    "Story Rich",
+    "Singleplayer",
+    "Action-Adventure",
+    "Drama"
+   ],
+   "total_reviews": 1206680,
+   "positive_reviews": 1164604,
+   "review_score_desc": "Overwhelmingly Positive",
+   "pct_positive": 96.5,
+   "est_sales": 42233800,
+   "est_gross_usd": 2533605662,
+   "est_net_usd": 1393483114,
+   "steamspy_owners": "50,000,000 .. 100,000,000",
+   "ccu_now": 22684
+  },
+  {
+   "appid": 3932890,
+   "name": "Escape from Tarkov",
+   "release_date": "2025-11-15",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Battlestate Games"
+   ],
+   "publishers": [
+    "Battlestate Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Massively Multiplayer",
+    "RPG",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Massively Multiplayer",
+    "RPG",
+    "Simulation"
+   ],
+   "total_reviews": 62214,
+   "positive_reviews": 30496,
+   "review_score_desc": "Mixed",
+   "pct_positive": 49.0,
+   "est_sales": 2177490,
+   "est_gross_usd": 108852725,
+   "est_net_usd": 59868998,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 22153
+  },
+  {
+   "appid": 236390,
+   "name": "War Thunder",
+   "release_date": "2013-08-15",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Gaijin Entertainment"
+   ],
+   "publishers": [
+    "Gaijin Network Ltd"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Massively Multiplayer",
+    "Simulation",
+    "Free To Play"
+   ],
+   "tags": [
+    "Free to Play",
+    "Simulation",
+    "Vehicular Combat",
+    "Combat",
+    "World War II",
+    "Flight",
+    "VR",
+    "War",
+    "Military",
+    "Tanks"
+   ],
+   "total_reviews": 776841,
+   "positive_reviews": 553088,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 71.2,
+   "est_sales": 27189435,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 37894
+  },
+  {
+   "appid": 4294490,
+   "name": "KOTAMON: My Sis Found A Super-Rare Card In Her Cereal Box, So I Became A Garbage Man To Find The Entire Collection And Earn $1,000,000",
+   "release_date": "2026-08-20",
+   "price_usd": 6.99,
+   "is_free": false,
+   "developers": [
+    " KotaMota Games"
+   ],
+   "publishers": [
+    "Polnoch"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 219,
+   "positive_reviews": 167,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 76.3,
+   "est_sales": 7665,
+   "est_gross_usd": 53578,
+   "est_net_usd": 29468,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 2443
+  },
+  {
+   "appid": 903930,
+   "name": "Brigador Killers",
+   "release_date": "2026-08-20",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "Stellar Jockeys",
+    "Gausswerks"
+   ],
+   "publishers": [
+    "Stellar Jockeys"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Indie",
+    "Early Access"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Early Access"
+   ],
+   "total_reviews": 92,
+   "positive_reviews": 82,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 89.1,
+   "est_sales": 3220,
+   "est_gross_usd": 80467,
+   "est_net_usd": 44257,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 465
+  },
+  {
+   "appid": 2141910,
+   "name": "Magic: The Gathering Arena",
+   "release_date": "2023-05-23",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Wizards of the Coast"
+   ],
+   "publishers": [
+    "Wizards of the Coast"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Strategy",
+    "Free To Play"
+   ],
+   "tags": [
+    "Strategy",
+    "Free To Play"
+   ],
+   "total_reviews": 31001,
+   "positive_reviews": 18956,
+   "review_score_desc": "Mixed",
+   "pct_positive": 61.1,
+   "est_sales": 1085035,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 6878
+  },
+  {
+   "appid": 632360,
+   "name": "Risk of Rain 2",
+   "release_date": "2020-08-11",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "Hopoo Games"
+   ],
+   "publishers": [
+    "Gearbox Publishing",
+    "2K"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Indie"
+   ],
+   "tags": [
+    "Third-Person Shooter",
+    "Action Roguelike",
+    "Multiplayer",
+    "Co-op",
+    "Action",
+    "Rogue-lite",
+    "Rogue-like",
+    "Looter Shooter",
+    "Loot",
+    "Online Co-Op"
+   ],
+   "total_reviews": 351557,
+   "positive_reviews": 329806,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 93.8,
+   "est_sales": 12304495,
+   "est_gross_usd": 307489330,
+   "est_net_usd": 169119131,
+   "steamspy_owners": "5,000,000 .. 10,000,000",
+   "ccu_now": 4154
+  },
+  {
+   "appid": 2073850,
+   "name": "THE FINALS",
+   "release_date": "2023-12-07",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Embark Studios"
+   ],
+   "publishers": [
+    "Embark Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Free To Play"
+   ],
+   "total_reviews": 274699,
+   "positive_reviews": 214992,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 78.3,
+   "est_sales": 9614465,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 8804
+  },
+  {
+   "appid": 4356430,
+   "name": "NBA 2K27",
+   "release_date": "2026-09-03",
+   "price_usd": 69.99,
+   "is_free": false,
+   "developers": [
+    "Visual Concepts"
+   ],
+   "publishers": [
+    "2K"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Sports"
+   ],
+   "tags": [
+    "Sports"
+   ],
+   "total_reviews": 0,
+   "positive_reviews": 0,
+   "review_score_desc": "No user reviews",
+   "pct_positive": null,
+   "est_sales": 0,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": null
+  },
+  {
+   "appid": 108600,
+   "name": "Project Zomboid",
+   "release_date": "2013-11-08",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "The Indie Stone"
+   ],
+   "publishers": [
+    "The Indie Stone"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Indie",
+    "RPG",
+    "Simulation",
+    "Early Access"
+   ],
+   "tags": [
+    "Survival",
+    "Zombies",
+    "Open World",
+    "Multiplayer",
+    "Open World Survival Craft",
+    "Sandbox",
+    "Post-apocalyptic",
+    "Co-op",
+    "Crafting",
+    "Building"
+   ],
+   "total_reviews": 473601,
+   "positive_reviews": 444480,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 93.9,
+   "est_sales": 16576035,
+   "est_gross_usd": 414235114,
+   "est_net_usd": 227829313,
+   "steamspy_owners": "10,000,000 .. 20,000,000",
+   "ccu_now": 50439
+  },
+  {
+   "appid": 1778820,
+   "name": "TEKKEN 8",
+   "release_date": "2024-01-25",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "Bandai Namco Studios Inc."
+   ],
+   "publishers": [
+    "Bandai Namco Entertainment"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Fighting",
+    "3D Fighter",
+    "Action",
+    "Multiplayer",
+    "Local Multiplayer",
+    "e-sports",
+    "PvP",
+    "Arcade",
+    "Singleplayer",
+    "Competitive"
+   ],
+   "total_reviews": 72048,
+   "positive_reviews": 40606,
+   "review_score_desc": "Mixed",
+   "pct_positive": 56.4,
+   "est_sales": 2521680,
+   "est_gross_usd": 100841983,
+   "est_net_usd": 55463090,
+   "steamspy_owners": "1,000,000 .. 2,000,000",
+   "ccu_now": 5164
+  },
+  {
+   "appid": 1449850,
+   "name": "Yu-Gi-Oh! Master Duel",
+   "release_date": "2022-01-18",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "KONAMI"
+   ],
+   "publishers": [
+    "KONAMI"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Simulation",
+    "Strategy",
+    "Free To Play"
+   ],
+   "tags": [
+    "Simulation",
+    "Strategy",
+    "Free To Play"
+   ],
+   "total_reviews": 100928,
+   "positive_reviews": 72198,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 71.5,
+   "est_sales": 3532480,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 12821
+  },
+  {
+   "appid": 306130,
+   "name": "The Elder Scrolls® Online",
+   "release_date": "2017-05-22",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "ZeniMax Online Studios"
+   ],
+   "publishers": [
+    "Bethesda Softworks"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Massively Multiplayer",
+    "RPG"
+   ],
+   "tags": [
+    "RPG",
+    "MMORPG",
+    "Open World",
+    "Fantasy",
+    "Adventure",
+    "Multiplayer",
+    "Exploration",
+    "Singleplayer",
+    "Massively Multiplayer",
+    "Action"
+   ],
+   "total_reviews": 161388,
+   "positive_reviews": 130550,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 80.9,
+   "est_sales": 5648580,
+   "est_gross_usd": 112915114,
+   "est_net_usd": 62103312,
+   "steamspy_owners": "5,000,000 .. 10,000,000",
+   "ccu_now": 6406
+  },
+  {
+   "appid": 1245620,
+   "name": "ELDEN RING",
+   "release_date": "2022-02-24",
+   "price_usd": 59.99,
+   "is_free": false,
+   "developers": [
+    "FromSoftware, Inc."
+   ],
+   "publishers": [
+    "FromSoftware, Inc.",
+    "Bandai Namco Entertainment"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "RPG"
+   ],
+   "tags": [
+    "Souls-like",
+    "Open World",
+    "Dark Fantasy",
+    "RPG",
+    "Difficult",
+    "Action RPG",
+    "Third Person",
+    "Multiplayer",
+    "Fantasy",
+    "Singleplayer"
+   ],
+   "total_reviews": 1149348,
+   "positive_reviews": 1069819,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 93.1,
+   "est_sales": 40227180,
+   "est_gross_usd": 2413228528,
+   "est_net_usd": 1327275690,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 19773
+  },
+  {
+   "appid": 2651280,
+   "name": "Marvel's Spider-Man 2",
+   "release_date": "2025-01-30",
+   "price_usd": 59.99,
+   "is_free": false,
+   "developers": [
+    "Insomniac Games",
+    "Nixxes Software"
+   ],
+   "publishers": [
+    "PlayStation Publishing LLC"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "tags": [
+    "Action",
+    "Superhero",
+    "Open World",
+    "Singleplayer",
+    "Adventure",
+    "Action-Adventure",
+    "Third Person",
+    "Story Rich",
+    "LGBTQ+",
+    "Political"
+   ],
+   "total_reviews": 45044,
+   "positive_reviews": 37449,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 83.1,
+   "est_sales": 1576540,
+   "est_gross_usd": 94576634,
+   "est_net_usd": 52017149,
+   "steamspy_owners": "500,000 .. 1,000,000",
+   "ccu_now": 4963
+  },
+  {
+   "appid": 4026250,
+   "name": "Project P.I.T.T.",
+   "release_date": "2026-08-19",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Froke"
+   ],
+   "publishers": [
+    "Pretty Soon"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 229,
+   "positive_reviews": 193,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 84.3,
+   "est_sales": 8015,
+   "est_gross_usd": 80069,
+   "est_net_usd": 44038,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 2015
+  }
+ ]
+}
