@@ -1,0 +1,1907 @@
+{
+"week": "2026-W38",
+"window_days": 14,
+"releases": [
+{
+"appid": 4883590,
+"name": "iRacing® Studios NASCAR 26",
+"release_date": "2026-09-17",
+"price_usd": 59.99,
+"is_free": false,
+"developers": [
+"iRacing.com Motorsport Simulations, LLC"
+],
+"publishers": [
+"iRacing.com Motorsport Simulations, LLC"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Racing",
+"Simulation",
+"Sports"
+],
+"tags": [
+"Racing",
+"Simulation",
+"Sports"
+],
+"total_reviews": 116,
+"positive_reviews": 100,
+"review_score_desc": "Very Positive",
+"pct_positive": 86.2,
+"est_sales": 4060,
+"est_gross_usd": 243559,
+"est_net_usd": 133957,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 615,
+"ai_disclosed": true,
+"ai_note": "NASCAR 26 used AI to generate certain VO lines and other presentation elements throughout the UI.",
+"ai_scope": "unspecified"
+},
+{
+"appid": 1980390,
+"name": "Neighbor Fight",
+"release_date": "2026-09-17",
+"price_usd": 0.99,
+"is_free": false,
+"developers": [
+"CHICKEN SODA GAMES"
+],
+"publishers": [
+"CHICKEN SODA GAMES"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Indie",
+"Simulation",
+"Strategy"
+],
+"tags": [
+"Early Access",
+"First-Person",
+"PvP",
+"Destruction",
+"Resource Management",
+"Strategy",
+"Physics",
+"Action",
+"3D",
+"Multiplayer"
+],
+"total_reviews": 207,
+"positive_reviews": 192,
+"review_score_desc": "Very Positive",
+"pct_positive": 92.8,
+"est_sales": 7245,
+"est_gross_usd": 7172,
+"est_net_usd": 3944,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 1,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 645860,
+"name": "Spartan VR",
+"release_date": "2026-09-17",
+"price_usd": 4.99,
+"is_free": false,
+"developers": [
+"Immergity"
+],
+"publishers": [
+"Immergity"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Adventure",
+"RPG"
+],
+"tags": [
+"Adventure",
+"Action",
+"RPG",
+"Violent",
+"Early Access",
+"VR"
+],
+"total_reviews": 15,
+"positive_reviews": 8,
+"review_score_desc": "Mixed",
+"pct_positive": 53.3,
+"est_sales": 525,
+"est_gross_usd": 2619,
+"est_net_usd": 1440,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 0,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3407390,
+"name": "ENDLESS Legend™ 2",
+"release_date": "2026-09-17",
+"price_usd": 49.99,
+"is_free": false,
+"developers": [
+"AMPLITUDE Studios"
+],
+"publishers": [
+"Hooded Horse"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"RPG",
+"Simulation",
+"Strategy"
+],
+"tags": [
+"RPG",
+"Simulation",
+"Strategy"
+],
+"total_reviews": 3066,
+"positive_reviews": 2573,
+"review_score_desc": "Very Positive",
+"pct_positive": 83.9,
+"est_sales": 107310,
+"est_gross_usd": 5364426,
+"est_net_usd": 2950434,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 1543,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3088700,
+"name": "Driving Rogue",
+"release_date": "2026-09-17",
+"price_usd": 9.99,
+"is_free": false,
+"developers": [
+"Gravity Works"
+],
+"publishers": [
+"Gravity Works",
+"Cosmic Shift Studios"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Casual",
+"Indie",
+"Racing",
+"Sports"
+],
+"tags": [
+"Action",
+"Casual",
+"Indie",
+"Racing",
+"Sports"
+],
+"total_reviews": 35,
+"positive_reviews": 33,
+"review_score_desc": "Positive",
+"pct_positive": 94.3,
+"est_sales": 1225,
+"est_gross_usd": 12237,
+"est_net_usd": 6730,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 126,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4428890,
+"name": "20 More, Somehow Even Smaller, Mazes",
+"release_date": "2026-09-17",
+"price_usd": 0.0,
+"is_free": true,
+"developers": [
+"FLEB"
+],
+"publishers": [
+"FLEB"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Free To Play"
+],
+"tags": [
+"Free To Play"
+],
+"total_reviews": 462,
+"positive_reviews": 461,
+"review_score_desc": "Very Positive",
+"pct_positive": 99.8,
+"est_sales": 16170,
+"est_gross_usd": 0,
+"est_net_usd": 0,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 314,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3844740,
+"name": "I AM YOUR BEAST VR",
+"release_date": "2026-09-17",
+"price_usd": 22.99,
+"is_free": false,
+"developers": [
+"Flat2VR Spark",
+" Strange Scaffold"
+],
+"publishers": [
+"Impact Inked"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Adventure"
+],
+"tags": [
+"Action",
+"Adventure"
+],
+"total_reviews": 17,
+"positive_reviews": 17,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 595,
+"est_gross_usd": 13679,
+"est_net_usd": 7523,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 7,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 5181480,
+"name": "Omega Pilot Evolution",
+"release_date": "2026-09-17",
+"price_usd": 19.99,
+"is_free": false,
+"developers": [
+"XOCUS"
+],
+"publishers": [
+"XOCUS"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Indie",
+"Racing"
+],
+"tags": [
+"Indie",
+"Racing"
+],
+"total_reviews": 16,
+"positive_reviews": 15,
+"review_score_desc": "Positive",
+"pct_positive": 93.8,
+"est_sales": 560,
+"est_gross_usd": 11194,
+"est_net_usd": 6156,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 1,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2902170,
+"name": "Kernel Hearts",
+"release_date": "2026-09-17",
+"price_usd": 19.99,
+"is_free": false,
+"developers": [
+"Ephemera Games"
+],
+"publishers": [
+"Whitethorn Games"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Indie",
+"RPG"
+],
+"tags": [
+"Action",
+"Indie",
+"RPG"
+],
+"total_reviews": 52,
+"positive_reviews": 44,
+"review_score_desc": "Very Positive",
+"pct_positive": 84.6,
+"est_sales": 1820,
+"est_gross_usd": 36381,
+"est_net_usd": 20009,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 274,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3640200,
+"name": "Dawson Oaks Trailer Park",
+"release_date": "2026-09-17",
+"price_usd": 9.99,
+"is_free": false,
+"developers": [
+"Striped Panda Studios"
+],
+"publishers": [
+"Striped Panda Studios"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Casual",
+"RPG",
+"Simulation",
+"Strategy"
+],
+"tags": [
+"Casual",
+"RPG",
+"Simulation",
+"Strategy"
+],
+"total_reviews": 76,
+"positive_reviews": 62,
+"review_score_desc": "Very Positive",
+"pct_positive": 81.6,
+"est_sales": 2660,
+"est_gross_usd": 26573,
+"est_net_usd": 14615,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 737,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 5063140,
+"name": "Cards Everywhere!",
+"release_date": "2026-09-17",
+"price_usd": 5.99,
+"is_free": false,
+"developers": [
+"Armed Chicken"
+],
+"publishers": [
+"Armed Chicken"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Casual",
+"Simulation"
+],
+"tags": [
+"Casual",
+"Simulation"
+],
+"total_reviews": 20,
+"positive_reviews": 13,
+"review_score_desc": "Mixed",
+"pct_positive": 65.0,
+"est_sales": 700,
+"est_gross_usd": 4193,
+"est_net_usd": 2306,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 121,
+"ai_disclosed": true,
+"ai_note": "Generative AI tools were used during development to support creation of the artwork featured on some of the collectible cards and UI. All AI-generated content was created before release, curated and integrated into the game by the developer. No content is generated by AI during gameplay.",
+"ai_scope": "unspecified"
+},
+{
+"appid": 2609610,
+"name": "CONVRGENCE",
+"release_date": "2026-09-17",
+"price_usd": 24.99,
+"is_free": false,
+"developers": [
+"Monkey-With-a-Bomb"
+],
+"publishers": [
+"Monkey-With-a-Bomb"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Adventure"
+],
+"tags": [
+"VR",
+"Atmospheric",
+"Post-apocalyptic",
+"Shooter",
+"Extraction Shooter",
+"Survival Horror",
+"Survival",
+"Horror",
+"Stealth",
+"Exploration"
+],
+"total_reviews": 1751,
+"positive_reviews": 1549,
+"review_score_desc": "Very Positive",
+"pct_positive": 88.5,
+"est_sales": 61285,
+"est_gross_usd": 1531512,
+"est_net_usd": 842331,
+"steamspy_owners": "100,000 .. 200,000",
+"ccu_now": 77,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4548120,
+"name": "Tumblebee",
+"release_date": "2026-09-17",
+"price_usd": 6.99,
+"is_free": false,
+"developers": [
+"Agelvik"
+],
+"publishers": [
+"Agelvik"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Adventure",
+"Indie"
+],
+"tags": [
+"Action",
+"Adventure",
+"Indie"
+],
+"total_reviews": 15,
+"positive_reviews": 15,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 525,
+"est_gross_usd": 3669,
+"est_net_usd": 2018,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 6,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2459550,
+"name": "Emberward",
+"release_date": "2026-09-17",
+"price_usd": 19.99,
+"is_free": false,
+"developers": [
+"Refic Games"
+],
+"publishers": [
+"Refic Games"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Indie",
+"Strategy",
+"Free To Play"
+],
+"tags": [
+"Early Access",
+"Tower Defense",
+"Strategy",
+"Rogue-lite",
+"Base-Building",
+"Deckbuilding",
+"Rogue-like",
+"RTS",
+"Singleplayer",
+"Tactical"
+],
+"total_reviews": 3898,
+"positive_reviews": 3781,
+"review_score_desc": "Overwhelmingly Positive",
+"pct_positive": 97.0,
+"est_sales": 136430,
+"est_gross_usd": 2727235,
+"est_net_usd": 1499979,
+"steamspy_owners": "100,000 .. 200,000",
+"ccu_now": 893,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2841650,
+"name": "Sniper Dan",
+"release_date": "2026-09-17",
+"price_usd": 12.99,
+"is_free": false,
+"developers": [
+"Denki"
+],
+"publishers": [
+"PQube"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Casual",
+"Indie"
+],
+"tags": [
+"Casual",
+"Indie"
+],
+"total_reviews": 23,
+"positive_reviews": 21,
+"review_score_desc": "Positive",
+"pct_positive": 91.3,
+"est_sales": 805,
+"est_gross_usd": 10456,
+"est_net_usd": 5751,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 210,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2938460,
+"name": "Police Chief Simulator",
+"release_date": "2026-09-17",
+"price_usd": 19.99,
+"is_free": false,
+"developers": [
+"Perfect Circle Team S.A."
+],
+"publishers": [
+"Perfect Circle Team S.A."
+],
+"team_class": "aaa_or_publisher",
+"genres": [
+"Action",
+"Casual",
+"Indie",
+"Simulation",
+"Strategy"
+],
+"tags": [
+"Action",
+"Casual",
+"Indie",
+"Simulation",
+"Strategy"
+],
+"total_reviews": 94,
+"positive_reviews": 82,
+"review_score_desc": "Very Positive",
+"pct_positive": 87.2,
+"est_sales": 3290,
+"est_gross_usd": 65767,
+"est_net_usd": 36171,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 974,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3195580,
+"name": "lily's world XD",
+"release_date": "2026-09-17",
+"price_usd": 11.99,
+"is_free": false,
+"developers": [
+"SonderingEmily"
+],
+"publishers": [
+"Kwalee"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Casual",
+"Indie"
+],
+"tags": [
+"Casual",
+"Indie"
+],
+"total_reviews": 216,
+"positive_reviews": 214,
+"review_score_desc": "Very Positive",
+"pct_positive": 99.1,
+"est_sales": 7560,
+"est_gross_usd": 90644,
+"est_net_usd": 49854,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 358,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4810070,
+"name": "CONCRETE BURIAL",
+"release_date": "2026-09-17",
+"price_usd": 3.99,
+"is_free": false,
+"developers": [
+"Games From The Abyss"
+],
+"publishers": [
+"DreadXP"
+],
+"team_class": "aaa_or_publisher",
+"genres": [
+"Action",
+"Adventure",
+"Indie"
+],
+"tags": [
+"Action",
+"Adventure",
+"Indie"
+],
+"total_reviews": 21,
+"positive_reviews": 20,
+"review_score_desc": "Positive",
+"pct_positive": 95.2,
+"est_sales": 735,
+"est_gross_usd": 2932,
+"est_net_usd": 1612,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 9,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3201730,
+"name": "Flamecraft",
+"release_date": "2026-09-17",
+"price_usd": 19.99,
+"is_free": false,
+"developers": [
+"Monster Couch"
+],
+"publishers": [
+"Monster Couch",
+"Cardboard Alchemy"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Casual",
+"Indie",
+"Strategy"
+],
+"tags": [
+"Casual",
+"Indie",
+"Strategy"
+],
+"total_reviews": 27,
+"positive_reviews": 27,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 945,
+"est_gross_usd": 18890,
+"est_net_usd": 10389,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 126,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3650740,
+"name": "Dig & Deal",
+"release_date": "2026-09-17",
+"price_usd": 9.99,
+"is_free": false,
+"developers": [
+"ToYa Games"
+],
+"publishers": [
+"ToYa Games"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Casual",
+"Indie",
+"Simulation"
+],
+"tags": [
+"Casual",
+"Indie",
+"Simulation"
+],
+"total_reviews": 44,
+"positive_reviews": 35,
+"review_score_desc": "Mostly Positive",
+"pct_positive": 79.5,
+"est_sales": 1540,
+"est_gross_usd": 15384,
+"est_net_usd": 8461,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 7,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2977260,
+"name": "The Guild 1 Remake: Europa 1410",
+"release_date": "2026-09-17",
+"price_usd": 29.99,
+"is_free": false,
+"developers": [
+"Ashborne Games"
+],
+"publishers": [
+"THQ Nordic"
+],
+"team_class": "aaa_or_publisher",
+"genres": [
+"Simulation",
+"Strategy",
+"Early Access"
+],
+"tags": [
+"Simulation",
+"Strategy",
+"Early Access"
+],
+"total_reviews": 176,
+"positive_reviews": 144,
+"review_score_desc": "Very Positive",
+"pct_positive": 81.8,
+"est_sales": 6160,
+"est_gross_usd": 184738,
+"est_net_usd": 101606,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 589,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3048060,
+"name": "Trivia Murder Party 3",
+"release_date": "2026-09-17",
+"price_usd": 14.99,
+"is_free": false,
+"developers": [
+"Jackbox Games, Inc."
+],
+"publishers": [
+"Jackbox Games, Inc."
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Adventure",
+"Casual",
+"Indie",
+"Strategy",
+"Early Access"
+],
+"tags": [
+"Action",
+"Adventure",
+"Casual",
+"Indie",
+"Strategy",
+"Early Access"
+],
+"total_reviews": 31,
+"positive_reviews": 25,
+"review_score_desc": "Positive",
+"pct_positive": 80.6,
+"est_sales": 1085,
+"est_gross_usd": 16264,
+"est_net_usd": 8945,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 175,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4054050,
+"name": "O.B.O.L",
+"release_date": "2026-09-17",
+"price_usd": 6.99,
+"is_free": false,
+"developers": [
+"MrEliptik",
+"Woland"
+],
+"publishers": [
+"MrEliptik"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Adventure",
+"Indie",
+"Strategy"
+],
+"tags": [
+"Action",
+"Adventure",
+"Indie",
+"Strategy"
+],
+"total_reviews": 14,
+"positive_reviews": 13,
+"review_score_desc": "Positive",
+"pct_positive": 92.9,
+"est_sales": 490,
+"est_gross_usd": 3425,
+"est_net_usd": 1883,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 10,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3560670,
+"name": "OpenFront",
+"release_date": "2026-09-17",
+"price_usd": 6.99,
+"is_free": false,
+"developers": [
+"OpenFront Inc",
+"Evan Pellegrini"
+],
+"publishers": [
+"OpenFront Inc"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Indie",
+"Massively Multiplayer",
+"Strategy",
+"Early Access"
+],
+"tags": [
+"Indie",
+"Massively Multiplayer",
+"Strategy",
+"Early Access"
+],
+"total_reviews": 276,
+"positive_reviews": 257,
+"review_score_desc": "Very Positive",
+"pct_positive": 93.1,
+"est_sales": 9660,
+"est_gross_usd": 67523,
+"est_net_usd": 37137,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 700,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4753760,
+"name": "Your Fiancée",
+"release_date": "2026-09-17",
+"price_usd": 2.99,
+"is_free": false,
+"developers": [
+"DigitalDream"
+],
+"publishers": [
+"DigitalDream"
+],
+"team_class": "aaa_or_publisher",
+"genres": [
+"Casual",
+"Indie"
+],
+"tags": [
+"Casual",
+"Indie"
+],
+"total_reviews": 378,
+"positive_reviews": 377,
+"review_score_desc": "Very Positive",
+"pct_positive": 99.7,
+"est_sales": 13230,
+"est_gross_usd": 39557,
+"est_net_usd": 21756,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 257,
+"ai_disclosed": true,
+"ai_note": "The game's core content was created through extensive manual development. The main character, outfits, and all Live2D models are entirely hand-drawn, manually rigged, animated, and polished by the developer. AI was used only as a limited production aid for a small number of UI illustrations, some optional Gacha characters (which were extensively edited, layered, animated, and refined by hand), sto",
+"ai_scope": "unspecified"
+},
+{
+"appid": 3628390,
+"name": "33 Days till Extraction",
+"release_date": "2026-09-17",
+"price_usd": 17.99,
+"is_free": false,
+"developers": [
+"Three Whales Studio"
+],
+"publishers": [
+"Three Whales Studio"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"RPG",
+"Early Access"
+],
+"tags": [
+"Action",
+"RPG",
+"Early Access"
+],
+"total_reviews": 20,
+"positive_reviews": 15,
+"review_score_desc": "Mostly Positive",
+"pct_positive": 75.0,
+"est_sales": 700,
+"est_gross_usd": 12592,
+"est_net_usd": 6926,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 17,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4437370,
+"name": "Pop! Pachinko",
+"release_date": "2026-09-17",
+"price_usd": 12.99,
+"is_free": false,
+"developers": [
+"Pangolin Interactive",
+"Robot Lion Games"
+],
+"publishers": [
+"Pangolin Interactive",
+"Gamersky Games"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Casual",
+"Indie",
+"Strategy"
+],
+"tags": [
+"Casual",
+"Indie",
+"Strategy"
+],
+"total_reviews": 28,
+"positive_reviews": 28,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 980,
+"est_gross_usd": 12730,
+"est_net_usd": 7001,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 51,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4261320,
+"name": "스페셜포스 리마스터",
+"release_date": "2026-09-16",
+"price_usd": 0.0,
+"is_free": true,
+"developers": [
+"DRAGONFLY GF CO., LTD."
+],
+"publishers": [
+"DRAGONFLY GF CO., LTD."
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Free To Play"
+],
+"tags": [
+"Action",
+"Free To Play"
+],
+"total_reviews": 355,
+"positive_reviews": 80,
+"review_score_desc": "Mostly Negative",
+"pct_positive": 22.5,
+"est_sales": 12425,
+"est_gross_usd": 0,
+"est_net_usd": 0,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 74,
+"ai_disclosed": true,
+"ai_note": "Generative AI tools were used to assist with the development phase and to create some image resources.",
+"ai_scope": "some visuals"
+},
+{
+"appid": 4225980,
+"name": "Trails in the Sky 2nd Chapter",
+"release_date": "2026-09-16",
+"price_usd": 59.99,
+"is_free": false,
+"developers": [
+"Nihon Falcom"
+],
+"publishers": [
+"Nihon Falcom",
+"GungHo Online Entertainment America, Inc.",
+"Clouded Leopard Entertainment"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Adventure",
+"RPG"
+],
+"tags": [
+"Action",
+"Adventure",
+"RPG"
+],
+"total_reviews": 426,
+"positive_reviews": 410,
+"review_score_desc": "Very Positive",
+"pct_positive": 96.2,
+"est_sales": 14910,
+"est_gross_usd": 894450,
+"est_net_usd": 491947,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 5777,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4870430,
+"name": "Tidy Up History",
+"release_date": "2026-09-16",
+"price_usd": 5.99,
+"is_free": false,
+"developers": [
+"Casual Human"
+],
+"publishers": [
+"Casual Human"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Casual",
+"Indie",
+"Simulation"
+],
+"tags": [
+"Casual",
+"Indie",
+"Simulation"
+],
+"total_reviews": 108,
+"positive_reviews": 99,
+"review_score_desc": "Very Positive",
+"pct_positive": 91.7,
+"est_sales": 3780,
+"est_gross_usd": 22642,
+"est_net_usd": 12453,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 268,
+"ai_disclosed": true,
+"ai_note": "We are actively working to replace all placeholder AI art before launch. While we aim for a fully human-crafted experience, a few minor assets may still remain at release. AI tools were also used to assist with localizing the game and store page. All 3D in-game art was created by human artists or derived from real-world museum photoscans. (See the credits menu for full attributions.)",
+"ai_scope": "translation only"
+},
+{
+"appid": 3160570,
+"name": "Runeomicon",
+"release_date": "2026-09-16",
+"price_usd": 9.99,
+"is_free": false,
+"developers": [
+"TLR Games"
+],
+"publishers": [
+"Joystick Ventures"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Indie",
+"Strategy"
+],
+"tags": [
+"Action",
+"Indie",
+"Strategy"
+],
+"total_reviews": 25,
+"positive_reviews": 22,
+"review_score_desc": "Positive",
+"pct_positive": 88.0,
+"est_sales": 875,
+"est_gross_usd": 8741,
+"est_net_usd": 4807,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 23,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 5159810,
+"name": "ArmorSim",
+"release_date": "2026-09-16",
+"price_usd": 18.99,
+"is_free": false,
+"developers": [
+"Timerlan Galimov"
+],
+"publishers": [
+"Galimov Dynamics "
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Indie",
+"Simulation",
+"Early Access"
+],
+"tags": [
+"Indie",
+"Simulation",
+"Early Access"
+],
+"total_reviews": 87,
+"positive_reviews": 52,
+"review_score_desc": "Mixed",
+"pct_positive": 59.8,
+"est_sales": 3045,
+"est_gross_usd": 57824,
+"est_net_usd": 31803,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 13,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3120460,
+"name": "Night Club Simulator: Party King",
+"release_date": "2026-09-16",
+"price_usd": 13.99,
+"is_free": false,
+"developers": [
+"Bohem Games"
+],
+"publishers": [
+"Bohem Games"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Casual",
+"Indie",
+"Simulation",
+"Early Access"
+],
+"tags": [
+"Casual",
+"Indie",
+"Simulation",
+"Early Access"
+],
+"total_reviews": 38,
+"positive_reviews": 35,
+"review_score_desc": "Positive",
+"pct_positive": 92.1,
+"est_sales": 1330,
+"est_gross_usd": 18606,
+"est_net_usd": 10233,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 34,
+"ai_disclosed": true,
+"ai_note": "AI was used as an assistive tool for creating some music tracks, localization into certain languages, and a limited number of in-game paintings and artwork. All AI-generated content was manually reviewed, edited, and refined by our team before being included in the game. As a small independent game studio, we use AI to support our creative workflow. All final content was reviewed and approved by o",
+"ai_scope": "audio only"
+},
+{
+"appid": 4930980,
+"name": "Garage: Tidy Up!",
+"release_date": "2026-09-16",
+"price_usd": 4.99,
+"is_free": false,
+"developers": [
+"Cat Company Limited"
+],
+"publishers": [
+"Cat Company Limited"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Indie",
+"Simulation"
+],
+"tags": [
+"Indie",
+"Simulation"
+],
+"total_reviews": 13,
+"positive_reviews": 8,
+"review_score_desc": "Mixed",
+"pct_positive": 61.5,
+"est_sales": 455,
+"est_gross_usd": 2270,
+"est_net_usd": 1248,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 20,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4140530,
+"name": "The Plant Shop",
+"release_date": "2026-09-16",
+"price_usd": 4.99,
+"is_free": false,
+"developers": [
+"Tori"
+],
+"publishers": [
+"Tori"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Adventure",
+"Casual",
+"Indie",
+"Simulation"
+],
+"tags": [
+"Adventure",
+"Casual",
+"Indie",
+"Simulation"
+],
+"total_reviews": 69,
+"positive_reviews": 68,
+"review_score_desc": "Very Positive",
+"pct_positive": 98.6,
+"est_sales": 2415,
+"est_gross_usd": 12050,
+"est_net_usd": 6627,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 37,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3639070,
+"name": "BLACKWOOD",
+"release_date": "2026-09-16",
+"price_usd": 24.99,
+"is_free": false,
+"developers": [
+"AttritoM7 Productions"
+],
+"publishers": [
+"IZilla Games",
+"AttritoM7 Productions"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Adventure",
+"RPG",
+"Strategy"
+],
+"tags": [
+"Action",
+"Adventure",
+"RPG",
+"Strategy"
+],
+"total_reviews": 814,
+"positive_reviews": 399,
+"review_score_desc": "Mixed",
+"pct_positive": 49.0,
+"est_sales": 28490,
+"est_gross_usd": 711965,
+"est_net_usd": 391580,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 532,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3933930,
+"name": "Text Battle Royale",
+"release_date": "2026-09-16",
+"price_usd": 0.0,
+"is_free": true,
+"developers": [
+"Rebourne Studios"
+],
+"publishers": [
+"Rebourne Studios"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Free To Play"
+],
+"tags": [
+"Action",
+"Free To Play"
+],
+"total_reviews": 10,
+"positive_reviews": 10,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 350,
+"est_gross_usd": 0,
+"est_net_usd": 0,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 0,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3781550,
+"name": "Paratopic: Overdub",
+"release_date": "2026-09-16",
+"price_usd": 7.49,
+"is_free": false,
+"developers": [
+"Arbitrary Metric"
+],
+"publishers": [
+"Serenity Forge"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Adventure"
+],
+"tags": [
+"Adventure"
+],
+"total_reviews": 38,
+"positive_reviews": 30,
+"review_score_desc": "Mostly Positive",
+"pct_positive": 78.9,
+"est_sales": 1330,
+"est_gross_usd": 9961,
+"est_net_usd": 5478,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 17,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4328570,
+"name": "WE ARE FOOTBALL 2027",
+"release_date": "2026-09-16",
+"price_usd": 19.99,
+"is_free": false,
+"developers": [
+"Winning Streak Games GmbH"
+],
+"publishers": [
+"Winning Streak Games GmbH"
+],
+"team_class": "aaa_or_publisher",
+"genres": [
+"Simulation",
+"Sports",
+"Strategy"
+],
+"tags": [
+"Simulation",
+"Sports",
+"Strategy"
+],
+"total_reviews": 52,
+"positive_reviews": 45,
+"review_score_desc": "Very Positive",
+"pct_positive": 86.5,
+"est_sales": 1820,
+"est_gross_usd": 36381,
+"est_net_usd": 20009,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 107,
+"ai_disclosed": true,
+"ai_note": "In WE ARE FOOTBALL 2027 we use about 12,500 AI-generated realistic-looking photos for generic male and female players. These pictures are e.g. displayed on the line-up screen or on the player profile screens. Only photographs of persons photographed specifically for this purpose were used.",
+"ai_scope": "some visuals"
+},
+{
+"appid": 3636930,
+"name": "Professional Ship Simulator",
+"release_date": "2026-09-16",
+"price_usd": 36.99,
+"is_free": false,
+"developers": [
+"SWE Systems"
+],
+"publishers": [
+"Aerosoft"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Simulation",
+"Early Access"
+],
+"tags": [
+"Simulation",
+"Early Access"
+],
+"total_reviews": 139,
+"positive_reviews": 93,
+"review_score_desc": "Mixed",
+"pct_positive": 66.9,
+"est_sales": 4865,
+"est_gross_usd": 179956,
+"est_net_usd": 98975,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 170,
+"ai_disclosed": true,
+"ai_note": "Since we’re a very small team, we use generative AI for a small part of the development process, for example, to create graphical placeholders like icons or background images, or to localize newly added text. The vast majority of the game was localized by humans; only new text is machine-translated in order to include as many players as possible. The voice in the game is text-to-speech, not AI.",
+"ai_scope": "visuals + audio"
+},
+{
+"appid": 5088450,
+"name": "LIMINAL SORTING",
+"release_date": "2026-09-16",
+"price_usd": 4.99,
+"is_free": false,
+"developers": [
+"Silly Cat"
+],
+"publishers": [
+"Silly Cat"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Casual",
+"Indie",
+"Simulation"
+],
+"tags": [
+"Casual",
+"Indie",
+"Simulation"
+],
+"total_reviews": 13,
+"positive_reviews": 13,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 455,
+"est_gross_usd": 2270,
+"est_net_usd": 1248,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 3,
+"ai_disclosed": true,
+"ai_note": "AI was used for localization and translation.",
+"ai_scope": "translation only"
+},
+{
+"appid": 2231460,
+"name": "Roman Sands RE:Build",
+"release_date": "2026-09-16",
+"price_usd": 14.99,
+"is_free": false,
+"developers": [
+"Arbitrary Metric"
+],
+"publishers": [
+"Serenity Forge",
+"Beep Japan Inc."
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Adventure",
+"RPG",
+"Simulation",
+"Strategy"
+],
+"tags": [
+"Adventure",
+"RPG",
+"Simulation",
+"Strategy"
+],
+"total_reviews": 28,
+"positive_reviews": 28,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 980,
+"est_gross_usd": 14690,
+"est_net_usd": 8079,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 15,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3034650,
+"name": "BloomKeeper",
+"release_date": "2026-09-16",
+"price_usd": 19.99,
+"is_free": false,
+"developers": [
+"Resonance Interactive"
+],
+"publishers": [
+"Resonance Interactive"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Adventure",
+"Casual",
+"Indie"
+],
+"tags": [
+"Adventure",
+"Casual",
+"Indie"
+],
+"total_reviews": 14,
+"positive_reviews": 13,
+"review_score_desc": "Positive",
+"pct_positive": 92.9,
+"est_sales": 490,
+"est_gross_usd": 9795,
+"est_net_usd": 5387,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 19,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2854800,
+"name": "Alex & Arty",
+"release_date": "2026-09-16",
+"price_usd": 18.99,
+"is_free": false,
+"developers": [
+"ROLLDBOX GAMES"
+],
+"publishers": [
+"Jatai Games"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Adventure",
+"Indie"
+],
+"tags": [
+"Action",
+"Adventure",
+"Indie"
+],
+"total_reviews": 10,
+"positive_reviews": 10,
+"review_score_desc": "Positive",
+"pct_positive": 100.0,
+"est_sales": 350,
+"est_gross_usd": 6646,
+"est_net_usd": 3655,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 1,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4986890,
+"name": "Old Market Restored",
+"release_date": "2026-09-16",
+"price_usd": 4.99,
+"is_free": false,
+"developers": [
+"Alcedo Games"
+],
+"publishers": [
+"Alcedo Games",
+"Gamersky Games"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Casual",
+"Indie"
+],
+"tags": [
+"Casual",
+"Indie"
+],
+"total_reviews": 30,
+"positive_reviews": 25,
+"review_score_desc": "Positive",
+"pct_positive": 83.3,
+"est_sales": 1050,
+"est_gross_usd": 5239,
+"est_net_usd": 2881,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 188,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4163960,
+"name": "Another Eden Begins",
+"release_date": "2026-09-16",
+"price_usd": 39.99,
+"is_free": false,
+"developers": [
+"WRIGHT FLYER STUDIOS"
+],
+"publishers": [
+"WRIGHT FLYER STUDIOS"
+],
+"team_class": "self_published_indie",
+"genres": [
+"RPG"
+],
+"tags": [
+"RPG"
+],
+"total_reviews": 60,
+"positive_reviews": 46,
+"review_score_desc": "Mostly Positive",
+"pct_positive": 76.7,
+"est_sales": 2100,
+"est_gross_usd": 83979,
+"est_net_usd": 46188,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 549,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2680440,
+"name": "MONOWAVE",
+"release_date": "2026-09-16",
+"price_usd": 9.99,
+"is_free": false,
+"developers": [
+"Studio BBB Inc."
+],
+"publishers": [
+"Studio BBB Inc.",
+"Phoenixx Inc."
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Adventure",
+"Casual",
+"Indie"
+],
+"tags": [
+"Action",
+"Adventure",
+"Casual",
+"Indie"
+],
+"total_reviews": 17,
+"positive_reviews": 15,
+"review_score_desc": "Positive",
+"pct_positive": 88.2,
+"est_sales": 595,
+"est_gross_usd": 5944,
+"est_net_usd": 3269,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 3,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3275400,
+"name": "PATLABOR the Case Files",
+"release_date": "2026-09-16",
+"price_usd": 34.99,
+"is_free": false,
+"developers": [
+"Chime"
+],
+"publishers": [
+"GOOD SMILE COMPANY "
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action"
+],
+"tags": [
+"Action"
+],
+"total_reviews": 58,
+"positive_reviews": 39,
+"review_score_desc": "Mixed",
+"pct_positive": 67.2,
+"est_sales": 2030,
+"est_gross_usd": 71029,
+"est_net_usd": 39066,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 14,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 2572040,
+"name": "Woodo",
+"release_date": "2026-09-16",
+"price_usd": 16.99,
+"is_free": false,
+"developers": [
+"Tiny Monks Tales"
+],
+"publishers": [
+"Daedalic Entertainment"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Casual",
+"Indie"
+],
+"tags": [
+"Casual",
+"Indie"
+],
+"total_reviews": 224,
+"positive_reviews": 221,
+"review_score_desc": "Very Positive",
+"pct_positive": 98.7,
+"est_sales": 7840,
+"est_gross_usd": 133201,
+"est_net_usd": 73260,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 388,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3572800,
+"name": "Duo Quest",
+"release_date": "2026-09-16",
+"price_usd": 14.99,
+"is_free": false,
+"developers": [
+"1+1 Studios"
+],
+"publishers": [
+"Rising Tide",
+"Electronic Sheep Games"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Casual",
+"Indie",
+"Strategy"
+],
+"tags": [
+"Casual",
+"Indie",
+"Strategy"
+],
+"total_reviews": 50,
+"positive_reviews": 35,
+"review_score_desc": "Mostly Positive",
+"pct_positive": 70.0,
+"est_sales": 1750,
+"est_gross_usd": 26232,
+"est_net_usd": 14427,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 78,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 4241920,
+"name": "BRAZILIAN DRUG DEALER BEFORE 4: DEMONS FROM THE PORTAL TO HELL I OPENED ARE STILL IN THE FAVELA AND NOW I HAVE TO SAVE MAMADAS FROM RONALDO",
+"release_date": "2026-09-16",
+"price_usd": 4.99,
+"is_free": false,
+"developers": [
+"Joeveno"
+],
+"publishers": [
+"Joeveno",
+"NoQuarter"
+],
+"team_class": "indie_with_publisher",
+"genres": [
+"Action",
+"Adventure",
+"Simulation"
+],
+"tags": [
+"Action",
+"Adventure",
+"Simulation"
+],
+"total_reviews": 261,
+"positive_reviews": 258,
+"review_score_desc": "Very Positive",
+"pct_positive": 98.9,
+"est_sales": 9135,
+"est_gross_usd": 45583,
+"est_net_usd": 25071,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 65,
+"ai_disclosed": false,
+"ai_note": null,
+"ai_scope": null
+},
+{
+"appid": 3570470,
+"name": "Dark Farts: Parody Smell Edition",
+"release_date": "2026-09-16",
+"price_usd": 14.99,
+"is_free": false,
+"developers": [
+"Violarte"
+],
+"publishers": [
+"Violarte"
+],
+"team_class": "self_published_indie",
+"genres": [
+"Action",
+"Indie",
+"RPG"
+],
+"tags": [
+"Action",
+"Indie",
+"RPG"
+],
+"total_reviews": 52,
+"positive_reviews": 43,
+"review_score_desc": "Very Positive",
+"pct_positive": 82.7,
+"est_sales": 1820,
+"est_gross_usd": 27281,
+"est_net_usd": 15004,
+"steamspy_owners": "0 .. 20,000",
+"ccu_now": 0,
+"ai_disclosed": true,
+"ai_note": "Unfortunately, humans made that. AI simply wasn't ready for this level of stupidity: weaponized farts, magical beans, drunk Vikings, terrible life choices, unnecessary memes, and ideas invented after someone said, “One more beer and then we go home.” We apologize to artificial intelligence for dragging it into this.",
+"ai_scope": "unspecified"
+}
+]
+}

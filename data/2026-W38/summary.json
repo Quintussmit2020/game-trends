@@ -1,0 +1,289 @@
+{
+"week": "2026-W38",
+"generated_utc": "2026-09-18T05:23:21Z",
+"counts": {
+"most_played": 100,
+"top_sellers": 48,
+"new_releases_tracked": 52,
+"indie_new_releases": 47
+},
+"breakouts": [
+{
+"appid": 3407390,
+"name": "ENDLESS Legend™ 2",
+"release_date": "2026-09-17",
+"price_usd": 49.99,
+"team_class": "indie_with_publisher",
+"tags": [
+"RPG",
+"Simulation",
+"Strategy"
+],
+"total_reviews": 3066,
+"pct_positive": 83.9,
+"est_net_usd": 2950434,
+"ccu_now": 1543
+},
+{
+"appid": 2459550,
+"name": "Emberward",
+"release_date": "2026-09-17",
+"price_usd": 19.99,
+"team_class": "self_published_indie",
+"tags": [
+"Early Access",
+"Tower Defense",
+"Strategy",
+"Rogue-lite",
+"Base-Building",
+"Deckbuilding",
+"Rogue-like",
+"RTS",
+"Singleplayer",
+"Tactical"
+],
+"total_reviews": 3898,
+"pct_positive": 97.0,
+"est_net_usd": 1499979,
+"ccu_now": 893
+},
+{
+"appid": 2609610,
+"name": "CONVRGENCE",
+"release_date": "2026-09-17",
+"price_usd": 24.99,
+"team_class": "self_published_indie",
+"tags": [
+"VR",
+"Atmospheric",
+"Post-apocalyptic",
+"Shooter",
+"Extraction Shooter",
+"Survival Horror",
+"Survival",
+"Horror",
+"Stealth",
+"Exploration"
+],
+"total_reviews": 1751,
+"pct_positive": 88.5,
+"est_net_usd": 842331,
+"ccu_now": 77
+},
+{
+"appid": 4225980,
+"name": "Trails in the Sky 2nd Chapter",
+"release_date": "2026-09-16",
+"price_usd": 59.99,
+"team_class": "indie_with_publisher",
+"tags": [
+"Action",
+"Adventure",
+"RPG"
+],
+"total_reviews": 426,
+"pct_positive": 96.2,
+"est_net_usd": 491947,
+"ccu_now": 5777
+},
+{
+"appid": 3639070,
+"name": "BLACKWOOD",
+"release_date": "2026-09-16",
+"price_usd": 24.99,
+"team_class": "indie_with_publisher",
+"tags": [
+"Action",
+"Adventure",
+"RPG",
+"Strategy"
+],
+"total_reviews": 814,
+"pct_positive": 49.0,
+"est_net_usd": 391580,
+"ccu_now": 532
+},
+{
+"appid": 4883590,
+"name": "iRacing® Studios NASCAR 26",
+"release_date": "2026-09-17",
+"price_usd": 59.99,
+"team_class": "self_published_indie",
+"tags": [
+"Racing",
+"Simulation",
+"Sports"
+],
+"total_reviews": 116,
+"pct_positive": 86.2,
+"est_net_usd": 133957,
+"ccu_now": 615
+},
+{
+"appid": 3636930,
+"name": "Professional Ship Simulator",
+"release_date": "2026-09-16",
+"price_usd": 36.99,
+"team_class": "indie_with_publisher",
+"tags": [
+"Simulation",
+"Early Access"
+],
+"total_reviews": 139,
+"pct_positive": 66.9,
+"est_net_usd": 98975,
+"ccu_now": 170
+},
+{
+"appid": 2572040,
+"name": "Woodo",
+"release_date": "2026-09-16",
+"price_usd": 16.99,
+"team_class": "indie_with_publisher",
+"tags": [
+"Casual",
+"Indie"
+],
+"total_reviews": 224,
+"pct_positive": 98.7,
+"est_net_usd": 73260,
+"ccu_now": 388
+},
+{
+"appid": 3195580,
+"name": "lily's world XD",
+"release_date": "2026-09-17",
+"price_usd": 11.99,
+"team_class": "indie_with_publisher",
+"tags": [
+"Casual",
+"Indie"
+],
+"total_reviews": 216,
+"pct_positive": 99.1,
+"est_net_usd": 49854,
+"ccu_now": 358
+},
+{
+"appid": 4163960,
+"name": "Another Eden Begins",
+"release_date": "2026-09-16",
+"price_usd": 39.99,
+"team_class": "self_published_indie",
+"tags": [
+"RPG"
+],
+"total_reviews": 60,
+"pct_positive": 76.7,
+"est_net_usd": 46188,
+"ccu_now": 549
+}
+],
+"tag_momentum": [
+{
+"tag": "RPG",
+"weight_usd": 860821
+},
+{
+"tag": "Strategy",
+"weight_usd": 850593
+},
+{
+"tag": "Action",
+"weight_usd": 629274
+},
+{
+"tag": "Simulation",
+"weight_usd": 600274
+},
+{
+"tag": "Adventure",
+"weight_usd": 567110
+},
+{
+"tag": "Early Access",
+"weight_usd": 444019
+},
+{
+"tag": "Indie",
+"weight_usd": 329627
+},
+{
+"tag": "VR",
+"weight_usd": 250000
+},
+{
+"tag": "Atmospheric",
+"weight_usd": 250000
+},
+{
+"tag": "Post-apocalyptic",
+"weight_usd": 250000
+},
+{
+"tag": "Shooter",
+"weight_usd": 250000
+},
+{
+"tag": "Extraction Shooter",
+"weight_usd": 250000
+},
+{
+"tag": "Survival Horror",
+"weight_usd": 250000
+},
+{
+"tag": "Survival",
+"weight_usd": 250000
+},
+{
+"tag": "Horror",
+"weight_usd": 250000
+},
+{
+"tag": "Stealth",
+"weight_usd": 250000
+},
+{
+"tag": "Exploration",
+"weight_usd": 250000
+},
+{
+"tag": "Tower Defense",
+"weight_usd": 250000
+},
+{
+"tag": "Rogue-lite",
+"weight_usd": 250000
+},
+{
+"tag": "Base-Building",
+"weight_usd": 250000
+},
+{
+"tag": "Deckbuilding",
+"weight_usd": 250000
+},
+{
+"tag": "Rogue-like",
+"weight_usd": 250000
+},
+{
+"tag": "RTS",
+"weight_usd": 250000
+},
+{
+"tag": "Singleplayer",
+"weight_usd": 250000
+},
+{
+"tag": "Tactical",
+"weight_usd": 250000
+}
+],
+"assumptions": {
+"review_multiplier": 35,
+"net_factor": 0.55,
+"note": "Revenue estimates are directional (Boxleiter method)."
+}
+}
