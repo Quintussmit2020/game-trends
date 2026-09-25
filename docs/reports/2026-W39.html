@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Trends - 2026-W39</title>
+<style>
+/* Colours live as custom properties on .report, which paints its own surface.
+   That matters: this file gets viewed inside panels and iframes that impose
+   their own background, and a page relying on the host's surface ends up with
+   dark-mode text on a light body or vice versa. .report always brings its own. */
+:root { color-scheme: light dark; }
+.report {
+  --surface:      #fcfcfb;
+  --surface-card: #ffffff;
+  --border:       #e8e7e3;
+  --border-soft:  #f0efec;
+  --ink:          #0b0b0b;
+  --ink-2:        #45443f;   /* secondary text: 8.0:1 on the light surface */
+  --ink-3:        #5c5b55;   /* tertiary / tag text: 6.0:1 */
+  --accent:       #256abf;   /* 5.26:1 on the light surface, clears 4.5:1 as link text */
+  --accent-warm:  #eb6834;
+  --accent-3:     #1baf7a;
+  --accent-4:     #eda100;
+  --muted-bar:    #a8a79f;
+  color-scheme: light;
+  background: var(--surface);
+  color: var(--ink);
+  display: block;
+  padding: 24px;
+  max-width: 1080px;
+  margin-inline: auto;
+}
+.report[data-theme="dark"] {
+  --surface:      #1a1a19;
+  --surface-card: #232322;
+  --border:       #3d3d39;
+  --border-soft:  #2c2c2a;
+  --ink:          #ffffff;
+  --ink-2:        #d6d5cb;   /* secondary text: 11.4:1 on the dark surface */
+  --ink-3:        #b9b8ad;   /* tertiary / tag text: 8.5:1 */
+  --accent:       #6ea8ea;   /* raised from #3987e5 to clear 4.5:1 as link text */
+  --accent-warm:  #f08050;
+  --accent-3:     #35c48f;
+  --accent-4:     #e0ae3c;
+  --muted-bar:    #6e6e65;
+  color-scheme: dark;
+}
+body {
+  margin: 0; padding: 0; font: 15px/1.5 system-ui, sans-serif;
+  background: #fcfcfb;
+}
+body:has(.report[data-theme="dark"]) { background: #1a1a19; }
+h1 { font-size: 26px; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 36px 0 10px; }
+.sub { color: var(--ink-2); margin-bottom: 20px; }
+.tabs { display: flex; gap: 4px; align-items: center; border-bottom: 1px solid var(--border); margin: 20px 0 24px; }
+.tabs button {
+  font: inherit; font-weight: 600; color: var(--ink-2); background: none; border: none;
+  padding: 10px 16px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.tabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+.panel[hidden] { display: none; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.tile { background: var(--surface-card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.tlabel { font-size: 13px; color: var(--ink-2); }
+.tvalue { font-size: 26px; font-weight: 600; margin-top: 2px; }
+.tsub { font-size: 12px; color: var(--ink-2); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th { text-align: left; color: var(--ink-2); font-weight: 600; border-bottom: 1px solid var(--border); padding: 6px 8px; }
+td { border-bottom: 1px solid var(--border-soft); padding: 6px 8px; vertical-align: top; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr.hl td:first-child, tr.lane td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+.badge {
+  font-size: 11px; font-weight: 600; color: var(--accent); border: 1px solid var(--accent);
+  border-radius: 4px; padding: 0 5px; margin-left: 6px; vertical-align: 1px;
+}
+.tags { color: var(--ink-3); font-size: 12.5px; }
+.ai {
+  display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: .02em;
+  color: var(--ink-2); border: 1px solid var(--border); border-radius: 4px;
+  padding: 0 5px; margin-left: 6px; white-space: nowrap; cursor: help;
+}
+.ai-heavy { color: var(--accent-warm); border-color: var(--accent-warm); }
+.chart { margin: 8px 0 4px; }
+.chart svg { display: block; width: 100%; height: auto; }
+.note { color: var(--ink-2); font-style: italic; }
+.analysis p { max-width: 75ch; }
+.analysis p.caveat { color: var(--ink-2); font-size: 13.5px; border-left: 2px solid var(--border); padding-left: 12px; }
+.tooltip {
+  position: fixed; pointer-events: none; background: var(--surface-card); color: var(--ink);
+  border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; font-size: 12.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.28); display: none; z-index: 10;
+}
+.tooltip .v { font-weight: 600; }
+footer { margin-top: 40px; color: var(--ink-2); font-size: 12.5px; border-top: 1px solid var(--border); padding-top: 12px; }
+a { color: var(--accent); text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+a:hover { text-decoration-thickness: 2px; }
+.themetoggle {
+  margin-left: auto; font: inherit; font-size: 13px; font-weight: 600;
+  color: var(--ink-2); background: none; border: 1px solid var(--border);
+  border-radius: 6px; padding: 4px 10px; cursor: pointer;
+}
+.themetoggle:hover { color: var(--ink); }
+</style></head><body>
+<div class="report" id="report">
+<h1>Game Trends</h1>
+<div class="sub">Week 2026-W39 &middot; generated 2026-09-25T05:20:37Z &middot; indie lens, Steam data</div>
+
+<div class="tabs" role="tablist">
+  <button role="tab" aria-selected="true" aria-controls="tab-market" id="btn-market">Market</button>
+  <button role="tab" aria-selected="false" aria-controls="tab-vn" id="btn-vn">Visual Novels</button>
+  <button class="themetoggle" id="themetoggle" type="button">Dark</button>
+</div>
+
+<div class="panel" id="tab-market" role="tabpanel" aria-labelledby="btn-market">
+
+<div class="kpis"><div class="tile"><div class="tlabel">New releases tracked</div><div class="tvalue">11</div><div class="tsub"></div></div><div class="tile"><div class="tlabel">Indie releases</div><div class="tvalue">11</div><div class="tsub">of those tracked</div></div><div class="tile"><div class="tlabel">Top breakout</div><div class="tvalue">Kingdom Rush 6: Genesis TD</div><div class="tsub">$206k est. net</div></div><div class="tile"><div class="tlabel">Hot tag</div><div class="tvalue">Indie</div><div class="tsub">$260k est. weight</div></div></div>
+
+<h2>Breakouts of the week</h2>
+<p class="sub">Indie releases (last 14 days) ranked by estimated net revenue.</p>
+<div id="breakoutchart" class="chart"></div>
+<table><thead><tr><th>Game</th><th>Released</th><th>Price</th><th>Team</th><th>Reviews</th>
+<th>Positive</th><th>Est. net</th><th>Top tags</th></tr></thead>
+<tbody><tr><td><a href="https://store.steampowered.com/app/4259190/" target="_blank" rel="noopener noreferrer">Kingdom Rush 6: Genesis TD</a></td><td>2026-09-24</td><td class='num'>$19.99</td><td>self published indie</td><td class='num'>536</td><td class='num'>65.9%</td><td class='num'>$206k</td><td class='tags'>Action, Indie, Strategy</td></tr><tr><td><a href="https://store.steampowered.com/app/3972190/" target="_blank" rel="noopener noreferrer">Mineral Mining Simulator</a></td><td>2026-09-24</td><td class='num'>$12.99</td><td>self published indie</td><td class='num'>82</td><td class='num'>84.1%</td><td class='num'>$21k</td><td class='tags'>Casual, Indie, Simulation</td></tr><tr><td><a href="https://store.steampowered.com/app/3932790/" target="_blank" rel="noopener noreferrer">Garfield - Escape from Monday</a></td><td>2026-09-24</td><td class='num'>$24.99</td><td>indie with publisher</td><td class='num'>31</td><td class='num'>96.8%</td><td class='num'>$15k</td><td class='tags'>Adventure</td></tr><tr><td><a href="https://store.steampowered.com/app/3789080/" target="_blank" rel="noopener noreferrer">HIROTONFA’s American Revolution Smuggler</a></td><td>2026-09-24</td><td class='num'>$19.99</td><td>indie with publisher</td><td class='num'>31</td><td class='num'>100.0%</td><td class='num'>$12k</td><td class='tags'>Adventure, RPG, Simulation, Strategy, Early Access</td></tr><tr><td><a href="https://store.steampowered.com/app/3880400/" target="_blank" rel="noopener noreferrer">FRUKT</a></td><td>2026-09-24</td><td class='num'>$7.49</td><td>self published indie</td><td class='num'>62</td><td class='num'>95.2%</td><td class='num'>$9k</td><td class='tags'>Casual, Indie, Simulation, Early Access</td></tr><tr><td><a href="https://store.steampowered.com/app/2985880/" target="_blank" rel="noopener noreferrer">Farming Camp</a></td><td>2026-09-24</td><td class='num'>$19.99</td><td>indie with publisher</td><td class='num'>19</td><td class='num'>89.5%</td><td class='num'>$7k</td><td class='tags'>Adventure, Casual, Indie, Simulation</td></tr><tr><td><a href="https://store.steampowered.com/app/4084120/" target="_blank" rel="noopener noreferrer">CODEX MORTIS</a></td><td>2026-09-24</td><td class='num'>$3.99</td><td>indie with publisher</td><td class='num'>80</td><td class='num'>76.2%</td><td class='num'>$6k</td><td class='tags'>Action, Indie, RPG</td></tr><tr><td><a href="https://store.steampowered.com/app/2443170/" target="_blank" rel="noopener noreferrer">Survivor Challenge TD</a></td><td>2026-09-24</td><td class='num'>$4.99</td><td>self published indie</td><td class='num'>59</td><td class='num'>79.7%</td><td class='num'>$6k</td><td class='tags'>Time Management, Bullet Hell, Rogue-lite, Tower Defense, PvE</td></tr><tr><td><a href="https://store.steampowered.com/app/3179120/" target="_blank" rel="noopener noreferrer">Monastery: Ora et Labora</a></td><td>2026-09-24</td><td class='num'>$14.99</td><td>self published indie</td><td class='num'>19</td><td class='num'>100.0%</td><td class='num'>$5k</td><td class='tags'>Indie, Simulation, Early Access</td></tr><tr><td><a href="https://store.steampowered.com/app/4502770/" target="_blank" rel="noopener noreferrer">Rotfront</a></td><td>2026-09-24</td><td class='num'>$14.99</td><td>self published indie</td><td class='num'>18</td><td class='num'>83.3%</td><td class='num'>$5k</td><td class='tags'>Action, Indie</td></tr></tbody></table>
+
+<h2>Tag momentum</h2>
+<p class="sub">Tags of successful indie releases this week, weighted by estimated net revenue.</p>
+<div id="tagchart" class="chart"></div>
+<div id='tagtrend' class='chart'></div>
+
+<h2>Most played - biggest climbers</h2>
+<div id="gainerchart" class="chart"></div>
+
+<h2>Top sellers right now</h2>
+<p class="sub">Current global top sellers (hardware excluded). Blue edge = indie.</p>
+<table><thead><tr><th>#</th><th>Game</th><th>Price</th><th>Team</th><th>Players now</th>
+<th>Positive</th></tr></thead><tbody><tr class=hl><td>1</td><td><a href="https://store.steampowered.com/app/4019220/" target="_blank" rel="noopener noreferrer">Dressmaker</a></td><td class='num'>$14.99</td><td>indie with publisher</td><td class='num'>13,992</td><td class='num'>96.9%</td></tr><tr><td>2</td><td><a href="https://store.steampowered.com/app/553850/" target="_blank" rel="noopener noreferrer">HELLDIVERS™ 2</a></td><td class='num'>$39.99</td><td>aaa or publisher</td><td class='num'>45,044</td><td class='num'>75.6%</td></tr><tr class=hl><td>3</td><td><a href="https://store.steampowered.com/app/4126040/" target="_blank" rel="noopener noreferrer">Aniimo</a></td><td class='num'>$0.00</td><td>self published indie</td><td class='num'>82,216</td><td class='num'>73.7%</td></tr><tr><td>4</td><td><a href="https://store.steampowered.com/app/2531310/" target="_blank" rel="noopener noreferrer">The Last of Us™ Part II Remastered</a></td><td class='num'>$49.99</td><td>aaa or publisher</td><td class='num'>1,406</td><td class='num'>90.9%</td></tr><tr><td>5</td><td><a href="https://store.steampowered.com/app/2552430/" target="_blank" rel="noopener noreferrer">KINGDOM HEARTS -HD 1.5+2.5 ReMIX-</a></td><td class='num'>$49.99</td><td>aaa or publisher</td><td class='num'>3,773</td><td class='num'>86.9%</td></tr><tr><td>6</td><td><a href="https://store.steampowered.com/app/570940/" target="_blank" rel="noopener noreferrer">DARK SOULS™: REMASTERED</a></td><td class='num'>$39.99</td><td>aaa or publisher</td><td class='num'>2,263</td><td class='num'>92.5%</td></tr><tr><td>7</td><td><a href="https://store.steampowered.com/app/335300/" target="_blank" rel="noopener noreferrer">DARK SOULS™ II: Scholar of the First Sin</a></td><td class='num'>$39.99</td><td>aaa or publisher</td><td class='num'>3,324</td><td class='num'>83.9%</td></tr><tr class=hl><td>8</td><td><a href="https://store.steampowered.com/app/1973530/" target="_blank" rel="noopener noreferrer">Limbus Company</a></td><td class='num'>$0.00</td><td>self published indie</td><td class='num'>64,962</td><td class='num'>88.3%</td></tr><tr><td>9</td><td><a href="https://store.steampowered.com/app/3061570/" target="_blank" rel="noopener noreferrer">Persona5: The Phantom X</a></td><td class='num'>$0.00</td><td>aaa or publisher</td><td class='num'>2,743</td><td class='num'>51.1%</td></tr><tr class=hl><td>10</td><td><a href="https://store.steampowered.com/app/4705510/" target="_blank" rel="noopener noreferrer">Happy Wheels</a></td><td class='num'>$4.99</td><td>indie with publisher</td><td class='num'>1,289</td><td class='num'>94.8%</td></tr><tr><td>11</td><td><a href="https://store.steampowered.com/app/1687950/" target="_blank" rel="noopener noreferrer">Persona 5 Royal</a></td><td class='num'>$59.99</td><td>aaa or publisher</td><td class='num'>6,263</td><td class='num'>96.4%</td></tr></tbody></table>
+
+<h2>What this means</h2>
+<div class="analysis"><p>The breakout of the week is <strong>Kingdom Rush 6: Genesis TD</strong> from a self-published team, released 2026-09-24 at $19.99. It has 536 reviews (65.9% positive), which points to roughly $206k net revenue on the standard reviews-to-sales heuristic. Its defining tags: Action, Indie, Strategy.</p><p>Among indie releases that gained real traction this week, the tags carrying the most estimated revenue are: <strong>Indie, Strategy, Action, Simulation, Casual</strong>. Watch how these shift week over week - sustained climbs are the signal that a niche is heating up, single-week spikes usually just mean one hit game.</p><p>2 self-published releases cleared an estimated $10k net in their launch window: Kingdom Rush 6: Genesis TD, Mineral Mining Simulator. These are the games worth studying - they won without publisher marketing muscle.</p><p>Method note: revenue figures are estimates derived from public review counts (reviews x 35 x price x 0.55) and should be read as order-of-magnitude signals, not accounting. Team classification is inferred from developer/publisher records.</p></div>
+
+</div>
+
+<div class="panel" id="tab-vn" role="tabpanel" aria-labelledby="btn-vn" hidden>
+
+<div class="kpis"><div class="tile"><div class="tlabel">Horror x point-and-click</div><div class="tvalue">47</div><div class="tsub">of 446 VNs do both</div></div><div class="tile"><div class="tlabel">Median reviews, that overlap</div><div class="tvalue">3,071</div><div class="tsub">vs 1,902 lane, 1,809 all VNs</div></div><div class="tile"><div class="tlabel">VN releases tracked</div><div class="tvalue">75</div><div class="tsub">last 30 days</div></div><div class="tile"><div class="tlabel">Proven titles</div><div class="tvalue">200</div><div class="tsub">500+ reviews</div></div></div>
+
+<h2>The hybrid lane</h2>
+<p class="sub">Horror / psychological, point-and-click / puzzle, and mystery / detective VNs -
+the clusters that out-perform pure romance among visible titles. Watchlist by review count.</p>
+<table><thead><tr><th>Game</th><th>Reviews</th><th>Positive</th>
+<th>Price</th><th>Length</th><th>Clusters</th></tr></thead>
+<tbody><tr><td><a href="https://store.steampowered.com/app/632470/" target="_blank" rel="noopener noreferrer">Disco Elysium - The Final Cut</a></td><td class='num'>111,712</td><td class='num'>93.1%</td><td class='num'>$39.99</td><td class='num'>33h</td><td class='tags'>Adult (explicit), Choice-driven branching, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1113000/" target="_blank" rel="noopener noreferrer">Persona 4 Golden</a></td><td class='num'>78,346</td><td class='num'>97.0%</td><td class='num'>$19.99</td><td class='num'>57h</td><td class='tags'>Choice-driven branching, Mystery / detective, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/1451940/" target="_blank" rel="noopener noreferrer">NEEDY STREAMER OVERLOAD</a></td><td class='num'>47,205</td><td class='num'>94.7%</td><td class='num'>$15.99</td><td class='num'>6.1h</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/568220/" target="_blank" rel="noopener noreferrer">Lobotomy Corporation | Monster Management Simulation</a></td><td class='num'>43,932</td><td class='num'>93.8%</td><td class='num'>$24.99</td><td class='num'>34h</td><td class='tags'>Horror / psychological, Sim / management hybrid, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/787480/" target="_blank" rel="noopener noreferrer">Phoenix Wright: Ace Attorney Trilogy</a></td><td class='num'>37,254</td><td class='num'>97.6%</td><td class='num'>$29.99</td><td class='num'>20h</td><td class='tags'>LGBTQ+ / queer narrative, Mystery / detective, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/250320/" target="_blank" rel="noopener noreferrer">The Wolf Among Us</a></td><td class='num'>35,678</td><td class='num'>97.9%</td><td class='num'>$14.99</td><td class='num'>9.6h</td><td class='tags'>Choice-driven branching, Mystery / detective, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/1256670/" target="_blank" rel="noopener noreferrer">Library Of Ruina</a></td><td class='num'>34,509</td><td class='num'>94.1%</td><td class='num'>$29.99</td><td class='num'>71h</td><td class='tags'>Horror / psychological, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/1449690/" target="_blank" rel="noopener noreferrer">The Walking Dead: The Telltale Definitive Series</a></td><td class='num'>31,041</td><td class='num'>96.5%</td><td class='num'>$49.99</td><td class='num'>43h</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/413410/" target="_blank" rel="noopener noreferrer">Danganronpa: Trigger Happy Havoc</a></td><td class='num'>30,431</td><td class='num'>96.1%</td><td class='num'>$19.99</td><td class='num'>24h</td><td class='tags'>Horror / psychological, Mystery / detective, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/2378900/" target="_blank" rel="noopener noreferrer">The Coffin of Andy and Leyley</a></td><td class='num'>30,157</td><td class='num'>96.5%</td><td class='num'>$11.99</td><td class='num'>10h</td><td class='tags'>Choice-driven branching, Horror / psychological, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/1388880/" target="_blank" rel="noopener noreferrer">Doki Doki Literature Club Plus!</a></td><td class='num'>27,539</td><td class='num'>96.9%</td><td class='num'>$14.99</td><td class='num'>8.5h</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/413420/" target="_blank" rel="noopener noreferrer">Danganronpa 2: Goodbye Despair</a></td><td class='num'>26,611</td><td class='num'>96.2%</td><td class='num'>$19.99</td><td class='num'>27h</td><td class='tags'>Adult (explicit), Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1989270/" target="_blank" rel="noopener noreferrer">Slay the Princess — The Pristine Cut</a></td><td class='num'>23,963</td><td class='num'>97.1%</td><td class='num'>$17.99</td><td class='num'>5.5h</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/481510/" target="_blank" rel="noopener noreferrer">Night in the Woods</a></td><td class='num'>18,741</td><td class='num'>94.2%</td><td class='num'>$19.99</td><td class='num'>14h</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/330830/" target="_blank" rel="noopener noreferrer">Tales from the Borderlands</a></td><td class='num'>18,606</td><td class='num'>94.7%</td><td class='num'>$19.99</td><td class='num'>12h</td><td class='tags'>Choice-driven branching, Point &amp; click / puzzle, RPG hybrid</td></tr></tbody></table>
+
+<h2>What performs</h2>
+<p class="sub">Every cluster measured only on VNs with 500+ reviews, so this reflects
+titles that found an audience rather than everything that shipped. Sorted by how well
+players rate them.</p>
+<table><thead><tr><th>Cluster</th><th>Titles</th><th>Median positive</th>
+<th>Median reviews</th><th>Median length</th><th>Median price</th></tr></thead>
+<tbody><tr class=''><td>Slice of life / cozy</td><td class='num'>99</td><td class='num'>97.6%</td><td class='num'>2,270</td><td class='num'>9.1h</td><td class='num'>$17.49</td></tr><tr class=''><td>RPG hybrid</td><td class='num'>40</td><td class='num'>97.5%</td><td class='num'>3,498</td><td class='num'>6.2h</td><td class='num'>$13.99</td></tr><tr class=''><td>Interactive fiction / text</td><td class='num'>43</td><td class='num'>97.5%</td><td class='num'>3,949</td><td class='num'>7.0h</td><td class='num'>$13.99</td></tr><tr class=''><td>Choice-driven branching</td><td class='num'>97</td><td class='num'>97.2%</td><td class='num'>3,678</td><td class='num'>12h</td><td class='num'>$19.99</td></tr><tr class=''><td>Sim / management hybrid</td><td class='num'>48</td><td class='num'>97.2%</td><td class='num'>2,356</td><td class='num'>7.4h</td><td class='num'>$14.99</td></tr><tr class=''><td>Romance / dating sim</td><td class='num'>129</td><td class='num'>97.1%</td><td class='num'>2,089</td><td class='num'>9.7h</td><td class='num'>$19.99</td></tr><tr class=''><td>Adult (explicit)</td><td class='num'>94</td><td class='num'>97.0%</td><td class='num'>2,356</td><td class='num'>11h</td><td class='num'>$19.99</td></tr><tr class=''><td>LGBTQ+ / queer narrative</td><td class='num'>36</td><td class='num'>96.9%</td><td class='num'>1,310</td><td class='num'>7.0h</td><td class='num'>$14.99</td></tr><tr class='lane'><td>Mystery / detective <span class=badge>lane</span></td><td class='num'>58</td><td class='num'>96.7%</td><td class='num'>2,676</td><td class='num'>15h</td><td class='num'>$19.99</td></tr><tr class=''><td>Sci-fi / cyberpunk</td><td class='num'>23</td><td class='num'>96.6%</td><td class='num'>3,678</td><td class='num'>17h</td><td class='num'>$20.49</td></tr><tr class='lane'><td>Horror / psychological <span class=badge>lane</span></td><td class='num'>118</td><td class='num'>96.2%</td><td class='num'>2,287</td><td class='num'>8.8h</td><td class='num'>$14.99</td></tr><tr class='lane'><td>Point &amp; click / puzzle <span class=badge>lane</span></td><td class='num'>36</td><td class='num'>96.2%</td><td class='num'>4,001</td><td class='num'>7.6h</td><td class='num'>$14.99</td></tr></tbody></table>
+<div id="provenchart" class="chart"></div>
+
+<h2>Proven titles</h2>
+<p class="sub">The 500+ review set, most-reviewed first.</p>
+<table><thead><tr><th>Game</th><th>Reviews</th><th>Positive</th>
+<th>Length</th><th>Price</th><th>Team</th><th>Clusters</th></tr></thead>
+<tbody><tr><td><a href="https://store.steampowered.com/app/698780/" target="_blank" rel="noopener noreferrer">Doki Doki Literature Club!</a></td><td class='num'>210,717</td><td class='num'>96.5%</td><td class='num'>5.2h</td><td class='num'>$0.00</td><td>self-pub</td><td class='tags'>Adult (explicit), Horror / psychological, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/1289310/" target="_blank" rel="noopener noreferrer">Helltaker</a></td><td class='num'>124,918</td><td class='num'>97.8%</td><td class='num'>2.5h</td><td class='num'>$0.00</td><td>self-pub</td><td class='tags'>Adult (explicit), Point &amp; click / puzzle, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/1113000/" target="_blank" rel="noopener noreferrer">Persona 4 Golden</a></td><td class='num'>78,346</td><td class='num'>97.0%</td><td class='num'>57h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Mystery / detective, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/207610/" target="_blank" rel="noopener noreferrer">The Walking Dead</a></td><td class='num'>73,628</td><td class='num'>97.3%</td><td class='num'>15h</td><td class='num'>$14.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Horror / psychological, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/501300/" target="_blank" rel="noopener noreferrer">What Remains of Edith Finch</a></td><td class='num'>45,053</td><td class='num'>95.7%</td><td class='num'>2.8h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Horror / psychological, Mystery / detective, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/568220/" target="_blank" rel="noopener noreferrer">Lobotomy Corporation | Monster Management Simulation</a></td><td class='num'>43,932</td><td class='num'>93.8%</td><td class='num'>34h</td><td class='num'>$24.99</td><td>self-pub</td><td class='tags'>Horror / psychological, Sim / management hybrid, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/1288310/" target="_blank" rel="noopener noreferrer">Firework</a></td><td class='num'>41,558</td><td class='num'>97.9%</td><td class='num'>4.3h</td><td class='num'>$9.99</td><td>publisher</td><td class='tags'>Horror / psychological, Interactive fiction / text, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1669980/" target="_blank" rel="noopener noreferrer">Volcano Princess</a></td><td class='num'>41,180</td><td class='num'>97.8%</td><td class='num'>13h</td><td class='num'>$10.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, RPG hybrid, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/1256670/" target="_blank" rel="noopener noreferrer">Library Of Ruina</a></td><td class='num'>34,509</td><td class='num'>94.1%</td><td class='num'>71h</td><td class='num'>$29.99</td><td>self-pub</td><td class='tags'>Horror / psychological, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/1144400/" target="_blank" rel="noopener noreferrer">Senren＊Banka</a></td><td class='num'>31,226</td><td class='num'>98.9%</td><td class='num'>14h</td><td class='num'>$34.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Horror / psychological, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/1449690/" target="_blank" rel="noopener noreferrer">The Walking Dead: The Telltale Definitive Series</a></td><td class='num'>31,041</td><td class='num'>96.5%</td><td class='num'>43h</td><td class='num'>$49.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/413410/" target="_blank" rel="noopener noreferrer">Danganronpa: Trigger Happy Havoc</a></td><td class='num'>30,431</td><td class='num'>96.1%</td><td class='num'>24h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Horror / psychological, Mystery / detective, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/2378900/" target="_blank" rel="noopener noreferrer">The Coffin of Andy and Leyley</a></td><td class='num'>30,157</td><td class='num'>96.5%</td><td class='num'>10h</td><td class='num'>$11.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/1392820/" target="_blank" rel="noopener noreferrer">Milk inside a bag of milk inside a bag of milk</a></td><td class='num'>29,935</td><td class='num'>96.7%</td><td class='num'>0.4h</td><td class='num'>$1.49</td><td>publisher</td><td class='tags'>Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/1388880/" target="_blank" rel="noopener noreferrer">Doki Doki Literature Club Plus!</a></td><td class='num'>27,539</td><td class='num'>96.9%</td><td class='num'>8.4h</td><td class='num'>$14.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/333600/" target="_blank" rel="noopener noreferrer">NEKOPARA Vol. 1</a></td><td class='num'>26,924</td><td class='num'>95.2%</td><td class='num'>4.7h</td><td class='num'>$9.99</td><td>publisher</td><td class='tags'>Adult (explicit), Romance / dating sim, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/413420/" target="_blank" rel="noopener noreferrer">Danganronpa 2: Goodbye Despair</a></td><td class='num'>26,611</td><td class='num'>96.2%</td><td class='num'>27h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Adult (explicit), Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1989270/" target="_blank" rel="noopener noreferrer">Slay the Princess — The Pristine Cut</a></td><td class='num'>23,963</td><td class='num'>97.1%</td><td class='num'>5.5h</td><td class='num'>$17.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/412830/" target="_blank" rel="noopener noreferrer">STEINS;GATE</a></td><td class='num'>21,078</td><td class='num'>97.4%</td><td class='num'>34h</td><td class='num'>$29.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1230140/" target="_blank" rel="noopener noreferrer">ATRI -My Dear Moments-</a></td><td class='num'>20,882</td><td class='num'>98.6%</td><td class='num'>9.6h</td><td class='num'>$20.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/1241510/" target="_blank" rel="noopener noreferrer">The Test</a></td><td class='num'>19,954</td><td class='num'>96.9%</td><td class='num'>0.5h</td><td class='num'>$1.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1604000/" target="_blank" rel="noopener noreferrer">Milk outside a bag of milk outside a bag of milk</a></td><td class='num'>18,723</td><td class='num'>97.0%</td><td class='num'>3.0h</td><td class='num'>$8.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/812810/" target="_blank" rel="noopener noreferrer">missed messages.</a></td><td class='num'>15,196</td><td class='num'>96.1%</td><td class='num'>0.7h</td><td class='num'>$0.00</td><td>self-pub</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/555220/" target="_blank" rel="noopener noreferrer">Detention</a></td><td class='num'>14,378</td><td class='num'>81.9%</td><td class='num'>4.3h</td><td class='num'>$11.99</td><td>self-pub</td><td class='tags'>Horror / psychological, Point &amp; click / puzzle</td></tr><tr><td><a href="https://store.steampowered.com/app/1093910/" target="_blank" rel="noopener noreferrer">Tales of the Black Forest</a></td><td class='num'>13,947</td><td class='num'>97.7%</td><td class='num'>4.9h</td><td class='num'>$3.99</td><td>publisher</td><td class='tags'>Horror / psychological, Point &amp; click / puzzle, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/420110/" target="_blank" rel="noopener noreferrer">NEKOPARA Vol. 2</a></td><td class='num'>12,598</td><td class='num'>97.0%</td><td class='num'>4.5h</td><td class='num'>$9.99</td><td>publisher</td><td class='tags'>Adult (explicit), Romance / dating sim, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/1129190/" target="_blank" rel="noopener noreferrer">Our Life: Beginnings &amp; Always</a></td><td class='num'>12,452</td><td class='num'>98.8%</td><td class='num'>18h</td><td class='num'>$0.00</td><td>self-pub</td><td class='tags'>Adult (explicit), Choice-driven branching, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/602520/" target="_blank" rel="noopener noreferrer">NEKOPARA Vol. 3</a></td><td class='num'>11,893</td><td class='num'>97.0%</td><td class='num'>6.0h</td><td class='num'>$9.99</td><td>publisher</td><td class='tags'>Adult (explicit), Romance / dating sim, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/2415010/" target="_blank" rel="noopener noreferrer">A Date with Death</a></td><td class='num'>10,483</td><td class='num'>98.3%</td><td class='num'>6.3h</td><td class='num'>$0.00</td><td>self-pub</td><td class='tags'>Choice-driven branching, Interactive fiction / text, LGBTQ+ / queer narrative</td></tr><tr><td><a href="https://store.steampowered.com/app/1574820/" target="_blank" rel="noopener noreferrer">Until Then</a></td><td class='num'>9,868</td><td class='num'>97.5%</td><td class='num'>20h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/324160/" target="_blank" rel="noopener noreferrer">CLANNAD</a></td><td class='num'>9,709</td><td class='num'>98.5%</td><td class='num'>20h</td><td class='num'>$44.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Romance / dating sim, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/2495450/" target="_blank" rel="noopener noreferrer">Winter Memories</a></td><td class='num'>9,173</td><td class='num'>97.5%</td><td class='num'>12h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Adult (explicit), RPG hybrid, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/675260/" target="_blank" rel="noopener noreferrer">Batman: The Enemy Within - The Telltale Series</a></td><td class='num'>9,139</td><td class='num'>91.9%</td><td class='num'>11h</td><td class='num'>$14.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/2458530/" target="_blank" rel="noopener noreferrer">魔女的夜宴</a></td><td class='num'>8,775</td><td class='num'>98.7%</td><td class='num'>15h</td><td class='num'>$34.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/1406990/" target="_blank" rel="noopener noreferrer">NEKOPARA Vol. 4</a></td><td class='num'>8,619</td><td class='num'>97.4%</td><td class='num'>5.0h</td><td class='num'>$9.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/948740/" target="_blank" rel="noopener noreferrer">AI: The Somnium Files</a></td><td class='num'>8,364</td><td class='num'>91.6%</td><td class='num'>24h</td><td class='num'>$19.99</td><td>self-pub</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/1764390/" target="_blank" rel="noopener noreferrer">BAD END THEATER</a></td><td class='num'>8,332</td><td class='num'>97.5%</td><td class='num'>2.1h</td><td class='num'>$9.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, LGBTQ+ / queer narrative</td></tr><tr><td><a href="https://store.steampowered.com/app/648100/" target="_blank" rel="noopener noreferrer">Raging Loop</a></td><td class='num'>7,772</td><td class='num'>96.2%</td><td class='num'>30h</td><td class='num'>$29.99</td><td>self-pub</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/310080/" target="_blank" rel="noopener noreferrer">Hatoful Boyfriend</a></td><td class='num'>7,443</td><td class='num'>94.0%</td><td class='num'>7.6h</td><td class='num'>$9.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Mystery / detective, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/1202540/" target="_blank" rel="noopener noreferrer">Marco &amp; The Galaxy Dragon</a></td><td class='num'>7,068</td><td class='num'>97.5%</td><td class='num'>6.2h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Horror / psychological, Sim / management hybrid, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/825630/" target="_blank" rel="noopener noreferrer">STEINS;GATE 0</a></td><td class='num'>6,918</td><td class='num'>96.2%</td><td class='num'>29h</td><td class='num'>$34.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/2302660/" target="_blank" rel="noopener noreferrer">Homicipher</a></td><td class='num'>6,540</td><td class='num'>96.4%</td><td class='num'>8.2h</td><td class='num'>$13.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/2704110/" target="_blank" rel="noopener noreferrer">Aliya: Timelink</a></td><td class='num'>6,512</td><td class='num'>98.2%</td><td class='num'>8.6h</td><td class='num'>$2.99</td><td>publisher</td><td class='tags'>Choice-driven branching, Interactive fiction / text, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/1902690/" target="_blank" rel="noopener noreferrer">Fate/Samurai Remnant</a></td><td class='num'>6,285</td><td class='num'>91.1%</td><td class='num'>27h</td><td class='num'>$39.99</td><td>self-pub</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/1277930/" target="_blank" rel="noopener noreferrer">Riddle Joker</a></td><td class='num'>6,239</td><td class='num'>98.3%</td><td class='num'>23h</td><td class='num'>$34.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/477740/" target="_blank" rel="noopener noreferrer">Zero Escape: The Nonary Games</a></td><td class='num'>6,206</td><td class='num'>93.4%</td><td class='num'>37h</td><td class='num'>$29.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1140270/" target="_blank" rel="noopener noreferrer">Monster Prom 2: Monster Camp</a></td><td class='num'>5,973</td><td class='num'>96.7%</td><td class='num'>6.8h</td><td class='num'>$11.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Interactive fiction / text, LGBTQ+ / queer narrative</td></tr><tr><td><a href="https://store.steampowered.com/app/1282200/" target="_blank" rel="noopener noreferrer">The Test: Hypothesis Rising</a></td><td class='num'>5,893</td><td class='num'>97.7%</td><td class='num'>0.7h</td><td class='num'>$1.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/555950/" target="_blank" rel="noopener noreferrer">Danganronpa Another Episode: Ultra Despair Girls</a></td><td class='num'>5,843</td><td class='num'>85.0%</td><td class='num'>16h</td><td class='num'>$29.99</td><td>self-pub</td><td class='tags'>Adult (explicit), Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1044620/" target="_blank" rel="noopener noreferrer">Aokana - Four Rhythms Across the Blue</a></td><td class='num'>5,825</td><td class='num'>97.9%</td><td class='num'>26h</td><td class='num'>$34.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/844930/" target="_blank" rel="noopener noreferrer">Fox Hime Zero</a></td><td class='num'>5,682</td><td class='num'>97.4%</td><td class='num'>3.7h</td><td class='num'>$1.99</td><td>self-pub</td><td class='tags'>Adult (explicit), Romance / dating sim, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/1293820/" target="_blank" rel="noopener noreferrer">YOU and ME and HER: A Love Story</a></td><td class='num'>5,466</td><td class='num'>95.9%</td><td class='num'>14h</td><td class='num'>$29.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Horror / psychological</td></tr><tr><td><a href="https://store.steampowered.com/app/1829980/" target="_blank" rel="noopener noreferrer">Café Stella and the Reaper&#x27;s Butterflies</a></td><td class='num'>5,385</td><td class='num'>98.1%</td><td class='num'>18h</td><td class='num'>$34.99</td><td>publisher</td><td class='tags'>Adult (explicit), Choice-driven branching, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/1377360/" target="_blank" rel="noopener noreferrer">Vampires&#x27; Melody</a></td><td class='num'>5,377</td><td class='num'>97.5%</td><td class='num'>5.6h</td><td class='num'>$3.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Interactive fiction / text, RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/1428310/" target="_blank" rel="noopener noreferrer">The Test: Final Revelation</a></td><td class='num'>5,360</td><td class='num'>98.0%</td><td class='num'>1.3h</td><td class='num'>$1.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/2106840/" target="_blank" rel="noopener noreferrer">PARANORMASIGHT: The Seven Mysteries of Honjo</a></td><td class='num'>5,190</td><td class='num'>95.8%</td><td class='num'>12h</td><td class='num'>$19.99</td><td>self-pub</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/1895350/" target="_blank" rel="noopener noreferrer">I Wani Hug that Gator!</a></td><td class='num'>4,839</td><td class='num'>98.5%</td><td class='num'>19h</td><td class='num'>$14.99</td><td>self-pub</td><td class='tags'>Adult (explicit), Choice-driven branching, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/315810/" target="_blank" rel="noopener noreferrer">eden*</a></td><td class='num'>4,637</td><td class='num'>97.3%</td><td class='num'>8.9h</td><td class='num'>$19.99</td><td>publisher</td><td class='tags'>Adult (explicit), Romance / dating sim, Sci-fi / cyberpunk</td></tr><tr><td><a href="https://store.steampowered.com/app/1434480/" target="_blank" rel="noopener noreferrer">Maitetsu:Last Run!!</a></td><td class='num'>4,620</td><td class='num'>98.2%</td><td class='num'>27h</td><td class='num'>$34.99</td><td>publisher</td><td class='tags'>Adult (explicit), Interactive fiction / text, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/2167960/" target="_blank" rel="noopener noreferrer">买个可乐饼吧！ - Buy a Croquette!</a></td><td class='num'>4,397</td><td class='num'>99.0%</td><td class='num'>5.3h</td><td class='num'>$0.00</td><td>publisher</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr></tbody></table>
+<h2>Tags that over-index among lane winners</h2>
+<p class="sub">Within the lane, how much more often a tag appears on titles doing at least
+2x the lane's median reviews. Above 1.0 means over-represented among the winners.</p>
+<div id="liftchart" class="chart"></div>
+<table><thead><tr><th>Tag</th><th>Lift</th><th>On winners</th><th>In lane</th></tr></thead>
+<tbody><tr><td>Episodic</td><td class='num'>1.80x</td><td class='num'>7</td><td class='num'>12</td></tr><tr><td>Memes</td><td class='num'>1.80x</td><td class='num'>14</td><td class='num'>24</td></tr><tr><td>Great Soundtrack</td><td class='num'>1.67x</td><td class='num'>39</td><td class='num'>72</td></tr><tr><td>Strategy</td><td class='num'>1.66x</td><td class='num'>7</td><td class='num'>13</td></tr><tr><td>Retro</td><td class='num'>1.54x</td><td class='num'>6</td><td class='num'>12</td></tr><tr><td>Conversation</td><td class='num'>1.49x</td><td class='num'>13</td><td class='num'>27</td></tr><tr><td>Pixel Graphics</td><td class='num'>1.45x</td><td class='num'>16</td><td class='num'>34</td></tr><tr><td>Psychological</td><td class='num'>1.45x</td><td class='num'>15</td><td class='num'>32</td></tr><tr><td>Detective</td><td class='num'>1.43x</td><td class='num'>24</td><td class='num'>52</td></tr><tr><td>Mature</td><td class='num'>1.41x</td><td class='num'>16</td><td class='num'>35</td></tr><tr><td>Text-Based</td><td class='num'>1.38x</td><td class='num'>13</td><td class='num'>29</td></tr><tr><td>Funny</td><td class='num'>1.32x</td><td class='num'>18</td><td class='num'>42</td></tr><tr><td>Dark Comedy</td><td class='num'>1.32x</td><td class='num'>6</td><td class='num'>14</td></tr><tr><td>Immersive Sim</td><td class='num'>1.32x</td><td class='num'>6</td><td class='num'>14</td></tr></tbody></table>
+
+<h2>Sub-genre clusters</h2>
+<p class="sub">Share of the visible VN market, with this week's new releases per cluster.
+Highlighted rows are the lane.</p>
+<table><thead><tr><th>Cluster</th><th>Share</th><th>Median reviews</th><th>Titles &gt;1k reviews</th>
+<th>Median price</th><th>New this week</th></tr></thead><tbody><tr class=''><td>Slice of life / cozy</td><td class='num'>62.6%</td><td class='num'>1,501</td><td class='num'>164</td><td class='num'>$14.99</td><td class='num'>9</td></tr><tr class=''><td>Choice-driven branching</td><td class='num'>54.7%</td><td class='num'>1,809</td><td class='num'>147</td><td class='num'>$15.99</td><td class='num'>12</td></tr><tr class=''><td>Romance / dating sim</td><td class='num'>47.5%</td><td class='num'>1,507</td><td class='num'>130</td><td class='num'>$19.49</td><td class='num'>6</td></tr><tr class=''><td>Adult (explicit)</td><td class='num'>37.9%</td><td class='num'>1,905</td><td class='num'>118</td><td class='num'>$19.99</td><td class='num'>1</td></tr><tr class='lane'><td>Horror / psychological <span class=badge>lane</span></td><td class='num'>33.6%</td><td class='num'>2,221</td><td class='num'>104</td><td class='num'>$14.99</td><td class='num'>7</td></tr><tr class=''><td>Interactive fiction / text</td><td class='num'>31.6%</td><td class='num'>1,656</td><td class='num'>82</td><td class='num'>$14.99</td><td class='num'>6</td></tr><tr class='lane'><td>Mystery / detective <span class=badge>lane</span></td><td class='num'>29.1%</td><td class='num'>1,910</td><td class='num'>91</td><td class='num'>$17.99</td><td class='num'>6</td></tr><tr class=''><td>RPG hybrid</td><td class='num'>28.7%</td><td class='num'>1,454</td><td class='num'>78</td><td class='num'>$19.99</td><td class='num'>4</td></tr><tr class=''><td>Sim / management hybrid</td><td class='num'>26.7%</td><td class='num'>1,753</td><td class='num'>73</td><td class='num'>$14.99</td><td class='num'>10</td></tr><tr class='lane'><td>Point &amp; click / puzzle <span class=badge>lane</span></td><td class='num'>23.5%</td><td class='num'>2,157</td><td class='num'>69</td><td class='num'>$14.99</td><td class='num'>5</td></tr><tr class=''><td>LGBTQ+ / queer narrative</td><td class='num'>22.6%</td><td class='num'>1,084</td><td class='num'>52</td><td class='num'>$14.99</td><td class='num'>5</td></tr><tr class=''><td>Sci-fi / cyberpunk</td><td class='num'>12.8%</td><td class='num'>1,851</td><td class='num'>39</td><td class='num'>$19.99</td><td class='num'>8</td></tr></tbody></table>
+
+<h2>VN releases in the window</h2>
+<table><thead><tr><th>Game</th><th>Released</th><th>Price</th>
+<th>Reviews</th><th>Positive</th><th>Length</th><th>Clusters</th></tr></thead>
+<tbody><tr><td><a href="https://store.steampowered.com/app/3971950/" target="_blank" rel="noopener noreferrer">In Falsus</a></td><td>2026-09-09</td><td class='num'>$39.99</td><td class='num'>1,020</td><td class='num'>89.9%</td><td class='num'>35h</td><td class='tags'>LGBTQ+ / queer narrative, Sci-fi / cyberpunk</td></tr><tr><td><a href="https://store.steampowered.com/app/3604780/" target="_blank" rel="noopener noreferrer">Sunken Engine</a></td><td>2026-09-10</td><td class='num'>$14.99</td><td class='num'>899</td><td class='num'>81.4%</td><td class='num'>10h</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/3195580/" target="_blank" rel="noopener noreferrer">lily&#x27;s world XD</a></td><td>2026-09-17</td><td class='num'>$11.99</td><td class='num'>1,058</td><td class='num'>97.5%</td><td class='num'>3.9h</td><td class='tags'>Choice-driven branching, Horror / psychological, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/2902170/" target="_blank" rel="noopener noreferrer">Kernel Hearts</a></td><td>2026-09-17</td><td class='num'>$19.99</td><td class='num'>241</td><td class='num'>78.0%</td><td class='num'>7.7h</td><td class='tags'>RPG hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/3208930/" target="_blank" rel="noopener noreferrer">Galvatein : Adventurers&#x27; Guild</a><span class="ai" title="Generative AI was used during the initial production of character and background artwork to explore different visual concepts, expressions, poses, and compositions. All character and background artwork is manually refined and finalized, including adjustments to poses, colors, details, character consistency, and overall visual quality. Generative AI was also used to create the game&#x27;s background mus">AI: some visuals</span></td><td>2026-09-22</td><td class='num'>$13.99</td><td class='num'>297</td><td class='num'>86.5%</td><td class='num'>3.8h</td><td class='tags'>Choice-driven branching, Point &amp; click / puzzle, Sim / management hybrid</td></tr><tr><td><a href="https://store.steampowered.com/app/4354460/" target="_blank" rel="noopener noreferrer">Survivor&#x27;s Notes</a><span class="ai" title="游戏中的所有素材均通过AI生成 All in-game materials are generated by AI.">AI: unspecified</span></td><td>2026-09-11</td><td class='num'>$6.99</td><td class='num'>492</td><td class='num'>89.8%</td><td class='num'>8.1h</td><td class='tags'>Choice-driven branching, Horror / psychological, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/3804370/" target="_blank" rel="noopener noreferrer">The Piper of Dawn</a></td><td>2026-09-22</td><td class='num'>$12.99</td><td class='num'>187</td><td class='num'>88.2%</td><td class='num'>4.8h</td><td class='tags'>Choice-driven branching, RPG hybrid, Romance / dating sim</td></tr><tr><td><a href="https://store.steampowered.com/app/4838460/" target="_blank" rel="noopener noreferrer">HimaNatsu: Of Churches, Sunflowers, and Long Summers</a></td><td>2026-09-10</td><td class='num'>$34.99</td><td class='num'>61</td><td class='num'>93.4%</td><td class='num'>2.2h</td><td class='tags'>Adult (explicit), Choice-driven branching, Interactive fiction / text</td></tr><tr><td><a href="https://store.steampowered.com/app/3319700/" target="_blank" rel="noopener noreferrer">新世界：暗影成双</a></td><td>2026-09-22</td><td class='num'>$9.99</td><td class='num'>104</td><td class='num'>88.5%</td><td class='num'>4.0h</td><td class='tags'>Choice-driven branching, Interactive fiction / text, Mystery / detective</td></tr><tr><td><a href="https://store.steampowered.com/app/4264270/" target="_blank" rel="noopener noreferrer">Fuyukuru. - Winter winds, adieu? -</a></td><td>2026-09-09</td><td class='num'>$19.99</td><td class='num'>51</td><td class='num'>96.1%</td><td class='num'>4.5h</td><td class='tags'>Mystery / detective, Sci-fi / cyberpunk, Slice of life / cozy</td></tr><tr><td><a href="https://store.steampowered.com/app/3503300/" target="_blank" rel="noopener noreferrer">Toxic Yuri</a></td><td>2026-09-18</td><td class='num'>$14.99</td><td class='num'>42</td><td class='num'>100.0%</td><td class='num'>2.5h</td><td class='tags'>Horror / psychological, Interactive fiction / text, LGBTQ+ / queer narrative</td></tr><tr><td><a href="https://store.steampowered.com/app/3470930/" target="_blank" rel="noopener noreferrer">The Grinch 2: Saving Christmas </a></td><td>2026-09-18</td><td class='num'>$39.99</td><td class='num'>13</td><td class='num'>92.3%</td><td class='num'>1.2h</td><td class='tags'></td></tr></tbody></table>
+
+<h2>Reading this</h2>
+<div class="analysis">
+<p>The VN tag space has a spine that is not a differentiator: Story Rich, Singleplayer,
+Anime and Adventure sit on two thirds to three quarters of everything tagged Visual Novel.
+The sub-genre lives in what comes after those, and most VNs stack three or four clusters
+at once rather than picking one.</p>
+
+<p><strong>The lane.</strong> Of 446 visible VNs,
+47 carry both horror/psychological and point-and-click/puzzle tags.
+That overlap has a median of 3,071 reviews against
+1,902 for the broader lane and
+1,809 across all visible VNs. Company in that space:
+NEEDY STREAMER OVERLOAD, What Remains of Edith Finch, Firework, The Walking Dead: The Telltale Definitive Series, Danganronpa: Trigger Happy Havoc, The Coffin of Andy and Leyley.</p>
+
+<p><strong>What travels with the winners.</strong> Inside the lane, the tags that over-index
+among titles doing at least twice the lane median are shown in the lift table - Great Soundtrack,
+Atmospheric, Detective, Psychological and Point &amp; Click lead, with Episodic and Dark Comedy
+appearing far more often than their share of the lane would predict. Pixel Graphics over-indexing
+is worth noting for scope: it is not a penalty at this end of the market.</p>
+
+<p class="caveat">Cluster membership comes from Steam&#x27;s own tag intersections. Review and price data for established titles comes from SteamSpy, so only VNs with public data appear in the market sample: those medians describe survivors, not expected outcomes. Most VNs on Steam never reach them.</p>
+</div>
+
+</div>
+
+<footer>game-trends &middot; public Steam data (charts, store, reviews) + SteamSpy &middot;
+revenue estimated via review-count heuristic &middot; built by Claude, weekly on Fridays</footer>
+<div class="tooltip" id="tt"></div>
+</div>
+<script>
+const DATA = {"week": "2026-W39", "breakouts": [{"appid": 4259190, "name": "Kingdom Rush 6: Genesis TD", "release_date": "2026-09-24", "price_usd": 19.99, "team_class": "self_published_indie", "tags": ["Action", "Indie", "Strategy"], "total_reviews": 536, "pct_positive": 65.9, "est_net_usd": 206256, "ccu_now": 10933}, {"appid": 3972190, "name": "Mineral Mining Simulator", "release_date": "2026-09-24", "price_usd": 12.99, "team_class": "self_published_indie", "tags": ["Casual", "Indie", "Simulation"], "total_reviews": 82, "pct_positive": 84.1, "est_net_usd": 20504, "ccu_now": 33}, {"appid": 3932790, "name": "Garfield - Escape from Monday", "release_date": "2026-09-24", "price_usd": 24.99, "team_class": "indie_with_publisher", "tags": ["Adventure"], "total_reviews": 31, "pct_positive": 96.8, "est_net_usd": 14912, "ccu_now": 39}, {"appid": 3789080, "name": "HIROTONFA’s American Revolution Smuggler", "release_date": "2026-09-24", "price_usd": 19.99, "team_class": "indie_with_publisher", "tags": ["Adventure", "RPG", "Simulation", "Strategy", "Early Access"], "total_reviews": 31, "pct_positive": 100.0, "est_net_usd": 11929, "ccu_now": 112}, {"appid": 3880400, "name": "FRUKT", "release_date": "2026-09-24", "price_usd": 7.49, "team_class": "self_published_indie", "tags": ["Casual", "Indie", "Simulation", "Early Access"], "total_reviews": 62, "pct_positive": 95.2, "est_net_usd": 8939, "ccu_now": 83}, {"appid": 2985880, "name": "Farming Camp", "release_date": "2026-09-24", "price_usd": 19.99, "team_class": "indie_with_publisher", "tags": ["Adventure", "Casual", "Indie", "Simulation"], "total_reviews": 19, "pct_positive": 89.5, "est_net_usd": 7311, "ccu_now": 13}, {"appid": 4084120, "name": "CODEX MORTIS", "release_date": "2026-09-24", "price_usd": 3.99, "team_class": "indie_with_publisher", "tags": ["Action", "Indie", "RPG"], "total_reviews": 80, "pct_positive": 76.2, "est_net_usd": 6144, "ccu_now": 26}, {"appid": 2443170, "name": "Survivor Challenge TD", "release_date": "2026-09-24", "price_usd": 4.99, "team_class": "self_published_indie", "tags": ["Time Management", "Bullet Hell", "Rogue-lite", "Tower Defense", "PvE", "Strategy", "3D", "Stylized", "Colorful", "Tactical"], "total_reviews": 59, "pct_positive": 79.7, "est_net_usd": 5667, "ccu_now": 3}, {"appid": 3179120, "name": "Monastery: Ora et Labora", "release_date": "2026-09-24", "price_usd": 14.99, "team_class": "self_published_indie", "tags": ["Indie", "Simulation", "Early Access"], "total_reviews": 19, "pct_positive": 100.0, "est_net_usd": 5482, "ccu_now": 56}, {"appid": 4502770, "name": "Rotfront", "release_date": "2026-09-24", "price_usd": 14.99, "team_class": "self_published_indie", "tags": ["Action", "Indie"], "total_reviews": 18, "pct_positive": 83.3, "est_net_usd": 5194, "ccu_now": 0}], "tags": [{"tag": "Indie", "weight_usd": 259830}, {"tag": "Strategy", "weight_usd": 223852}, {"tag": "Action", "weight_usd": 217594}, {"tag": "Simulation", "weight_usd": 54165}, {"tag": "Casual", "weight_usd": 36754}, {"tag": "Adventure", "weight_usd": 34152}, {"tag": "Early Access", "weight_usd": 26350}, {"tag": "RPG", "weight_usd": 18073}, {"tag": "Time Management", "weight_usd": 5667}, {"tag": "Bullet Hell", "weight_usd": 5667}, {"tag": "Rogue-lite", "weight_usd": 5667}, {"tag": "Tower Defense", "weight_usd": 5667}, {"tag": "PvE", "weight_usd": 5667}, {"tag": "3D", "weight_usd": 5667}, {"tag": "Stylized", "weight_usd": 5667}], "gainers": [{"rank": 30, "appid": 1142710, "last_week_rank": 68, "peak_in_game": 89476, "delta": 38, "name": "app 1142710"}, {"rank": 66, "appid": 1085660, "last_week_rank": 98, "peak_in_game": 27188, "delta": 32, "name": "app 1085660"}, {"rank": 19, "appid": 230410, "last_week_rank": 30, "peak_in_game": 95028, "delta": 11, "name": "app 230410"}, {"rank": 40, "appid": 252950, "last_week_rank": 51, "peak_in_game": 37530, "delta": 11, "name": "app 252950"}, {"rank": 85, "appid": 1374490, "last_week_rank": 96, "peak_in_game": 27547, "delta": 11, "name": "app 1374490"}, {"rank": 91, "appid": 2050650, "last_week_rank": 102, "peak_in_game": 14000, "delta": 11, "name": "app 2050650"}, {"rank": 38, "appid": 1203220, "last_week_rank": 48, "peak_in_game": 63881, "delta": 10, "name": "app 1203220"}, {"rank": 97, "appid": 1329410, "last_week_rank": 106, "peak_in_game": 12290, "delta": 9, "name": "app 1329410"}], "history_weeks": ["2026-W33", "2026-W34", "2026-W38", "2026-W39"], "history_tags": {"Simulation": {"2026-W33": 467269, "2026-W34": 810156, "2026-W38": 600274, "2026-W39": 54165}, "Indie": {"2026-W33": 333826, "2026-W34": 899193, "2026-W38": 329627, "2026-W39": 259830}, "Strategy": {"2026-W33": 269656, "2026-W34": 301273, "2026-W38": 850593, "2026-W39": 223852}, "Adventure": {"2026-W33": 184917, "2026-W38": 567110, "2026-W39": 34152}, "Early Access": {"2026-W33": 130139, "2026-W34": 548687, "2026-W38": 444019, "2026-W39": 26350}, "RPG": {"2026-W33": 126825, "2026-W34": 301905, "2026-W38": 860821, "2026-W39": 18073}, "Action": {"2026-W33": 123320, "2026-W34": 848495, "2026-W38": 629274, "2026-W39": 217594}, "Casual": {"2026-W33": 24522, "2026-W34": 283823, "2026-W39": 36754}, "Massively Multiplayer": {"2026-W34": 250000}, "VR": {"2026-W38": 250000}}, "lift": [{"tag": "Episodic", "lift": 1.8, "top_count": 7, "lane_count": 12, "excess": 0.8}, {"tag": "Memes", "lift": 1.8, "top_count": 14, "lane_count": 24, "excess": 0.8}, {"tag": "Great Soundtrack", "lift": 1.67, "top_count": 39, "lane_count": 72, "excess": 0.67}, {"tag": "Strategy", "lift": 1.66, "top_count": 7, "lane_count": 13, "excess": 0.66}, {"tag": "Retro", "lift": 1.54, "top_count": 6, "lane_count": 12, "excess": 0.54}, {"tag": "Conversation", "lift": 1.49, "top_count": 13, "lane_count": 27, "excess": 0.49}, {"tag": "Pixel Graphics", "lift": 1.45, "top_count": 16, "lane_count": 34, "excess": 0.45}, {"tag": "Psychological", "lift": 1.45, "top_count": 15, "lane_count": 32, "excess": 0.45}, {"tag": "Detective", "lift": 1.43, "top_count": 24, "lane_count": 52, "excess": 0.43}, {"tag": "Mature", "lift": 1.41, "top_count": 16, "lane_count": 35, "excess": 0.41}, {"tag": "Text-Based", "lift": 1.38, "top_count": 13, "lane_count": 29, "excess": 0.38}, {"tag": "Funny", "lift": 1.32, "top_count": 18, "lane_count": 42, "excess": 0.32}, {"tag": "Dark Comedy", "lift": 1.32, "top_count": 6, "lane_count": 14, "excess": 0.32}, {"tag": "Immersive Sim", "lift": 1.32, "top_count": 6, "lane_count": 14, "excess": 0.32}], "proven": [{"cluster": "Slice of life / cozy", "pct": 97.6, "reviews": 2270, "lane": false}, {"cluster": "RPG hybrid", "pct": 97.5, "reviews": 3498, "lane": false}, {"cluster": "Interactive fiction / text", "pct": 97.5, "reviews": 3949, "lane": false}, {"cluster": "Choice-driven branching", "pct": 97.2, "reviews": 3678, "lane": false}, {"cluster": "Sim / management hybrid", "pct": 97.2, "reviews": 2356, "lane": false}, {"cluster": "Romance / dating sim", "pct": 97.1, "reviews": 2089, "lane": false}, {"cluster": "Adult (explicit)", "pct": 97.0, "reviews": 2356, "lane": false}, {"cluster": "LGBTQ+ / queer narrative", "pct": 96.9, "reviews": 1310, "lane": false}, {"cluster": "Mystery / detective", "pct": 96.7, "reviews": 2676, "lane": true}, {"cluster": "Sci-fi / cyberpunk", "pct": 96.6, "reviews": 3678, "lane": false}, {"cluster": "Horror / psychological", "pct": 96.2, "reviews": 2287, "lane": true}, {"cluster": "Point & click / puzzle", "pct": 96.2, "reviews": 4001, "lane": true}], "vn_clusters": [{"cluster": "Slice of life / cozy", "share_pct": 62.6, "median_reviews": 1501, "lane": false}, {"cluster": "Choice-driven branching", "share_pct": 54.7, "median_reviews": 1809, "lane": false}, {"cluster": "Romance / dating sim", "share_pct": 47.5, "median_reviews": 1507, "lane": false}, {"cluster": "Adult (explicit)", "share_pct": 37.9, "median_reviews": 1905, "lane": false}, {"cluster": "Horror / psychological", "share_pct": 33.6, "median_reviews": 2221, "lane": true}, {"cluster": "Interactive fiction / text", "share_pct": 31.6, "median_reviews": 1656, "lane": false}, {"cluster": "Mystery / detective", "share_pct": 29.1, "median_reviews": 1910, "lane": true}, {"cluster": "RPG hybrid", "share_pct": 28.7, "median_reviews": 1454, "lane": false}, {"cluster": "Sim / management hybrid", "share_pct": 26.7, "median_reviews": 1753, "lane": false}, {"cluster": "Point & click / puzzle", "share_pct": 23.5, "median_reviews": 2157, "lane": true}, {"cluster": "LGBTQ+ / queer narrative", "share_pct": 22.6, "median_reviews": 1084, "lane": false}, {"cluster": "Sci-fi / cyberpunk", "share_pct": 12.8, "median_reviews": 1851, "lane": false}]};
+const report = document.getElementById('report');
+const themeBtn = document.getElementById('themetoggle');
+
+// Chart colours are read back off the live CSS variables rather than hard-coded,
+// so the SVGs can never disagree with the stylesheet.
+let C = {};
+function readTheme() {
+  const s = getComputedStyle(report);
+  const v = n => s.getPropertyValue(n).trim();
+  C = { accent: v('--accent'), warm: v('--accent-warm'), third: v('--accent-3'),
+        fourth: v('--accent-4'), ink: v('--ink'), sub: v('--ink-2'),
+        grid: v('--border-soft'), surface: v('--surface'), muted: v('--muted-bar') };
+}
+function isDark() { return report.getAttribute('data-theme') === 'dark'; }
+function setTheme(mode) {
+  if (mode === 'dark') report.setAttribute('data-theme', 'dark');
+  else report.removeAttribute('data-theme');
+  themeBtn.textContent = mode === 'dark' ? 'Light' : 'Dark';
+  readTheme();
+  drawCharts();
+}
+themeBtn.addEventListener('click', () => setTheme(isDark() ? 'light' : 'dark'));
+
+// tabs
+const tabs = [['btn-market','tab-market'], ['btn-vn','tab-vn']];
+tabs.forEach(([b, p]) => document.getElementById(b).addEventListener('click', () => {
+  tabs.forEach(([bb, pp]) => {
+    const on = bb === b;
+    document.getElementById(bb).setAttribute('aria-selected', on ? 'true' : 'false');
+    document.getElementById(pp).hidden = !on;
+  });
+}));
+
+const tt = document.getElementById('tt');
+function showTT(e, valueText, labelText) {
+  tt.textContent = '';
+  const v = document.createElement('span');
+  v.className = 'v'; v.textContent = valueText;
+  tt.appendChild(v);
+  tt.appendChild(document.createTextNode(' · ' + labelText));
+  tt.style.display = 'block';
+  tt.style.left = Math.min(e.clientX + 14, innerWidth - 240) + 'px';
+  tt.style.top = (e.clientY + 14) + 'px';
+}
+function hideTT() { tt.style.display = 'none'; }
+function fmtUsd(n) {
+  if (n >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return '$' + Math.round(n/1e3) + 'k';
+  return '$' + Math.round(n);
+}
+function hbar(el, items, valueKey, labelKey, fmt, colorFn) {
+  if (!el || !items.length) return;
+  el.textContent = '';
+  const W = 1040, rowH = 30, pad = 4, labelW = 260, valueW = 120;
+  const H = items.length * rowH + pad * 2;
+  const max = Math.max(...items.map(d => d[valueKey]), 1);
+  const bw = W - labelW - valueW - 20;
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('role', 'img');
+  items.forEach((d, i) => {
+    const y = pad + i * rowH, w = Math.max(2, d[valueKey] / max * bw), bh = 18;
+    const label = document.createElementNS(svgNS, 'text');
+    label.setAttribute('x', labelW - 8); label.setAttribute('y', y + 14);
+    label.setAttribute('text-anchor', 'end'); label.setAttribute('font-size', '12.5');
+    label.setAttribute('fill', C.ink);
+    const raw = String(d[labelKey]);
+    label.textContent = raw.length > 34 ? raw.slice(0, 33) + '…' : raw;
+    svg.appendChild(label);
+    const bar = document.createElementNS(svgNS, 'path');
+    bar.setAttribute('d', `M${labelW} ${y} h${Math.max(0, w-4)} a4 4 0 0 1 4 4 v${bh-8} a4 4 0 0 1 -4 4 h-${Math.max(0, w-4)} z`);
+    bar.setAttribute('fill', colorFn ? colorFn(d) : C.accent);
+    bar.addEventListener('pointermove', e => showTT(e, fmt(d[valueKey]), raw));
+    bar.addEventListener('pointerleave', hideTT);
+    svg.appendChild(bar);
+    const val = document.createElementNS(svgNS, 'text');
+    val.setAttribute('x', labelW + w + 8); val.setAttribute('y', y + 14);
+    val.setAttribute('font-size', '12'); val.setAttribute('fill', C.sub);
+    val.textContent = fmt(d[valueKey]);
+    svg.appendChild(val);
+  });
+  el.appendChild(svg);
+}
+
+function drawCharts() {
+hbar(document.getElementById('breakoutchart'), DATA.breakouts, 'est_net_usd', 'name', fmtUsd);
+hbar(document.getElementById('tagchart'), DATA.tags, 'weight_usd', 'tag', fmtUsd);
+hbar(document.getElementById('gainerchart'),
+  DATA.gainers.map(g => ({ name: `${g.name} (#${g.last_week_rank} → #${g.rank})`, delta: g.delta }))
+    .filter(g => g.delta > 0), 'delta', 'name', v => '+' + v + ' ranks');
+
+// VN tab charts
+hbar(document.getElementById('liftchart'), DATA.lift, 'excess', 'tag',
+  v => '+' + Math.round(v * 100) + '% vs lane');
+hbar(document.getElementById('provenchart'), DATA.proven, 'reviews', 'cluster',
+  v => v.toLocaleString(), d => d.lane ? C.accent : C.muted);
+
+const trendEl = document.getElementById('tagtrend');
+if (trendEl && DATA.history_weeks.length > 1) {
+  const W = 1040, H = 260, padL = 60, padR = 160, padY = 24;
+  const weeks = DATA.history_weeks;
+  const series = Object.entries(DATA.history_tags)
+    .map(([tag, byWeek]) => ({ tag, pts: weeks.map(w => byWeek[w] ?? null) }))
+    .filter(s => s.pts.filter(v => v !== null).length > 1).slice(0, 4);
+  const max = Math.max(...series.flatMap(s => s.pts.filter(v => v !== null)), 1);
+  const x = i => padL + i * (W - padL - padR) / Math.max(1, weeks.length - 1);
+  const y = v => H - padY - v / max * (H - padY * 2);
+  const hues = [C.accent, C.warm, C.third, C.fourth];
+  let s = `<svg viewBox="0 0 ${W} ${H}">`;
+  weeks.forEach((w, i) => {
+    s += `<line x1="${x(i)}" y1="${padY}" x2="${x(i)}" y2="${H - padY}" stroke="${C.grid}"/>`;
+    s += `<text x="${x(i)}" y="${H - 6}" font-size="11" fill="${C.sub}" text-anchor="middle">${w}</text>`;
+  });
+  series.forEach((sr, si) => {
+    const pts = sr.pts.map((v, i) => v === null ? null : `${x(i)},${y(v)}`).filter(Boolean);
+    s += `<polyline points="${pts.join(' ')}" fill="none" stroke="${hues[si]}" stroke-width="2" stroke-linejoin="round"/>`;
+    const last = sr.pts.length - 1;
+    if (sr.pts[last] !== null) {
+      s += `<circle cx="${x(last)}" cy="${y(sr.pts[last])}" r="4" fill="${hues[si]}" stroke="${C.surface}" stroke-width="2"/>`;
+      s += `<text x="${x(last) + 10}" y="${y(sr.pts[last]) + 4}" font-size="12" fill="${C.ink}">${sr.tag}</text>`;
+    }
+  });
+  s += '</svg>';
+  trendEl.innerHTML = s;
+}
+}
+
+// Start from the viewer's preference, then let the toggle take over. Following the
+// system setting live matters when a host panel switches theme under us.
+const mq = matchMedia('(prefers-color-scheme: dark)');
+let manual = false;
+setTheme(mq.matches ? 'dark' : 'light');
+themeBtn.addEventListener('click', () => { manual = true; });
+mq.addEventListener('change', e => { if (!manual) setTheme(e.matches ? 'dark' : 'light'); });
+</script>
+</body></html>
