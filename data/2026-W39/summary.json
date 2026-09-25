@@ -1,0 +1,255 @@
+{
+ "week": "2026-W39",
+ "generated_utc": "2026-09-25T05:20:37Z",
+ "counts": {
+  "most_played": 100,
+  "top_sellers": 11,
+  "new_releases_tracked": 11,
+  "indie_new_releases": 11
+ },
+ "breakouts": [
+  {
+   "appid": 4259190,
+   "name": "Kingdom Rush 6: Genesis TD",
+   "release_date": "2026-09-24",
+   "price_usd": 19.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Action",
+    "Indie",
+    "Strategy"
+   ],
+   "total_reviews": 536,
+   "pct_positive": 65.9,
+   "est_net_usd": 206256,
+   "ccu_now": 10933
+  },
+  {
+   "appid": 3972190,
+   "name": "Mineral Mining Simulator",
+   "release_date": "2026-09-24",
+   "price_usd": 12.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 82,
+   "pct_positive": 84.1,
+   "est_net_usd": 20504,
+   "ccu_now": 33
+  },
+  {
+   "appid": 3932790,
+   "name": "Garfield - Escape from Monday",
+   "release_date": "2026-09-24",
+   "price_usd": 24.99,
+   "team_class": "indie_with_publisher",
+   "tags": [
+    "Adventure"
+   ],
+   "total_reviews": 31,
+   "pct_positive": 96.8,
+   "est_net_usd": 14912,
+   "ccu_now": 39
+  },
+  {
+   "appid": 3789080,
+   "name": "HIROTONFA’s American Revolution Smuggler",
+   "release_date": "2026-09-24",
+   "price_usd": 19.99,
+   "team_class": "indie_with_publisher",
+   "tags": [
+    "Adventure",
+    "RPG",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "total_reviews": 31,
+   "pct_positive": 100.0,
+   "est_net_usd": 11929,
+   "ccu_now": 112
+  },
+  {
+   "appid": 3880400,
+   "name": "FRUKT",
+   "release_date": "2026-09-24",
+   "price_usd": 7.49,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 62,
+   "pct_positive": 95.2,
+   "est_net_usd": 8939,
+   "ccu_now": 83
+  },
+  {
+   "appid": 2985880,
+   "name": "Farming Camp",
+   "release_date": "2026-09-24",
+   "price_usd": 19.99,
+   "team_class": "indie_with_publisher",
+   "tags": [
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 19,
+   "pct_positive": 89.5,
+   "est_net_usd": 7311,
+   "ccu_now": 13
+  },
+  {
+   "appid": 4084120,
+   "name": "CODEX MORTIS",
+   "release_date": "2026-09-24",
+   "price_usd": 3.99,
+   "team_class": "indie_with_publisher",
+   "tags": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "total_reviews": 80,
+   "pct_positive": 76.2,
+   "est_net_usd": 6144,
+   "ccu_now": 26
+  },
+  {
+   "appid": 2443170,
+   "name": "Survivor Challenge TD",
+   "release_date": "2026-09-24",
+   "price_usd": 4.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Time Management",
+    "Bullet Hell",
+    "Rogue-lite",
+    "Tower Defense",
+    "PvE",
+    "Strategy",
+    "3D",
+    "Stylized",
+    "Colorful",
+    "Tactical"
+   ],
+   "total_reviews": 59,
+   "pct_positive": 79.7,
+   "est_net_usd": 5667,
+   "ccu_now": 3
+  },
+  {
+   "appid": 3179120,
+   "name": "Monastery: Ora et Labora",
+   "release_date": "2026-09-24",
+   "price_usd": 14.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 19,
+   "pct_positive": 100.0,
+   "est_net_usd": 5482,
+   "ccu_now": 56
+  },
+  {
+   "appid": 4502770,
+   "name": "Rotfront",
+   "release_date": "2026-09-24",
+   "price_usd": 14.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Action",
+    "Indie"
+   ],
+   "total_reviews": 18,
+   "pct_positive": 83.3,
+   "est_net_usd": 5194,
+   "ccu_now": 0
+  }
+ ],
+ "tag_momentum": [
+  {
+   "tag": "Indie",
+   "weight_usd": 259830
+  },
+  {
+   "tag": "Strategy",
+   "weight_usd": 223852
+  },
+  {
+   "tag": "Action",
+   "weight_usd": 217594
+  },
+  {
+   "tag": "Simulation",
+   "weight_usd": 54165
+  },
+  {
+   "tag": "Casual",
+   "weight_usd": 36754
+  },
+  {
+   "tag": "Adventure",
+   "weight_usd": 34152
+  },
+  {
+   "tag": "Early Access",
+   "weight_usd": 26350
+  },
+  {
+   "tag": "RPG",
+   "weight_usd": 18073
+  },
+  {
+   "tag": "Time Management",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "Bullet Hell",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "Rogue-lite",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "Tower Defense",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "PvE",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "3D",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "Stylized",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "Colorful",
+   "weight_usd": 5667
+  },
+  {
+   "tag": "Tactical",
+   "weight_usd": 5667
+  }
+ ],
+ "assumptions": {
+  "review_multiplier": 35,
+  "net_factor": 0.55,
+  "note": "Revenue estimates are directional (Boxleiter method)."
+ }
+}

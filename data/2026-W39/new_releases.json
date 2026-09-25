@@ -1,0 +1,411 @@
+{
+ "week": "2026-W39",
+ "window_days": 14,
+ "releases": [
+  {
+   "appid": 4502770,
+   "name": "Rotfront",
+   "release_date": "2026-09-24",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Blackridge Entertainment"
+   ],
+   "publishers": [
+    "Blackridge Entertainment"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Indie"
+   ],
+   "total_reviews": 18,
+   "positive_reviews": 15,
+   "review_score_desc": "Positive",
+   "pct_positive": 83.3,
+   "est_sales": 630,
+   "est_gross_usd": 9443,
+   "est_net_usd": 5194,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3880400,
+   "name": "FRUKT",
+   "release_date": "2026-09-24",
+   "price_usd": 7.49,
+   "is_free": false,
+   "developers": [
+    "tripledose"
+   ],
+   "publishers": [
+    "tripledose"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 62,
+   "positive_reviews": 59,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 95.2,
+   "est_sales": 2170,
+   "est_gross_usd": 16253,
+   "est_net_usd": 8939,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 83,
+   "ai_disclosed": true,
+   "ai_note": "AI coding assistants are used during the development of FRUKT. Every line of code is reviewed by me, and all design, architecture and creative decisions are mine. No AI-generated art, animation, or written content ships in the game. The only other AI use is the music in the demo teaser trailer.",
+   "ai_scope": "audio only"
+  },
+  {
+   "appid": 2985880,
+   "name": "Farming Camp",
+   "release_date": "2026-09-24",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "Innerfire Studios"
+   ],
+   "publishers": [
+    "SOEDESCO"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 19,
+   "positive_reviews": 17,
+   "review_score_desc": "Positive",
+   "pct_positive": 89.5,
+   "est_sales": 665,
+   "est_gross_usd": 13293,
+   "est_net_usd": 7311,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 13,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4084120,
+   "name": "CODEX MORTIS",
+   "release_date": "2026-09-24",
+   "price_usd": 3.99,
+   "is_free": false,
+   "developers": [
+    "GROLAF"
+   ],
+   "publishers": [
+    "CRUNCHFEST"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "total_reviews": 80,
+   "positive_reviews": 61,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 76.2,
+   "est_sales": 2800,
+   "est_gross_usd": 11172,
+   "est_net_usd": 6144,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 26,
+   "ai_disclosed": true,
+   "ai_note": "AI is used for entire code of the game, text, arts, sounds and music.",
+   "ai_scope": "audio only"
+  },
+  {
+   "appid": 3179120,
+   "name": "Monastery: Ora et Labora",
+   "release_date": "2026-09-24",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Dragonkin Studios"
+   ],
+   "publishers": [
+    "Dragonkin Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "tags": [
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 19,
+   "positive_reviews": 19,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 665,
+   "est_gross_usd": 9968,
+   "est_net_usd": 5482,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 56,
+   "ai_disclosed": true,
+   "ai_note": "This game uses generative AI during development to create initial concepts and some game art, which are then carefully edited and arranged by hand by our artist. All final in-game assets are curated to ensure a cohesive artistic style and high-quality experience.",
+   "ai_scope": "unspecified"
+  },
+  {
+   "appid": 2443170,
+   "name": "Survivor Challenge TD",
+   "release_date": "2026-09-24",
+   "price_usd": 4.99,
+   "is_free": false,
+   "developers": [
+    "SQRT Games"
+   ],
+   "publishers": [
+    "SQRT Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Strategy"
+   ],
+   "tags": [
+    "Time Management",
+    "Bullet Hell",
+    "Rogue-lite",
+    "Tower Defense",
+    "PvE",
+    "Strategy",
+    "3D",
+    "Stylized",
+    "Colorful",
+    "Tactical"
+   ],
+   "total_reviews": 59,
+   "positive_reviews": 47,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 79.7,
+   "est_sales": 2065,
+   "est_gross_usd": 10304,
+   "est_net_usd": 5667,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 3,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2438180,
+   "name": "Doggy Don't Care",
+   "release_date": "2026-09-24",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Rohan Nowell"
+   ],
+   "publishers": [
+    "Rotub Games"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 17,
+   "positive_reviews": 17,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 595,
+   "est_gross_usd": 8919,
+   "est_net_usd": 4905,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 15,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4259190,
+   "name": "Kingdom Rush 6: Genesis TD",
+   "release_date": "2026-09-24",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "Ironhide Game Studio"
+   ],
+   "publishers": [
+    "Ironhide Game Studio"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie",
+    "Strategy"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Strategy"
+   ],
+   "total_reviews": 536,
+   "positive_reviews": 353,
+   "review_score_desc": "Mixed",
+   "pct_positive": 65.9,
+   "est_sales": 18760,
+   "est_gross_usd": 375012,
+   "est_net_usd": 206256,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 10933,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3789080,
+   "name": "HIROTONFA’s American Revolution Smuggler",
+   "release_date": "2026-09-24",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "HIROTONFA"
+   ],
+   "publishers": [
+    "Ninth Exodus"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure",
+    "RPG",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "tags": [
+    "Adventure",
+    "RPG",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "total_reviews": 31,
+   "positive_reviews": 31,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 1085,
+   "est_gross_usd": 21689,
+   "est_net_usd": 11929,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 112,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3972190,
+   "name": "Mineral Mining Simulator",
+   "release_date": "2026-09-24",
+   "price_usd": 12.99,
+   "is_free": false,
+   "developers": [
+    "Bewolba Studios"
+   ],
+   "publishers": [
+    "Bewolba Studios"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 82,
+   "positive_reviews": 69,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 84.1,
+   "est_sales": 2870,
+   "est_gross_usd": 37281,
+   "est_net_usd": 20504,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 33,
+   "ai_disclosed": true,
+   "ai_note": "AI is used for generating game thumbnail with extra editing.",
+   "ai_scope": "unspecified"
+  },
+  {
+   "appid": 3932790,
+   "name": "Garfield - Escape from Monday",
+   "release_date": "2026-09-24",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "OSome Studio"
+   ],
+   "publishers": [
+    "Microids"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure"
+   ],
+   "tags": [
+    "Adventure"
+   ],
+   "total_reviews": 31,
+   "positive_reviews": 30,
+   "review_score_desc": "Positive",
+   "pct_positive": 96.8,
+   "est_sales": 1085,
+   "est_gross_usd": 27114,
+   "est_net_usd": 14912,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 39,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  }
+ ]
+}
