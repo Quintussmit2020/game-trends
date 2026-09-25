@@ -1,0 +1,412 @@
+{
+ "week": "2026-W39",
+ "top_sellers": [
+  {
+   "appid": 4019220,
+   "name": "Dressmaker",
+   "release_date": "2026-09-21",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Cozy Lives"
+   ],
+   "publishers": [
+    "Free Lives"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Casual",
+    "Simulation"
+   ],
+   "tags": [
+    "Casual",
+    "Simulation"
+   ],
+   "total_reviews": 2672,
+   "positive_reviews": 2590,
+   "review_score_desc": "Overwhelmingly Positive",
+   "pct_positive": 96.9,
+   "est_sales": 93520,
+   "est_gross_usd": 1401864,
+   "est_net_usd": 771025,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 13992
+  },
+  {
+   "appid": 553850,
+   "name": "HELLDIVERS™ 2",
+   "release_date": "2024-02-08",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "Arrowhead Game Studios"
+   ],
+   "publishers": [
+    "PlayStation Publishing LLC"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Online Co-Op",
+    "PvE",
+    "Third-Person Shooter",
+    "Multiplayer",
+    "Action",
+    "Shooter",
+    "Co-op",
+    "Sci-fi",
+    "Capitalism",
+    "Space"
+   ],
+   "total_reviews": 1163919,
+   "positive_reviews": 879920,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 75.6,
+   "est_sales": 40737165,
+   "est_gross_usd": 1629079228,
+   "est_net_usd": 895993575,
+   "steamspy_owners": "20,000,000 .. 50,000,000",
+   "ccu_now": 45044
+  },
+  {
+   "appid": 4126040,
+   "name": "Aniimo",
+   "release_date": "2026-09-15",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Pawprint Studio"
+   ],
+   "publishers": [
+    "Pawprint Studio"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Massively Multiplayer",
+    "RPG",
+    "Simulation",
+    "Strategy",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Massively Multiplayer",
+    "RPG",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 17219,
+   "positive_reviews": 12694,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 73.7,
+   "est_sales": 602665,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 82216
+  },
+  {
+   "appid": 2531310,
+   "name": "The Last of Us™ Part II Remastered",
+   "release_date": "2025-04-03",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Naughty Dog LLC",
+    "Nixxes Software",
+    "Iron Galaxy Studios"
+   ],
+   "publishers": [
+    "PlayStation Publishing LLC"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "tags": [
+    "Story Rich",
+    "Post-apocalyptic",
+    "Third-Person Shooter",
+    "LGBTQ+",
+    "Action-Adventure",
+    "Third Person",
+    "Horror",
+    "Action",
+    "Stealth",
+    "Realistic"
+   ],
+   "total_reviews": 55697,
+   "positive_reviews": 50640,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 90.9,
+   "est_sales": 1949395,
+   "est_gross_usd": 97450256,
+   "est_net_usd": 53597640,
+   "steamspy_owners": "500,000 .. 1,000,000",
+   "ccu_now": 1406
+  },
+  {
+   "appid": 2552430,
+   "name": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
+   "release_date": "2024-06-13",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Square Enix"
+   ],
+   "publishers": [
+    "Square Enix"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "RPG",
+    "Adventure",
+    "JRPG",
+    "Great Soundtrack",
+    "Action-Adventure",
+    "Emotional",
+    "Story Rich",
+    "Singleplayer",
+    "Fantasy"
+   ],
+   "total_reviews": 12603,
+   "positive_reviews": 10946,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 86.9,
+   "est_sales": 441105,
+   "est_gross_usd": 22050838,
+   "est_net_usd": 12127961,
+   "steamspy_owners": "1,000,000 .. 2,000,000",
+   "ccu_now": 3773
+  },
+  {
+   "appid": 570940,
+   "name": "DARK SOULS™: REMASTERED",
+   "release_date": "2018-05-23",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "QLOC",
+    "FromSoftware, Inc."
+   ],
+   "publishers": [
+    "FromSoftware, Inc.",
+    "Bandai Namco Entertainment"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Souls-like",
+    "Dark Fantasy",
+    "RPG",
+    "Difficult",
+    "Action",
+    "Dark",
+    "Fantasy",
+    "Atmospheric",
+    "Great Soundtrack",
+    "Action RPG"
+   ],
+   "total_reviews": 155512,
+   "positive_reviews": 143776,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 92.5,
+   "est_sales": 5442920,
+   "est_gross_usd": 217662370,
+   "est_net_usd": 119714303,
+   "steamspy_owners": "2,000,000 .. 5,000,000",
+   "ccu_now": 2263
+  },
+  {
+   "appid": 335300,
+   "name": "DARK SOULS™ II: Scholar of the First Sin",
+   "release_date": "2015-04-01",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "FromSoftware, Inc."
+   ],
+   "publishers": [
+    "Bandai Namco Entertainment",
+    "FromSoftware, Inc."
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "RPG"
+   ],
+   "tags": [
+    "Souls-like",
+    "Dark Fantasy",
+    "RPG",
+    "Difficult",
+    "Action",
+    "Third Person",
+    "Atmospheric",
+    "Action RPG",
+    "Character Customization",
+    "Co-op"
+   ],
+   "total_reviews": 132306,
+   "positive_reviews": 110999,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 83.9,
+   "est_sales": 4630710,
+   "est_gross_usd": 185182092,
+   "est_net_usd": 101850151,
+   "steamspy_owners": "2,000,000 .. 5,000,000",
+   "ccu_now": 3324
+  },
+  {
+   "appid": 1973530,
+   "name": "Limbus Company",
+   "release_date": "2023-02-26",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "ProjectMoon"
+   ],
+   "publishers": [
+    "ProjectMoon"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Free To Play"
+   ],
+   "tags": [
+    "Free To Play"
+   ],
+   "total_reviews": 119395,
+   "positive_reviews": 105379,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 88.3,
+   "est_sales": 4178825,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 64962
+  },
+  {
+   "appid": 3061570,
+   "name": "Persona5: The Phantom X",
+   "release_date": "2025-06-25",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "ATLUS",
+    "SEGA",
+    "Perfect World"
+   ],
+   "publishers": [
+    "SEGA"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "tags": [
+    "Adventure",
+    "RPG",
+    "Free To Play"
+   ],
+   "total_reviews": 13412,
+   "positive_reviews": 6851,
+   "review_score_desc": "Mixed",
+   "pct_positive": 51.1,
+   "est_sales": 469420,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 2743
+  },
+  {
+   "appid": 4705510,
+   "name": "Happy Wheels",
+   "release_date": "2026-09-21",
+   "price_usd": 4.99,
+   "is_free": false,
+   "developers": [
+    "Jim Bonacci"
+   ],
+   "publishers": [
+    "Fancy Force"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Racing"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Racing"
+   ],
+   "total_reviews": 2518,
+   "positive_reviews": 2386,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 94.8,
+   "est_sales": 88130,
+   "est_gross_usd": 439768,
+   "est_net_usd": 241872,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 1289
+  },
+  {
+   "appid": 1687950,
+   "name": "Persona 5 Royal",
+   "release_date": "2022-10-20",
+   "price_usd": 59.99,
+   "is_free": false,
+   "developers": [
+    "ATLUS"
+   ],
+   "publishers": [
+    "SEGA"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "RPG"
+   ],
+   "tags": [
+    "JRPG",
+    "Story Rich",
+    "Great Soundtrack",
+    "Turn-Based Combat",
+    "Anime",
+    "RPG",
+    "Singleplayer",
+    "Dating Sim",
+    "Party-Based RPG",
+    "Multiple Endings"
+   ],
+   "total_reviews": 140228,
+   "positive_reviews": 135122,
+   "review_score_desc": "Overwhelmingly Positive",
+   "pct_positive": 96.4,
+   "est_sales": 4907980,
+   "est_gross_usd": 294429720,
+   "est_net_usd": 161936346,
+   "steamspy_owners": "2,000,000 .. 5,000,000",
+   "ccu_now": 6263
+  }
+ ]
+}
