@@ -1,0 +1,699 @@
+{
+ "week": "2026-W40",
+ "window_days": 14,
+ "releases": [
+  {
+   "appid": 3867170,
+   "name": "Sengoku Rance",
+   "release_date": "2026-10-01",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "Alicesoft"
+   ],
+   "publishers": [
+    "Kagura Games",
+    "MangaGamer"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "RPG"
+   ],
+   "tags": [
+    "RPG"
+   ],
+   "total_reviews": 41,
+   "positive_reviews": 40,
+   "review_score_desc": "Positive",
+   "pct_positive": 97.6,
+   "est_sales": 1435,
+   "est_gross_usd": 35860,
+   "est_net_usd": 19723,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 469,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2288340,
+   "name": "ACE COMBAT 8: WINGS OF THEVE",
+   "release_date": "2026-10-01",
+   "price_usd": 69.99,
+   "is_free": false,
+   "developers": [
+    "Bandai Namco Aces Inc."
+   ],
+   "publishers": [
+    "Bandai Namco Entertainment Inc."
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Action"
+   ],
+   "total_reviews": 6386,
+   "positive_reviews": 4842,
+   "review_score_desc": "Mostly Positive",
+   "pct_positive": 75.8,
+   "est_sales": 223510,
+   "est_gross_usd": 15643464,
+   "est_net_usd": 8603905,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 33535,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 1130380,
+   "name": "OZARK",
+   "release_date": "2026-10-01",
+   "price_usd": 13.49,
+   "is_free": false,
+   "developers": [
+    "ALTER-BOY"
+   ],
+   "publishers": [
+    "ALTER-BOY",
+    "RLC"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Indie"
+   ],
+   "total_reviews": 12,
+   "positive_reviews": 8,
+   "review_score_desc": "Mixed",
+   "pct_positive": 66.7,
+   "est_sales": 420,
+   "est_gross_usd": 5665,
+   "est_net_usd": 3116,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 3,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 5090060,
+   "name": "Starlathe",
+   "release_date": "2026-10-01",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Astraeon Interactive"
+   ],
+   "publishers": [
+    "Astraeon Interactive"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "Simulation",
+    "Strategy",
+    "Early Access"
+   ],
+   "total_reviews": 21,
+   "positive_reviews": 14,
+   "review_score_desc": "Mixed",
+   "pct_positive": 66.7,
+   "est_sales": 735,
+   "est_gross_usd": 11017,
+   "est_net_usd": 6059,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 39,
+   "ai_disclosed": true,
+   "ai_note": "Some artwork (ship, station and environment sprites, icons) and sound effects were created using generative AI tools during development, then curated and hand-edited by the developer. All AI-generated content was reviewed before inclusion.",
+   "ai_scope": "audio only"
+  },
+  {
+   "appid": 4962560,
+   "name": "Eclesiar",
+   "release_date": "2026-10-01",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Atlantic Game Development"
+   ],
+   "publishers": [
+    "Atlantic Game Development"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Indie",
+    "Massively Multiplayer",
+    "RPG",
+    "Simulation",
+    "Free To Play"
+   ],
+   "tags": [
+    "Indie",
+    "Massively Multiplayer",
+    "RPG",
+    "Simulation",
+    "Free To Play"
+   ],
+   "total_reviews": 15,
+   "positive_reviews": 9,
+   "review_score_desc": "Mixed",
+   "pct_positive": 60.0,
+   "est_sales": 525,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 30,
+   "ai_disclosed": true,
+   "ai_note": "Audio and images were generated with AI to speed up and cost reduction of game development",
+   "ai_scope": "visuals + audio"
+  },
+  {
+   "appid": 2407780,
+   "name": "Gus Game",
+   "release_date": "2026-10-01",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Gus"
+   ],
+   "publishers": [
+    "Gus"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Strategy",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Strategy",
+    "Free To Play"
+   ],
+   "total_reviews": 11,
+   "positive_reviews": 11,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 385,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3919140,
+   "name": "Sous Raccoon",
+   "release_date": "2026-10-01",
+   "price_usd": 14.99,
+   "is_free": false,
+   "developers": [
+    "Novice Flow"
+   ],
+   "publishers": [
+    "Rising Tide"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Indie"
+   ],
+   "total_reviews": 25,
+   "positive_reviews": 22,
+   "review_score_desc": "Positive",
+   "pct_positive": 88.0,
+   "est_sales": 875,
+   "est_gross_usd": 13116,
+   "est_net_usd": 7213,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 22,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 5221540,
+   "name": "Emojix",
+   "release_date": "2026-10-01",
+   "price_usd": 4.99,
+   "is_free": false,
+   "developers": [
+    "100 Cozy Games",
+    "Cats"
+   ],
+   "publishers": [
+    "100 Cozy Games",
+    "Cats"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 11,
+   "positive_reviews": 11,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 385,
+   "est_gross_usd": 1921,
+   "est_net_usd": 1056,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3929260,
+   "name": "What Is The Ghost",
+   "release_date": "2026-10-01",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "Deda Games"
+   ],
+   "publishers": [
+    "Deda Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Indie"
+   ],
+   "total_reviews": 38,
+   "positive_reviews": 37,
+   "review_score_desc": "Positive",
+   "pct_positive": 97.4,
+   "est_sales": 1330,
+   "est_gross_usd": 10626,
+   "est_net_usd": 5844,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2067820,
+   "name": "RetroSpace",
+   "release_date": "2026-10-01",
+   "price_usd": 19.99,
+   "is_free": false,
+   "developers": [
+    "The Wild Gentlemen"
+   ],
+   "publishers": [
+    "Kwalee"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "total_reviews": 59,
+   "positive_reviews": 55,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 93.2,
+   "est_sales": 2065,
+   "est_gross_usd": 41279,
+   "est_net_usd": 22703,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 307,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4917440,
+   "name": "MOGGED: Looksmaxx or Die",
+   "release_date": "2026-10-01",
+   "price_usd": 6.99,
+   "is_free": false,
+   "developers": [
+    "Sigma Labs"
+   ],
+   "publishers": [
+    "Sigma Labs"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Indie",
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 94,
+   "positive_reviews": 42,
+   "review_score_desc": "Mixed",
+   "pct_positive": 44.7,
+   "est_sales": 3290,
+   "est_gross_usd": 22997,
+   "est_net_usd": 12648,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 173,
+   "ai_disclosed": true,
+   "ai_note": "AI tools were used in a limited way to help generate parts of some in-game comedic images and voice barks, which were then edited, refined, and finalized by human artists.",
+   "ai_scope": "visuals + audio"
+  },
+  {
+   "appid": 4229200,
+   "name": "Muchi Muchi Pork! & PinkSweets Boosted",
+   "release_date": "2026-10-01",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "CITY CONNECTION",
+    "TAKE×0FF"
+   ],
+   "publishers": [
+    "CITY CONNECTION"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action"
+   ],
+   "tags": [
+    "Action"
+   ],
+   "total_reviews": 19,
+   "positive_reviews": 19,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 665,
+   "est_gross_usd": 26593,
+   "est_net_usd": 14626,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 28,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4311440,
+   "name": "Carry The Count",
+   "release_date": "2026-10-01",
+   "price_usd": 17.99,
+   "is_free": false,
+   "developers": [
+    "Little Bird Studios"
+   ],
+   "publishers": [
+    "Cathedral Studios"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure",
+    "Indie"
+   ],
+   "tags": [
+    "Adventure",
+    "Indie"
+   ],
+   "total_reviews": 29,
+   "positive_reviews": 29,
+   "review_score_desc": "Positive",
+   "pct_positive": 100.0,
+   "est_sales": 1015,
+   "est_gross_usd": 18259,
+   "est_net_usd": 10042,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 4,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 1565490,
+   "name": "Train Station Tycoon",
+   "release_date": "2026-10-01",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Abyssal Interactive"
+   ],
+   "publishers": [
+    "Abyssal Interactive"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Simulation",
+    "Early Access"
+   ],
+   "tags": [
+    "Simulation",
+    "Early Access"
+   ],
+   "total_reviews": 19,
+   "positive_reviews": 18,
+   "review_score_desc": "Positive",
+   "pct_positive": 94.7,
+   "est_sales": 665,
+   "est_gross_usd": 6643,
+   "est_net_usd": 3653,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 48,
+   "ai_disclosed": true,
+   "ai_note": "We use generative AI to translate the game into other languages, assist with user interface design, and help optimize the game’s performance.",
+   "ai_scope": "translation only"
+  },
+  {
+   "appid": 3634190,
+   "name": "MXGP 26 - The Official Game",
+   "release_date": "2026-10-01",
+   "price_usd": 49.99,
+   "is_free": false,
+   "developers": [
+    "Artefacts Studio"
+   ],
+   "publishers": [
+    "Nacon"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Racing",
+    "Simulation",
+    "Sports"
+   ],
+   "tags": [
+    "Racing",
+    "Simulation",
+    "Sports"
+   ],
+   "total_reviews": 93,
+   "positive_reviews": 56,
+   "review_score_desc": "Mixed",
+   "pct_positive": 60.2,
+   "est_sales": 3255,
+   "est_gross_usd": 162717,
+   "est_net_usd": 89494,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 180,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3841510,
+   "name": "DYNASTY WARRIORS 3: Complete Edition Remastered",
+   "release_date": "2026-09-30",
+   "price_usd": 39.99,
+   "is_free": false,
+   "developers": [
+    "KOEI TECMO GAMES CO., LTD."
+   ],
+   "publishers": [
+    "KOEI TECMO GAMES CO., LTD."
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "RPG",
+    "Strategy"
+   ],
+   "tags": [
+    "Action",
+    "RPG",
+    "Strategy"
+   ],
+   "total_reviews": 816,
+   "positive_reviews": 697,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 85.4,
+   "est_sales": 28560,
+   "est_gross_usd": 1142114,
+   "est_net_usd": 628162,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 4899,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3877630,
+   "name": "The Calamity Trials",
+   "release_date": "2026-09-30",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Deme Nowa"
+   ],
+   "publishers": [
+    "Deme Nowa"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Simulation",
+    "Free To Play"
+   ],
+   "tags": [
+    "Action",
+    "Simulation",
+    "Free To Play"
+   ],
+   "total_reviews": 22,
+   "positive_reviews": 15,
+   "review_score_desc": "Mixed",
+   "pct_positive": 68.2,
+   "est_sales": 770,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 0,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 5193380,
+   "name": "Deep Space Idle: Frontier Era",
+   "release_date": "2026-09-30",
+   "price_usd": 1.99,
+   "is_free": false,
+   "developers": [
+    "音速工业"
+   ],
+   "publishers": [
+    "音速工业"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 30,
+   "positive_reviews": 15,
+   "review_score_desc": "Mixed",
+   "pct_positive": 50.0,
+   "est_sales": 1050,
+   "est_gross_usd": 2089,
+   "est_net_usd": 1149,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 107,
+   "ai_disclosed": true,
+   "ai_note": "Some store artwork and marketing materials were created with the assistance of generative AI tools. These are pre-generated static assets; no AI content is generated in real time during gameplay.",
+   "ai_scope": "unspecified"
+  },
+  {
+   "appid": 3854870,
+   "name": "ShipCrafter",
+   "release_date": "2026-09-30",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "Myrmecoman"
+   ],
+   "publishers": [
+    "MoreButterGames"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "total_reviews": 286,
+   "positive_reviews": 261,
+   "review_score_desc": "Very Positive",
+   "pct_positive": 91.3,
+   "est_sales": 10010,
+   "est_gross_usd": 79979,
+   "est_net_usd": 43988,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 196,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  }
+ ]
+}
