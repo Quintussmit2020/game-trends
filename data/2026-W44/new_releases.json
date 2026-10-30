@@ -1,0 +1,333 @@
+{
+ "week": "2026-W44",
+ "window_days": 14,
+ "releases": [
+  {
+   "appid": 3859180,
+   "name": "The Electorate",
+   "release_date": "2026-10-29",
+   "price_usd": 24.99,
+   "is_free": false,
+   "developers": [
+    "Galactic Interactive"
+   ],
+   "publishers": [
+    "Galactic Interactive"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 12,
+   "positive_reviews": 11,
+   "review_score_desc": null,
+   "pct_positive": 91.7,
+   "est_sales": 420,
+   "est_gross_usd": 10495,
+   "est_net_usd": 5772,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 103,
+   "ai_disclosed": true,
+   "ai_note": "AI was used to help localize text in the game.",
+   "ai_scope": "translation only"
+  },
+  {
+   "appid": 3091340,
+   "name": "Metal Thunder",
+   "release_date": "2026-10-29",
+   "price_usd": 10.99,
+   "is_free": false,
+   "developers": [
+    "Dumbbell Games"
+   ],
+   "publishers": [
+    "Dumbbell Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Action",
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Early Access",
+    "Flight",
+    "Vehicular Combat",
+    "Combat",
+    "War",
+    "Modern",
+    "Military",
+    "Action",
+    "Shooter",
+    "Realistic"
+   ],
+   "total_reviews": 599,
+   "positive_reviews": 526,
+   "review_score_desc": null,
+   "pct_positive": 87.8,
+   "est_sales": 20965,
+   "est_gross_usd": 230405,
+   "est_net_usd": 126722,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 72,
+   "ai_disclosed": true,
+   "ai_note": "Metal Thunder is made by a solo developer, and AI tools are part of how one person can build and compete at this scale. AI was used for some store page assets and for select in-game art in supporting roles, never as the focal point. Nothing was dropped in as-is. Every asset was directed, edited, designed and placed with human intent.",
+   "ai_scope": "unspecified"
+  },
+  {
+   "appid": 5267490,
+   "name": "Lantern Hollow",
+   "release_date": "2026-10-29",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Entropy Digital Entertainment"
+   ],
+   "publishers": [
+    "Entropy Digital Entertainment"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "Casual"
+   ],
+   "tags": [
+    "Adventure",
+    "Casual"
+   ],
+   "total_reviews": 10,
+   "positive_reviews": 8,
+   "review_score_desc": null,
+   "pct_positive": 80.0,
+   "est_sales": 350,
+   "est_gross_usd": 3496,
+   "est_net_usd": 1923,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 12,
+   "ai_disclosed": true,
+   "ai_note": "Artists were aided in creating some promotional content and digital art with the use of AI image generation and mesh builder tools",
+   "ai_scope": "some visuals"
+  },
+  {
+   "appid": 5190580,
+   "name": "HELENA : Cloud District",
+   "release_date": "2026-10-29",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "Helena : Cloud District"
+   ],
+   "publishers": [
+    "Helena : Cloud District"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "Indie",
+    "Free To Play"
+   ],
+   "tags": [
+    "Adventure",
+    "Indie",
+    "Free To Play"
+   ],
+   "total_reviews": 11,
+   "positive_reviews": 11,
+   "review_score_desc": null,
+   "pct_positive": 100.0,
+   "est_sales": 385,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 1,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4306070,
+   "name": "Catch Meow If You Can",
+   "release_date": "2026-10-29",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "Tempest Games"
+   ],
+   "publishers": [
+    "Tempest Games"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure"
+   ],
+   "tags": [
+    "Adventure"
+   ],
+   "total_reviews": 13,
+   "positive_reviews": 13,
+   "review_score_desc": null,
+   "pct_positive": 100.0,
+   "est_sales": 455,
+   "est_gross_usd": 3635,
+   "est_net_usd": 1999,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 59,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 1742440,
+   "name": "COP BASTARD",
+   "release_date": "2026-10-29",
+   "price_usd": 12.99,
+   "is_free": false,
+   "developers": [
+    "targim."
+   ],
+   "publishers": [
+    "Retrovibe"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Action",
+    "Indie"
+   ],
+   "tags": [
+    "Action",
+    "Indie"
+   ],
+   "total_reviews": 36,
+   "positive_reviews": 34,
+   "review_score_desc": null,
+   "pct_positive": 94.4,
+   "est_sales": 1260,
+   "est_gross_usd": 16367,
+   "est_net_usd": 9002,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 46,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4360290,
+   "name": "Terraclysm Survivors",
+   "release_date": "2026-10-29",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "DeadPixel"
+   ],
+   "publishers": [
+    "DeadPixel"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "tags": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "total_reviews": 22,
+   "positive_reviews": 22,
+   "review_score_desc": null,
+   "pct_positive": 100.0,
+   "est_sales": 770,
+   "est_gross_usd": 7692,
+   "est_net_usd": 4230,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 37,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 3624110,
+   "name": "Prophet Margin",
+   "release_date": "2026-10-29",
+   "price_usd": 16.99,
+   "is_free": false,
+   "developers": [
+    "Stellar Cartography Interactive UG"
+   ],
+   "publishers": [
+    "Stellar Cartography Interactive UG"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 16,
+   "positive_reviews": 15,
+   "review_score_desc": null,
+   "pct_positive": 93.8,
+   "est_sales": 560,
+   "est_gross_usd": 9514,
+   "est_net_usd": 5232,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 3,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 4538080,
+   "name": "Kingdom Inc.",
+   "release_date": "2026-10-29",
+   "price_usd": 7.99,
+   "is_free": false,
+   "developers": [
+    "Leaping Turtle"
+   ],
+   "publishers": [
+    "Leaping Turtle"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 11,
+   "positive_reviews": 10,
+   "review_score_desc": null,
+   "pct_positive": 90.9,
+   "est_sales": 385,
+   "est_gross_usd": 3076,
+   "est_net_usd": 1691,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 304,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "week": "2026-W44",
+ "generated_utc": "2026-10-30T07:09:04Z",
+ "counts": {
+  "most_played": 100,
+  "top_sellers": 42,
+  "new_releases_tracked": 9,
+  "indie_new_releases": 7
+ },
+ "breakouts": [
+  {
+   "appid": 3091340,
+   "name": "Metal Thunder",
+   "release_date": "2026-10-29",
+   "price_usd": 10.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Early Access",
+    "Flight",
+    "Vehicular Combat",
+    "Combat",
+    "War",
+    "Modern",
+    "Military",
+    "Action",
+    "Shooter",
+    "Realistic"
+   ],
+   "total_reviews": 599,
+   "pct_positive": 87.8,
+   "est_net_usd": 126722,
+   "ccu_now": 72
+  },
+  {
+   "appid": 1742440,
+   "name": "COP BASTARD",
+   "release_date": "2026-10-29",
+   "price_usd": 12.99,
+   "team_class": "indie_with_publisher",
+   "tags": [
+    "Action",
+    "Indie"
+   ],
+   "total_reviews": 36,
+   "pct_positive": 94.4,
+   "est_net_usd": 9002,
+   "ccu_now": 46
+  },
+  {
+   "appid": 3859180,
+   "name": "The Electorate",
+   "release_date": "2026-10-29",
+   "price_usd": 24.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 12,
+   "pct_positive": 91.7,
+   "est_net_usd": 5772,
+   "ccu_now": 103
+  },
+  {
+   "appid": 3624110,
+   "name": "Prophet Margin",
+   "release_date": "2026-10-29",
+   "price_usd": 16.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 16,
+   "pct_positive": 93.8,
+   "est_net_usd": 5232,
+   "ccu_now": 3
+  },
+  {
+   "appid": 4306070,
+   "name": "Catch Meow If You Can",
+   "release_date": "2026-10-29",
+   "price_usd": 7.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Adventure"
+   ],
+   "total_reviews": 13,
+   "pct_positive": 100.0,
+   "est_net_usd": 1999,
+   "ccu_now": 59
+  },
+  {
+   "appid": 5267490,
+   "name": "Lantern Hollow",
+   "release_date": "2026-10-29",
+   "price_usd": 9.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Adventure",
+    "Casual"
+   ],
+   "total_reviews": 10,
+   "pct_positive": 80.0,
+   "est_net_usd": 1923,
+   "ccu_now": 12
+  },
+  {
+   "appid": 5190580,
+   "name": "HELENA : Cloud District",
+   "release_date": "2026-10-29",
+   "price_usd": 0.0,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Adventure",
+    "Indie",
+    "Free To Play"
+   ],
+   "total_reviews": 11,
+   "pct_positive": 100.0,
+   "est_net_usd": 0,
+   "ccu_now": 1
+  }
+ ],
+ "tag_momentum": [
+  {
+   "tag": "Action",
+   "weight_usd": 135724
+  },
+  {
+   "tag": "Early Access",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Flight",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Vehicular Combat",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Combat",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "War",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Modern",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Military",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Shooter",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Realistic",
+   "weight_usd": 126722
+  },
+  {
+   "tag": "Indie",
+   "weight_usd": 14234
+  },
+  {
+   "tag": "Simulation",
+   "weight_usd": 11004
+  },
+  {
+   "tag": "Strategy",
+   "weight_usd": 11004
+  },
+  {
+   "tag": "Casual",
+   "weight_usd": 5232
+  }
+ ],
+ "assumptions": {
+  "review_multiplier": 35,
+  "net_factor": 0.55,
+  "note": "Revenue estimates are directional (Boxleiter method)."
+ }
+}
