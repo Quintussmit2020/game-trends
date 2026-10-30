@@ -189,10 +189,53 @@ def appdetails(appid):
     return entry.get("data") if entry.get("success") else None
 
 
+def _page_review_summary(appid):
+    """Last resort: parse review totals from the store page itself."""
+    url = "https://store.steampowered.com/app/%d/?cc=us&l=english" % appid
+    try:
+        req = urllib.request.Request(url, headers={**UA,
+            "Cookie": "birthtime=568022401; wants_mature_content=1"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            html = r.read().decode("utf-8", "replace")
+    except Exception:
+        return None
+    m = re.search(r'itemprop="reviewCount"\s+content="(\d+)"', html)
+    if not m:
+        return None
+    total = int(m.group(1))
+    pm = re.search(r'(\d+)% of the [\d,]+ user reviews', html)
+    positive = int(round(total * int(pm.group(1)) / 100.0)) if pm else 0
+    return {"total_reviews": total, "total_positive": positive}
+
+
 def review_summary(appid):
     d = fetch("https://store.steampowered.com/appreviews/%d?json=1&num_per_page=0"
               "&language=all&purchase_type=all" % appid)
-    return (d or {}).get("query_summary") or {}
+    qs = (d or {}).get("query_summary") or {}
+    if (qs.get("total_reviews") or 0) > 0:
+        return qs
+    # Fallback: the appreviews endpoint is blocked from some networks (302 to
+    # the store home page). Rebuild a summary from appdetails recommendations
+    # (current total review count) plus SteamSpy vote counts (pos/neg split).
+    time.sleep(STORE_DELAY)
+    det = fetch("https://store.steampowered.com/api/appdetails?appids=%d"
+                "&filters=recommendations" % appid)
+    total = ((((det or {}).get(str(appid)) or {}).get("data") or {})
+             .get("recommendations") or {}).get("total") or 0
+    time.sleep(STEAMSPY_DELAY)
+    spy = steamspy(appid)
+    pos = int((spy or {}).get("positive") or 0)
+    neg = int((spy or {}).get("negative") or 0)
+    total = max(total, pos + neg)
+    positive = int(round(total * pos / (pos + neg))) if (pos + neg) else 0
+    if not total or not positive:
+        time.sleep(STORE_DELAY)
+        pg = _page_review_summary(appid)
+        if pg and pg["total_reviews"] >= total * 0.8:
+            return pg
+    if not total:
+        return qs
+    return {"total_reviews": total, "total_positive": positive}
 
 
 def playtime_hours(appid, sample=100):
@@ -264,7 +307,7 @@ def record_from_store(appid, name, clusters):
         "publisher": ", ".join(pubs),
         "self_published": bool(devs) and set(d.lower() for d in devs) == set(p.lower() for p in pubs),
         "total_reviews": total,
-        "pct_positive": round(100.0 * pos / total, 1) if total else None,
+        "pct_positive": round(100.0 * pos / total, 1) if (total and pos) else None,
         "est_net_usd": int(total * REVIEW_MULTIPLIER * price * NET_FACTOR),
         "playtime_hours": hours,
         "playtime_sample": hours_n,
