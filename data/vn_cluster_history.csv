@@ -95,3 +95,15 @@ week,cluster,count,share_pct,median_reviews,over_1k_reviews,median_price_usd,rel
 2026-W44,"Adult (explicit)",33,17.6,7043,18,14.99,6
 2026-W44,"LGBTQ+ / queer narrative",26,13.8,2696,12,16.99,3
 2026-W44,"Sci-fi / cyberpunk",11,5.9,5,0,21.99,2
+2026-W45,"Slice of life / cozy",62,26.7,928,19,14.99,18
+2026-W45,"Choice-driven branching",61,26.3,3489,24,15.99,11
+2026-W45,"RPG hybrid",47,20.3,742,12,17.99,10
+2026-W45,"Point & click / puzzle",45,19.4,1010,16,17.99,14
+2026-W45,"Horror / psychological",43,18.5,3071,19,17.49,7
+2026-W45,"Romance / dating sim",40,17.2,1954,17,14.99,7
+2026-W45,"Mystery / detective",38,16.4,2070,12,19.99,10
+2026-W45,"Sim / management hybrid",37,15.9,1501,11,15.99,9
+2026-W45,"Interactive fiction / text",35,15.1,1568,12,16.32,6
+2026-W45,"Adult (explicit)",33,14.2,2942,16,17.99,4
+2026-W45,"LGBTQ+ / queer narrative",22,9.5,2942,8,15.0,4
+2026-W45,"Sci-fi / cyberpunk",11,4.7,697,3,19.99,3
