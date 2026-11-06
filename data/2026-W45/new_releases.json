@@ -1,0 +1,193 @@
+{
+ "week": "2026-W45",
+ "window_days": 14,
+ "releases": [
+  {
+   "appid": 5179280,
+   "name": "Goddess Cultivation: Idle RPG",
+   "release_date": "2026-11-05",
+   "price_usd": 0.0,
+   "is_free": true,
+   "developers": [
+    "女神养成工作室"
+   ],
+   "publishers": [
+    "女神养成工作室"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Adventure",
+    "RPG",
+    "Strategy",
+    "Free To Play"
+   ],
+   "tags": [
+    "Adventure",
+    "RPG",
+    "Strategy",
+    "Free To Play"
+   ],
+   "total_reviews": 106,
+   "positive_reviews": 88,
+   "review_score_desc": null,
+   "pct_positive": 83.0,
+   "est_sales": 3710,
+   "est_gross_usd": 0,
+   "est_net_usd": 0,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 102,
+   "ai_disclosed": true,
+   "ai_note": "While AI tools were used to assist with the creation of select assets for our game's store page, all featured assets are fully original designs developed by our internal team.",
+   "ai_scope": "unspecified"
+  },
+  {
+   "appid": 3951810,
+   "name": "Cheater's Table",
+   "release_date": "2026-11-05",
+   "price_usd": 6.99,
+   "is_free": false,
+   "developers": [
+    "Lagari"
+   ],
+   "publishers": [
+    "Lagari"
+   ],
+   "team_class": "self_published_indie",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 88,
+   "positive_reviews": 77,
+   "review_score_desc": null,
+   "pct_positive": 87.5,
+   "est_sales": 3080,
+   "est_gross_usd": 21529,
+   "est_net_usd": 11841,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 29,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 1476680,
+   "name": "Runika: A World of Little Legends",
+   "release_date": "2026-11-05",
+   "price_usd": 12.99,
+   "is_free": false,
+   "developers": [
+    "Pascal Dittrich"
+   ],
+   "publishers": [
+    "padSoft"
+   ],
+   "team_class": "indie_with_publisher",
+   "genres": [
+    "Adventure",
+    "Indie",
+    "RPG"
+   ],
+   "tags": [
+    "Early Access",
+    "Adventure",
+    "Exploration",
+    "Character Customization",
+    "Sandbox",
+    "Open World Survival Craft",
+    "Pixel Graphics",
+    "Agriculture",
+    "Farming Sim",
+    "Crafting"
+   ],
+   "total_reviews": 89,
+   "positive_reviews": 76,
+   "review_score_desc": null,
+   "pct_positive": 85.4,
+   "est_sales": 3115,
+   "est_gross_usd": 40463,
+   "est_net_usd": 22255,
+   "steamspy_owners": "20,000 .. 50,000",
+   "ccu_now": 7,
+   "ai_disclosed": true,
+   "ai_note": "Parts of the localization and most character portraits were created with the assistance of AI. All relevant content was manually reviewed and edited by me where possible and necessary.",
+   "ai_scope": "translation only"
+  },
+  {
+   "appid": 2229820,
+   "name": "Theme Hospital™",
+   "release_date": "2026-11-05",
+   "price_usd": 4.99,
+   "is_free": false,
+   "developers": [
+    "Bullfrog Productions"
+   ],
+   "publishers": [
+    "Electronic Arts"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Casual",
+    "Simulation"
+   ],
+   "tags": [
+    "Casual",
+    "Simulation"
+   ],
+   "total_reviews": 14,
+   "positive_reviews": 13,
+   "review_score_desc": null,
+   "pct_positive": 92.9,
+   "est_sales": 490,
+   "est_gross_usd": 2445,
+   "est_net_usd": 1344,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 38,
+   "ai_disclosed": false,
+   "ai_note": null,
+   "ai_scope": null
+  },
+  {
+   "appid": 2448570,
+   "name": "Road Rash™: 30th Anniversary Edition",
+   "release_date": "2026-11-05",
+   "price_usd": 9.99,
+   "is_free": false,
+   "developers": [
+    "Electronic Arts"
+   ],
+   "publishers": [
+    "Electronic Arts"
+   ],
+   "team_class": "aaa_or_publisher",
+   "genres": [
+    "Action",
+    "Racing"
+   ],
+   "tags": [
+    "Action",
+    "Racing"
+   ],
+   "total_reviews": 144,
+   "positive_reviews": 140,
+   "review_score_desc": null,
+   "pct_positive": 97.2,
+   "est_sales": 5040,
+   "est_gross_usd": 50349,
+   "est_net_usd": 27692,
+   "steamspy_owners": "0 .. 20,000",
+   "ccu_now": 239,
+   "ai_disclosed": true,
+   "ai_note": "AI was used to upscale the resolution and framerate of the master full-motion video source material, enhancing the full-motion cinematics for an optional enhanced viewing experience.",
+   "ai_scope": "unspecified"
+  }
+ ]
+}

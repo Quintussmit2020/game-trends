@@ -1,0 +1,132 @@
+{
+ "week": "2026-W45",
+ "generated_utc": "2026-11-06T05:49:50Z",
+ "counts": {
+  "most_played": 100,
+  "top_sellers": 45,
+  "new_releases_tracked": 5,
+  "indie_new_releases": 3
+ },
+ "breakouts": [
+  {
+   "appid": 1476680,
+   "name": "Runika: A World of Little Legends",
+   "release_date": "2026-11-05",
+   "price_usd": 12.99,
+   "team_class": "indie_with_publisher",
+   "tags": [
+    "Early Access",
+    "Adventure",
+    "Exploration",
+    "Character Customization",
+    "Sandbox",
+    "Open World Survival Craft",
+    "Pixel Graphics",
+    "Agriculture",
+    "Farming Sim",
+    "Crafting"
+   ],
+   "total_reviews": 89,
+   "pct_positive": 85.4,
+   "est_net_usd": 22255,
+   "ccu_now": 7
+  },
+  {
+   "appid": 3951810,
+   "name": "Cheater's Table",
+   "release_date": "2026-11-05",
+   "price_usd": 6.99,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Casual",
+    "Indie",
+    "Simulation",
+    "Strategy"
+   ],
+   "total_reviews": 88,
+   "pct_positive": 87.5,
+   "est_net_usd": 11841,
+   "ccu_now": 29
+  },
+  {
+   "appid": 5179280,
+   "name": "Goddess Cultivation: Idle RPG",
+   "release_date": "2026-11-05",
+   "price_usd": 0.0,
+   "team_class": "self_published_indie",
+   "tags": [
+    "Adventure",
+    "RPG",
+    "Strategy",
+    "Free To Play"
+   ],
+   "total_reviews": 106,
+   "pct_positive": 83.0,
+   "est_net_usd": 0,
+   "ccu_now": 102
+  }
+ ],
+ "tag_momentum": [
+  {
+   "tag": "Early Access",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Adventure",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Exploration",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Character Customization",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Sandbox",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Open World Survival Craft",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Pixel Graphics",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Agriculture",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Farming Sim",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Crafting",
+   "weight_usd": 22255
+  },
+  {
+   "tag": "Casual",
+   "weight_usd": 11841
+  },
+  {
+   "tag": "Indie",
+   "weight_usd": 11841
+  },
+  {
+   "tag": "Simulation",
+   "weight_usd": 11841
+  },
+  {
+   "tag": "Strategy",
+   "weight_usd": 11841
+  }
+ ],
+ "assumptions": {
+  "review_multiplier": 35,
+  "net_factor": 0.55,
+  "note": "Revenue estimates are directional (Boxleiter method)."
+ }
+}
