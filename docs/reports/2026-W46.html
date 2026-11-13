@@ -254,7 +254,7 @@ function showTT(e, valueText, labelText) {
   const v = document.createElement('span');
   v.className = 'v'; v.textContent = valueText;
   tt.appendChild(v);
-  tt.appendChild(document.createTextNode(' \\u00b7 ' + labelText));
+  tt.appendChild(document.createTextNode(' · ' + labelText));
   tt.style.display = 'block';
   tt.style.left = Math.min(e.clientX + 14, innerWidth - 240) + 'px';
   tt.style.top = (e.clientY + 14) + 'px';
@@ -283,7 +283,7 @@ function hbar(el, items, valueKey, labelKey, fmt, colorFn) {
     label.setAttribute('text-anchor', 'end'); label.setAttribute('font-size', '12.5');
     label.setAttribute('fill', C.ink);
     const raw = String(d[labelKey]);
-    label.textContent = raw.length > 34 ? raw.slice(0, 33) + '\\u2026' : raw;
+    label.textContent = raw.length > 34 ? raw.slice(0, 33) + '…' : raw;
     svg.appendChild(label);
     const bar = document.createElementNS(svgNS, 'path');
     bar.setAttribute('d', `M${labelW} ${y} h${Math.max(0, w-4)} a4 4 0 0 1 4 4 v${bh-8} a4 4 0 0 1 -4 4 h-${Math.max(0, w-4)} z`);
@@ -304,7 +304,7 @@ function drawCharts() {
 hbar(document.getElementById('breakoutchart'), DATA.breakouts, 'est_net_usd', 'name', fmtUsd);
 hbar(document.getElementById('tagchart'), DATA.tags, 'weight_usd', 'tag', fmtUsd);
 hbar(document.getElementById('gainerchart'),
-  DATA.gainers.map(g => ({ name: `${g.name} (#${g.last_week_rank} \\u2192 #${g.rank})`, delta: g.delta }))
+  DATA.gainers.map(g => ({ name: `${g.name} (#${g.last_week_rank} → #${g.rank})`, delta: g.delta }))
     .filter(g => g.delta > 0), 'delta', 'name', v => '+' + v + ' ranks');
 
 // VN tab charts
